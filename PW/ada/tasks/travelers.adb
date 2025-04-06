@@ -8,7 +8,7 @@ procedure  Travelers is
 
 -- Travelers moving on the board
 
-  Nr_Of_Travelers : constant Integer :=15;
+  Nr_Of_Travelers : constant Integer :=2;
 
   Min_Steps : constant Integer := 10 ;
   Max_Steps : constant Integer := 100 ;
@@ -18,8 +18,8 @@ procedure  Travelers is
 
 -- 2D Board with torus topology
 
-  Board_Width  : constant Integer := 15;
-  Board_Height : constant Integer := 15;
+  Board_Width  : constant Integer := 5;
+  Board_Height : constant Integer := 5;
 
 -- Timing
 
@@ -35,7 +35,31 @@ procedure  Travelers is
   type Position_Type is record	
     X: Integer range 0 .. Board_Width - 1; 
     Y: Integer range 0 .. Board_Height - 1; 
-  end record;	   
+  end record;
+
+    protected type Board_Cell is 
+        entry Enter;
+        entry Leave;
+    private
+          Occupied : Boolean := False;
+    end Board_Cell;
+
+    protected body Board_Cell is
+      entry Enter when not Occupied is
+      begin
+        Put_Line (Standard_Error, Boolean'Image(Occupied));
+        Occupied := True;
+      end Enter;
+
+      entry Leave when Occupied is
+      begin
+        Occupied := False;
+      end Leave;
+    end Board_Cell;
+
+   type Board_Type is array (0 .. Board_Width - 1, 0 .. Board_Height - 1) of Board_Cell;
+
+   Board : Board_Type;
 
   -- elementary steps
   procedure Move_Down( Position: in out Position_Type ) is
@@ -122,6 +146,7 @@ procedure  Travelers is
   end Traveler_Task_Type;	
 
   task body Traveler_Task_Type is
+    Done : Boolean := False;
     G : Generator;
     Traveler : Traveler_Type;
     Time_Stamp : Duration;
@@ -141,20 +166,53 @@ procedure  Travelers is
     
     procedure Make_Step is
       N : Integer; 
+      New_Position : Position_Type;
     begin
+      if Traveler.Symbol in 'a' .. 'z' then
+         Done := True;
+         return;
+      end if;
+
       N := Integer( Float'Floor(4.0 * Random(G)) );    
+      New_Position := Traveler.Position;
       case N is
         when 0 =>
-          Move_Up( Traveler.Position );
+         --   Move_Up( Traveler.Position );
+         New_Position.Y := (Traveler.Position.Y + Board_Height - 1) mod Board_Height;
         when 1 =>
-          Move_Down( Traveler.Position );
+         --   Move_Down( Traveler.Position );
+         New_Position.Y := (Traveler.Position.Y + 1) mod Board_Height;
         when 2 =>
-          Move_Left( Traveler.Position );
+         --   Move_Left( Traveler.Position );
+         New_Position.X := (Traveler.Position.X + Board_Width - 1) mod Board_Width;
         when 3 =>
-          Move_Right( Traveler.Position );
+         --   Move_Right( Traveler.Position );
+         New_Position.X := (Traveler.Position.X + 1) mod Board_Width;
         when others =>
           Put_Line( " ?????????????? " & Integer'Image( N ) );
         end case;
+
+        select
+          Board (New_Position.X, New_Position.Y).Enter;
+          --  Put_Line (Standard_Error, "Traveler " 
+          --  & Traveler.Symbol 
+          --  & " leaving " 
+          --  & Integer'Image(Traveler.Position.X)
+          --  & ", " 
+          --  & Integer'Image(Traveler.Position.Y)
+          --  & " and entering "
+          --  & Integer'Image(New_Position.X)
+          --  & ", "
+          --  & Integer'Image(New_Position.Y));
+          --  Board (Traveler.Position.X, Traveler.Position.Y).Leave;
+          Traveler.Position := New_Position;
+        or 
+          delay Max_Delay;
+          Traveler.Symbol := Character'Val (Character'Pos (Traveler.Symbol) + 32);
+
+        end select;
+
+
     end Make_Step;
 
   begin
@@ -163,10 +221,18 @@ procedure  Travelers is
       Traveler.Id := Id;
       Traveler.Symbol := Symbol;
       -- Random initial position:
-      Traveler.Position := (
-          X => Integer( Float'Floor( Float( Board_Width )  * Random(G)  ) ),
-          Y => Integer( Float'Floor( Float( Board_Height ) * Random(G) ) )          
+      loop
+        Traveler.Position := (
+            X => Integer( Float'Floor( Float( Board_Width )  * Random(G)  ) ),
+            Y => Integer( Float'Floor( Float( Board_Height ) * Random(G) ) )          
         );
+        select
+            Board(Traveler.Position.X, Traveler.Position.Y).Enter;
+            exit; -- got a free cell
+        or
+            delay 0.0; -- try again immediately
+        end select;
+      end loop;
       Store_Trace; -- store starting position
       -- Number of steps to be made by the traveler  
       Nr_of_Steps := Min_Steps + Integer( Float(Max_Steps - Min_Steps) * Random(G));
