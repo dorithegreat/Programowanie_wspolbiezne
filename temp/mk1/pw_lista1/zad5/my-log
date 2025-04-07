@@ -1,0 +1,386 @@
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp$ # Natalia Wolniewicz 272366
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp$ svn export https://repo.cs.pwr.edu.pl/272366-dir/mk1    
+A    mk1
+A    mk1/aisd_lista2
+A    mk1/aisd_lista3
+A    mk1/aisd_lista4
+A    mk1/aisd_lista5
+A    mk1/aisd_lista4/SplayTest.java
+A    mk1/aisd_lista4/BstMain.java
+A    mk1/aisd_lista2/Dual.java
+A    mk1/aisd_lista4/Tree.java
+A    mk1/aisd_lista4/BstTree.java
+A    mk1/aisd_lista2/GeneratorOrdered.java
+A    mk1/aisd_lista4/RbMain.java
+A    mk1/aisd_lista2/GeneratorRandom.java
+A    mk1/other
+A    mk1/aisd_lista2/GeneratorReverse.java
+A    mk1/aisd_lista4/RbTree.java
+A    mk1/other/Fifo.java
+A    mk1/aisd_lista2/Hybrid.java
+A    mk1/aisd_lista4/SplayMain.java
+A    mk1/aisd_lista2/HybridTest.java
+A    mk1/aisd_lista4/SplayTreeNode.java
+A    mk1/aisd_lista2/Insertion.java
+A    mk1/aisd_lista2/InsertionTest.java
+A    mk1/other/OneWayList.java
+A    mk1/aisd_lista2/MySort.java
+A    mk1/other/TwoWayList.java
+A    mk1/pw_lista1
+A    mk1/pw_lista1/ada
+A    mk1/aisd_lista2/Quick.java
+A    mk1/aisd_lista2/QuickTest.java
+A    mk1/other/ts_lista1_asciinema
+A    mk1/aisd_lista4/aisd_lista4
+A    mk1/aisd_lista5/Graph.java
+A    mk1/pw_lista1/zad1&3
+A    mk1/pw_lista1/zad5
+A    mk1/aisd_lista5/Main.java
+A    mk1/other/App.java
+A    mk1/other/LifoElement.java
+A    mk1/aisd_lista2/aisd_lista2
+A    mk1/pw_lista1/ada/random_seeds.adb
+A    mk1/other/Technologie sieciowe lista 1 sprawozdanie.docx
+A    mk1/sp_lista1
+A    mk1/other/lista1_asciinema
+A    mk1/pw_lista1/ada/out3
+A    mk1/pw_lista1/zad1&3/travelers.go
+A    mk1/sp_lista1/3.sh
+A    mk1/pw_lista1/zad5/travelers5.go
+A    mk1/sp_lista1/4.sh
+A    mk1/sp_lista2
+A    mk1/sp_lista2/zad4
+A    mk1/aisd_lista4/Wykresy.pdf
+A    mk1/aisd_lista5/EdgeComparator.java
+A    mk1/aisd_lista5/GraphNode.java
+A    mk1/aisd_lista5/aisd_lista5
+A    mk1/other/Lifo.java
+A    mk1/other/OneWayListHandler.java
+A    mk1/other/TwoWayListHandler.java
+A    mk1/sp_lista2/zad5
+A    mk1/sp_lista2/zad6
+A    mk1/sp_lista2/zad6/a
+A    mk1/sp_lista2/zad6/b
+A    mk1/pw_lista1/ada/out2
+A    mk1/pw_lista1/ada/travelers.adb
+A    mk1/sp_lista1/2.sh
+A    mk1/sp_lista3
+A    mk1/sp_lista1/6.sh
+A    mk1/sp_lista1/5_rev.sh
+A    mk1/sp_lista1/lista1
+A    mk1/sp_lista2/zad3 (copy)
+A    mk1/sp_lista2/zad2
+A    mk1/sp_lista2/zad6/a/a.txt
+A    mk1/tests
+A    mk1/ts_lista2
+A    mk1/sp_lista3/2&3-log
+A    mk1/sp_lista2/zad5 (copy)
+A    mk1/sp_lista2/zad4 (copy)
+A    mk1/sp_lista2/zad6/b/b.txt
+A    mk1/sp_lista3/2.sh
+A    mk1/ts_lista3
+A    mk1/tests/conflict.txt
+A    mk1/ts_lista2/Technologie sieciowe lista2 sprawozdanie.docx
+A    mk1/sp_lista2/zad6 (copy)
+A    mk1/ts_lista3/Cable.java
+A    mk1/ts_lista2/tp_lista2
+A    mk1/ts_lista4
+A    mk1/ts_lista4/project-files
+A    mk1/ts_lista3/Packet.java
+A    mk1/sp_lista3/zad1-log
+A    mk1/ts_lista3/Simulation.java
+A    mk1/ts_lista3/ts3_frames
+A    mk1/ts_lista3/ts3_ethernet
+A    mk1/ts_lista2/sprawozdanie.pdf
+A    mk1/ts_lista3/Frames.java
+A    mk1/ts_lista3/UnFrame.java
+A    mk1/ts_lista4/project-files/captures
+A    mk1/ts_lista4/project-files/dynamips
+A    mk1/ts_lista4/project-files/captures/Switch2_Ethernet1_to_R2_FastEthernet00.pcap
+A    mk1/ts_lista4/project-files/captures/R5_FastEthernet10_to_R6_FastEthernet10.pcap
+A    mk1/ts_lista4/project-files/captures/R5_FastEthernet00_to_NAT1_nat0.pcap
+A    mk1/ts_lista4/project-files/dynamips/dynamips_i14_stdout.txt
+A    mk1/ts_lista4/project-files/dynamips/dynamips_i17_stdout.txt
+A    mk1/ts_lista4/project-files/dynamips/dynamips_i16_stdout.txt
+A    mk1/ts_lista4/project-files/dynamips/dynamips_i19_stdout.txt
+A    mk1/ts_lista4/project-files/dynamips/ilt_2023010200_mips64e
+A    mk1/ts_lista4/project-files/images
+A    mk1/ts_lista4/project-files/vpcs
+A    mk1/aisd_lista2/data.xlsx
+A    mk1/aisd_lista2/lista2_update
+A    mk1/aisd_lista3/BinarySearch.java
+A    mk1/aisd_lista3/BinaryTest.java
+A    mk1/ts_lista4/project-files/dynamips/ilt_2023010200_ppc32j
+A    mk1/ts_lista4/project-files/dynamips/ilt_2023010200_mips64j
+A    mk1/aisd_lista3/Data.xlsx
+A    mk1/aisd_lista3/GeneratorOrdered.java
+A    mk1/aisd_lista3/GeneratorRandom.java
+A    mk1/aisd_lista3/RandomizedSelect.java
+A    mk1/aisd_lista3/RandomizedTest.java
+A    mk1/aisd_lista3/Select.java
+A    mk1/aisd_lista3/SelectTest.java
+A    mk1/aisd_lista3/Wyniki.pdf
+A    mk1/aisd_lista3/aisd_lista3
+A    mk1/aisd_lista4/BstTest.java
+A    mk1/aisd_lista4/BstTreeNode.java
+A    mk1/aisd_lista4/RbTest.java
+A    mk1/aisd_lista4/RbTreeNode.java
+A    mk1/aisd_lista4/SplayTree.java
+A    mk1/aisd_lista4/TreeNode.java
+A    mk1/aisd_lista5/Data.xlsx
+A    mk1/aisd_lista5/GraphEdge.java
+A    mk1/aisd_lista5/PrimTest.java
+A    mk1/other/FifoElement.java
+A    mk1/other/OneWayListElement.java
+A    mk1/other/TwoWayListElement.java
+A    mk1/pw_lista1/ada/out1
+A    mk1/pw_lista1/ada/random_seeds.ads
+A    mk1/sp_lista1/1.sh
+A    mk1/sp_lista1/5.sh
+A    mk1/sp_lista2/zad1
+A    mk1/sp_lista2/zad5/lock.txt
+A    mk1/sp_lista2/zad6/b/c.txt
+A    mk1/sp_lista3/3.sh
+A    mk1/ts_lista2/graph.py
+A    mk1/ts_lista3/Ethernet.java
+A    mk1/ts_lista3/Station.java
+A    mk1/ts_lista4/lista4.gns3
+A    mk1/ts_lista4/project-files/dynamips/dynamips_i13_stdout.txt
+A    mk1/ts_lista4/project-files/dynamips/dynamips_i18_stdout.txt
+A    mk1/ts_lista4/project-files/dynamips/ilt_2023010200_ppc32e
+
+Fetching external item into 'mk1/sp_lista2/zad4/external':
+A    mk1/sp_lista2/zad4/external
+A    mk1/sp_lista2/zad4/external/PW
+A    mk1/sp_lista2/zad4/external/PW/ada
+A    mk1/sp_lista2/zad4/external/PW/ada/tasks
+A    mk1/sp_lista2/zad4/external/PW/bash-tools
+A    mk1/sp_lista2/zad4/external/PW/go
+A    mk1/sp_lista2/zad4/external/PW/go/goroutines
+A    mk1/sp_lista2/zad4/external/PW/java
+A    mk1/sp_lista2/zad4/external/PW/java/runnable
+A    mk1/sp_lista2/zad4/external/skrypty
+A    mk1/sp_lista2/zad4/external/skrypty/test-dir
+A    mk1/sp_lista2/zad4/external/SP
+A    mk1/sp_lista2/zad4/external/SP/l3
+A    mk1/sp_lista2/zad4/external/SP/l3/a
+A    mk1/sp_lista2/zad4/external/SP/l3/a/baa
+A    mk1/sp_lista2/zad4/external/SP/l3/a/baa/b
+A    mk1/sp_lista2/zad4/external/SP/l3/a/ba
+A    mk1/sp_lista2/zad4/external/SP/l3/a/ba/b
+A    mk1/sp_lista2/zad4/external/SP/l3/a/a
+A    mk1/sp_lista2/zad4/external/SP/l3/a/a/b
+A    mk1/sp_lista2/zad4/external/SP/l3/a/aa
+A    mk1/sp_lista2/zad4/external/SP/l3/a/aa/b
+A    mk1/sp_lista2/zad4/external/SP/l3/a/aaa
+A    mk1/sp_lista2/zad4/external/SP/l3/a/aaa/b
+A    mk1/sp_lista2/zad4/external/SP/l3/a/aab
+A    mk1/sp_lista2/zad4/external/SP/l3/a/aab/b
+A    mk1/sp_lista2/zad4/external/SP/l3/a/ab
+A    mk1/sp_lista2/zad4/external/SP/l3/a/ab/b
+A    mk1/sp_lista2/zad4/external/SP/l3/a/aba
+A    mk1/sp_lista2/zad4/external/SP/l3/a/aba/b
+A    mk1/sp_lista2/zad4/external/SP/l3/a/abb
+A    mk1/sp_lista2/zad4/external/SP/l3/a/abb/b
+A    mk1/sp_lista2/zad4/external/SP/l3/a/bab
+A    mk1/sp_lista2/zad4/external/SP/l3/a/bab/b
+A    mk1/sp_lista2/zad4/external/SP/l3/a/bba
+A    mk1/sp_lista2/zad4/external/SP/l3/a/bba/b
+A    mk1/sp_lista2/zad4/external/SP/l3/a/bbb
+A    mk1/sp_lista2/zad4/external/SP/l3/a/bbb/b
+A    mk1/sp_lista2/zad4/external/skrypty/test-dir/t2
+A    mk1/sp_lista2/zad4/external/SP/l3/a/aaa/b/aaaab
+A    mk1/sp_lista2/zad4/external/PW/.gitignore
+A    mk1/sp_lista2/zad4/external/SP/l1
+A    mk1/sp_lista2/zad4/external/SP/l1/a
+A    mk1/sp_lista2/zad4/external/SP/l1/a/a
+A    mk1/sp_lista2/zad4/external/SP/l1/a/a/b
+A    mk1/sp_lista2/zad4/external/SP/l1/a/aa
+A    mk1/sp_lista2/zad4/external/SP/l1/a/aa/b
+A    mk1/sp_lista2/zad4/external/skrypty/view-casts-curl.bash
+A    mk1/sp_lista2/zad4/external/SP/l3/a/aba/b/aabab
+A    mk1/sp_lista2/zad4/external/PW/README.md
+A    mk1/sp_lista2/zad4/external/SP/l1/a/aaa
+A    mk1/sp_lista2/zad4/external/SP/l1/a/aaa/b
+A    mk1/sp_lista2/zad4/external/SP/l1/a/aab
+A    mk1/sp_lista2/zad4/external/SP/l1/a/aab/b
+A    mk1/sp_lista2/zad4/external/SP/l1/a/ab
+A    mk1/sp_lista2/zad4/external/SP/l1/a/ab/b
+A    mk1/sp_lista2/zad4/external/SP/l3/a/baa/dc
+A    mk1/sp_lista2/zad4/external/SP/l3/a/bba/b/abbab
+A    mk1/sp_lista2/zad4/external/SP/l1/a/aba
+A    mk1/sp_lista2/zad4/external/SP/l1/a/aba/b
+A    mk1/sp_lista2/zad4/external/SP/l1/a/abb
+A    mk1/sp_lista2/zad4/external/SP/l1/a/abb/b
+A    mk1/sp_lista2/zad4/external/SP/l1/a/b
+A    mk1/sp_lista2/zad4/external/SP/l3/a/ba/b/abab
+A    mk1/sp_lista2/zad4/external/PW/ada/tasks/random_seeds.adb
+A    mk1/sp_lista2/zad4/external/SP/l1/a/b/b
+A    mk1/sp_lista2/zad4/external/SP/l1/a/ba
+A    mk1/sp_lista2/zad4/external/SP/l1/a/ba/b
+A    mk1/sp_lista2/zad4/external/SP/l1/a/baa
+A    mk1/sp_lista2/zad4/external/SP/l1/a/baa/b
+A    mk1/sp_lista2/zad4/external/SP/l3/a/aa/b/aaab
+A    mk1/sp_lista2/zad4/external/PW/ada/tasks/random_seeds.ads
+A    mk1/sp_lista2/zad4/external/SP/l1/a/aa/b/aaab
+A    mk1/sp_lista2/zad4/external/SP/l3/a/ab/b/aabb
+A    mk1/sp_lista2/zad4/external/SP/l1/a/bab
+A    mk1/sp_lista2/zad4/external/SP/l1/a/bab/b
+A    mk1/sp_lista2/zad4/external/SP/l1/a/bb
+A    mk1/sp_lista2/zad4/external/SP/l1/a/bb/b
+A    mk1/sp_lista2/zad4/external/SP/l1/a/bba
+A    mk1/sp_lista2/zad4/external/SP/l1/a/bba/b
+A    mk1/sp_lista2/zad4/external/PW/ada/tasks/tasks.adb
+A    mk1/sp_lista2/zad4/external/SP/l3/a/bab/b/ababb
+A    mk1/sp_lista2/zad4/external/PW/ada/tasks/tasks.gpr
+A    mk1/sp_lista2/zad4/external/SP/l1/a/bbb
+A    mk1/sp_lista2/zad4/external/SP/l1/a/bbb/b
+A    mk1/sp_lista2/zad4/external/asciinema
+A    mk1/sp_lista2/zad4/external/SP/l1/a/aaa/b/aaaab
+A    mk1/sp_lista2/zad4/external/SP/l1/a/aba/b/aabab
+A    mk1/sp_lista2/zad4/external/SP/l1/a/abb/b/aabbb
+A    mk1/sp_lista2/zad4/external/SP/l1/a/a/b/aab
+A    mk1/sp_lista2/zad4/external/PW/ada/tasks/tasks2.adb
+A    mk1/sp_lista2/zad4/external/SP/l1/a/baa/b/abaab
+A    mk1/sp_lista2/zad4/external/SP/l1/a/ab/b/aabb
+A    mk1/sp_lista2/zad4/external/SP/l1/a/ba/b/abab
+A    mk1/sp_lista2/zad4/external/PW/ada/tasks/tasks3.adb
+A    mk1/sp_lista2/zad4/external/SP/l1/a/b/b/abb
+A    mk1/sp_lista2/zad4/external/SP/l1/a/bba/b/abbab
+A    mk1/sp_lista2/zad4/external/PW/ada/tasks/tasks4.adb
+A    mk1/sp_lista2/zad4/external/SP/l1/a/bb/b/abbb
+A    mk1/sp_lista2/zad4/external/PW/ada/tasks/tasks5.adb
+A    mk1/sp_lista2/zad4/external/PW/ada/tasks/tasks6.adb
+A    mk1/sp_lista2/zad4/external/PW/ada/tasks/tasks7.adb
+A    mk1/sp_lista2/zad4/external/PW/ada/tasks/travelers.adb
+A    mk1/sp_lista2/zad4/external/asciinema/5_generowanie_kluczy.cast
+A    mk1/sp_lista2/zad4/external/SP/l1/a/bbb/b/abbbb
+A    mk1/sp_lista2/zad4/external/PW/bash-tools/display-travel.bash
+A    mk1/sp_lista2/zad4/external/PW/go/goroutines/goroutines1.go
+A    mk1/sp_lista2/zad4/external/PW/go/goroutines/goroutines1a.go
+A    mk1/sp_lista2/zad4/external/asciinema/1_pierwszy_checkout.cast
+A    mk1/sp_lista2/zad4/external/PW/go/goroutines/goroutines2.go
+A    mk1/sp_lista2/zad4/external/PW/go/goroutines/goroutines3.go
+A    mk1/sp_lista2/zad4/external/PW/go/goroutines/goroutines3a.go
+A    mk1/sp_lista2/zad4/external/asciinema/3_drugie_zadanie.cast
+A    mk1/sp_lista2/zad4/external/PW/go/goroutines/goroutines3b.go
+A    mk1/sp_lista2/zad4/external/asciinema/4_meta-sprawozdanie.cast
+A    mk1/sp_lista2/zad4/external/index.html
+A    mk1/sp_lista2/zad4/external/repozytorium-svn.txt
+A    mk1/sp_lista2/zad4/external/PW/go/goroutines/goroutines3c.go
+A    mk1/sp_lista2/zad4/external/PW/go/goroutines/goroutines4.go
+A    mk1/sp_lista2/zad4/external/PW/java/runnable/MyRunnable.java
+A    mk1/sp_lista2/zad4/external/PW/java/runnable/MyRunnable1.java
+A    mk1/sp_lista2/zad4/external/PW/java/runnable/MyRunnable2.java
+A    mk1/sp_lista2/zad4/external/skrypty/test
+A    mk1/sp_lista2/zad4/external/skrypty/view-casts.bash
+A    mk1/sp_lista2/zad4/external/SP/l3/a/baa/b/abaab
+A    mk1/sp_lista2/zad4/external/SP/l3/a/a/b/aab
+A    mk1/sp_lista2/zad4/external/SP/l3/a/aab/b/aaabb
+A    mk1/sp_lista2/zad4/external/SP/l3/a/abb/b/aabbb
+A    mk1/sp_lista2/zad4/external/SP/l3/a/bbb/b/abbbb
+A    mk1/sp_lista2/zad4/external/SP/l1/a/aab/b/aaabb
+A    mk1/sp_lista2/zad4/external/SP/l1/a/b/ab
+A    mk1/sp_lista2/zad4/external/SP/l1/a/bab/b/ababb
+A    mk1/sp_lista2/zad4/external/asciinema/6_sklejanie_prezentacji.cast
+A    mk1/sp_lista2/zad4/external/asciinema/2_pierwsze_zadanie.cast
+Exported external at revision 26.
+
+Exported revision 45.
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp$ ls
+mk1
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp$ cd mk1/pw_lista1/
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1$ ls
+ ada  'zad1&3'   zad5
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1$ cd zad1\&3/
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ ls
+travelers.go
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ go run travelers.go > out1
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ cat out1 | head -10
+-1 15 15 15
+0.000000 12 8 11 M 
+0.000181 12 7 11 M 
+0.052916 12 6 11 M 
+0.089866 12 5 11 M 
+0.104935 12 6 11 M 
+0.136593 12 6 10 M 
+0.168084 12 7 10 M 
+0.181731 12 7 10 m 
+0.000000 11 5 11 L 
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ # ^ 15 travelers on 15x15 board
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ # 30 travelers
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ go run travelers.go > out2     
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ go run travelers.go > out3
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ shasum out1
+9d05931786362c45648a3e6a574b432d9253f0fb  out1
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ svn import out1 https://repo.cs.pwr.edu.pl/272366-dir/mk1/pw_lista1/zad1&3/out1 -m "out1 go"
+[1] 186790
+-bash: 3/out1: No such file or directory
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ ls
+out1  out2  out3  svn-commit.tmp  travelers.go
+
+[1]+  Stopped                 svn import out1 https://repo.cs.pwr.edu.pl/272366-dir/mk1/pw_lista1/zad1
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ svn import out1 https://repo.cs.pwr.edu.pl/272366-dir/mk1/pw_lista1/zad1&3/out1 -m "out1 go"
+[2] 186819
+-bash: 3/out1: No such file or directory
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ svn import out1 "https://repo.cs.pwr.edu.pl/272366-dir/mk1/pw_lista1/zad1&3/out1" -m "out1 go"                                                             
+Adding         out1
+Committing transaction...
+Committed revision 46.
+
+[2]+  Stopped                 svn import out1 https://repo.cs.pwr.edu.pl/272366-dir/mk1/pw_lista1/zad1
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ shasum out2                        
+77d9ba3b845d2884a1b9f5c7ef8162845a22f8a3  out2
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ svn import out2 "https://repo.cs.pwr.edu.pl/272366-dir/mk1/pw_lista1/zad1&3/out2" -m "out2 go"                                                             
+Adding         out2
+Committing transaction...
+Committed revision 47.
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ shasum out3                        
+d2fc87f61df7cc4002952f5dc5c1b1169e2ebefd  out3
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ svn import out3 "https://repo.cs.pwr.edu.pl/272366-dir/mk1/pw_lista1/zad1&3/out3" -m "out3 go"                                                             
+Adding         out3
+Committing transaction...
+Committed revision 48.
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ #zadanie 2
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad1&3$ cd ../ada
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/ada$ ls
+out1  out2  out3  random_seeds.adb  random_seeds.ads  travelers.adb
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/ada$ gnatmake travelers.adb 
+x86_64-linux-gnu-gcc-13 -c travelers.adb
+travelers.adb:228:09: warning: suspicious form of conditional entry call [enabled by default]
+travelers.adb:228:09: warning: "select or" may be intended rather than "select else" [enabled by default]
+x86_64-linux-gnu-gcc-13 -c random_seeds.adb
+x86_64-linux-gnu-gnatbind-13 -x travelers.ali
+x86_64-linux-gnu-gnatlink-13 travelers.ali
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/ada$ ./travelers > out1
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/ada$ # ^ 15 travelers on 15x15 board
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/ada$ shasum out1
+e642643eb721953eda8147ce0edec6759ce10efb  out1
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/ada$ svn import out1 "https://repo.cs.pwr.edu.pl/272366-dir/mk1/pw_lista1/zad1&3/out1" -m "out1 ada"                                                               
+svn: E150002: Path 'https://repo.cs.pwr.edu.pl/272366-dir/mk1/pw_lista1/zad1&3/out1' already exists
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/ada$ #I will replace them later
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/ada$ # 26 travelers
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/ada$ ./travelers > out2                    
+^C
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/ada$ # 20 travelers                    
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/ada$ ./travelers > out2
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/ada$ shasum out2
+badb0c53303369326960ec176a705df68012f8c6  out2
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/ada$ #7 travelers
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/ada$ ./travelers > out3                    
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/ada$ shasum out3                          
+3d021da1b98ed236fa6931b2b98590a69db8bf7b  out3
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/ada$ cd ../zad5
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad5$ ls
+travelers5.go
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad5$ go run travelers5.go > out 1
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad5$ shasum out1
+shasum: out1: No such file or directory
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad5$ go run travelers5.go > out1 
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad5$ shasum out1                
+c597c7a4b993fa752506955006584e1ea402222d  out1
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad5$ go run travelers5.go > out2          
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad5$ shasum out2                
+6a2827c8f402865918381673bd1ee1ef7c47543a  out2
+dorithegreat@DELLirium:~/Documents/programs/semestr_6/kik/temp/mk1/pw_lista1/zad5$ tmux capture-pane -p -S'-' -E'-' -J > my-log
+

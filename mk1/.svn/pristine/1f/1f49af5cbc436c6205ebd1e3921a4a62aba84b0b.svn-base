@@ -1,0 +1,1938 @@
+          s272372_podprogram.o \
+          s272397_podprogram.o \
+          s272354_podprogram.o \
+          s272385_podprogram.o \
+          s272369_podprogram.o \
+          s272355_podprogram.o \
+          s272388_podprogram.o \
+          s272379_podprogram.o \
+          s272383_podprogram.o \
+          s272370_podprogram.o \
+          s272402_podprogram.o \
+          s272389_podprogram.o \
+          s272392_podprogram.o \
+          s272374_podprogram.o \
+          s272362_podprogram.o \
+          s272395_podprogram.o \
+          s274037_podprogram.o \
+          s276588_podprogram.o \
+          s272378_podprogram.o \
+          s272382_podprogram.o \
+          s272359_podprogram.o \
+          s272358_podprogram.o \
+          s272380_podprogram.o \
+          s272360_podprogram.o \
+          s272381_podprogram.o \
+          s272353_podprogram.o \
+          s272398_podprogram.o \
+          s272368_podprogram.o \
+          s276749_podprogram.o \
+          s272361_podprogram.o\
+          s272351_podprogram.o\
+
+
+program : $(objects)
+        cc -o program $(objects)
+main.o : program.h
+
+program_usage.o : program.h
+
+s0_podprogram.o : program.h
+
+s999_podprogram.o : program.h
+
+s272366_podprogram.o : program.h
+
+s272397_podprogram.o : program.h
+
+s272372_podprogram.o : program.h
+
+s272362_podprogram.o : program.h
+
+s272354_podprogram.o : program.h
+
+s272385_podprogram.o : program.h
+
+s272369_podprogram.o : program.h
+
+s272388_podprogram.o : program.h
+
+s272355_podprogram.o : program.h
+
+s272358_podprogram.o : program.h
+
+s272379_podprogram.o : program.h
+
+s272382_podprogram.o : program.h
+
+s272383_podprogram.o : program.h
+
+s272370_podprogram.o : program.h
+
+s272402_podprogram.o : program.h
+
+s272389_podprogram.o : program.h
+
+s272392_podprogram.o : program.h
+
+s272374_podprogram.o : program.h
+
+s272395_podprogram.o : program.h
+
+s274037_podprogram.o : program.h
+
+s276588_podprogram.o : program.h
+
+s272378_podprogram.o : program.h
+
+s272359_podprogram.o : program.h
+
+s272380_podprogram.o : program.h
+
+s272360_podprogram.o : program.h
+
+s272353_podprogram.o : program.h
+
+s272381_podprogram.o : program.h
+
+s272398_podprogram.o : program.h
+
+s272368_podprogram.o : program.h
+
+s276749_podprogram.o : program.h
+
+s272361_podprogram.o : program.h
+
+s272351_podprogram.o : program.h
+.PHONY : clean
+
+clean :
+        -rm *.o program
+
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ ./main.o
+-bash: ./main.o: Permission denied
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ ls
+main.c                s272355_podprogram.c  s272369_podprogram.c  s272381_podprogram.o  s272397_podprogram.o
+main.o                s272355_podprogram.o  s272369_podprogram.o  s272382_podprogram.c  s272398_podprogram.c
+makefile              s272358_podprogram.c  s272370_podprogram.c  s272382_podprogram.o  s272398_podprogram.o
+program               s272358_podprogram.o  s272370_podprogram.o  s272383_podprogram.c  s272402_podprogram.c
+program.h             s272359_podprogram.c  s272372_podprogram.c  s272383_podprogram.o  s272402_podprogram.o
+program_usage.c       s272359_podprogram.o  s272372_podprogram.o  s272385_podprogram.c  s274037_podprogram.c
+program_usage.o       s272360_podprogram.c  s272374_podprogram.c  s272385_podprogram.o  s274037_podprogram.o
+README                s272360_podprogram.o  s272374_podprogram.o  s272388_podprogram.c  s276588_podprogram.c
+s0_podprogram.c       s272361_podprogram.c  s272375_podprogram.c  s272388_podprogram.o  s276588_podprogram.o
+s0_podprogram.o       s272361_podprogram.o  s272378_podprogram.c  s272389_podprogram.c  s276749_podprogram.c
+s272351_podprogram.c  s272362_podprogram.c  s272378_podprogram.o  s272389_podprogram.o  s276749_podprogram.o
+s272351_podprogram.o  s272362_podprogram.o  s272379_podprogram.c  s272392_podprogram.c  s999_podprogram.c
+s272353_podprogram.c  s272366_podprogram.c  s272379_podprogram.o  s272392_podprogram.o  s999_podprogram.o
+s272353_podprogram.o  s272366_podprogram.o  s272380_podprogram.c  s272395_podprogram.c
+s272354_podprogram.c  s272368_podprogram.c  s272380_podprogram.o  s272395_podprogram.o
+s272354_podprogram.o  s272368_podprogram.o  s272381_podprogram.c  s272397_podprogram.c
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ ./program
+wywołanie: program <nr_indeksu>
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ ./program 272366
+Student nr indeksu: 272366
+Program wczytuje liczbę całkowitą i drukuje ją pomnożoną przez 128
+Podaj liczbę x: 2
+Liczba x pomnożona przez 21 wynosi: 256
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ nano s272366_podprogram.
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ nano s272366_podprogram.c
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ make
+cc    -c -o s272366_podprogram.o s272366_podprogram.c
+cc -o program main.o program_usage.o s0_podprogram.o s999_podprogram.o s272366_podprogram.o s272372_podprogram.o s272397_podprogram.o s272354_podprogram.o s272385_podprogram.o s272369_podprogram.o s272355_podprogram.o s272388_podprogram.o
+ s272379_podprogram.o s272383_podprogram.o s272370_podprogram.o s272402_podprogram.o s272389_podprogram.o s272392_podprogram.o s272374_podprogram.o s272362_podprogram.o s272395_podprogram.o s274037_podprogram.o s276588_podprogram.o s27237
+8_podprogram.o s272382_podprogram.o s272359_podprogram.o s272358_podprogram.o s272380_podprogram.o s272360_podprogram.o s272381_podprogram.o s272353_podprogram.o s272398_podprogram.o s272368_podprogram.o s276749_podprogram.o s272361_podpr
+ogram.o s272351_podprogram.o
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ ./program 272366
+Student nr indeksu: 272366
+Program wczytuje liczbę całkowitą i drukuje ją pomnożoną przez 128
+Podaj liczbę x: 1
+Liczba x pomnożona przez 128 wynosi: 128
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ ./program 272366
+Student nr indeksu: 272366
+Program wczytuje liczbę całkowitą i drukuje ją pomnożoną przez 128
+Podaj liczbę x: 3
+Liczba x pomnożona przez 128 wynosi: 384
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn commit -m "created a subprogram 272366"
+Sending        main.c
+Sending        makefile
+Sending        program.h
+Adding         s272366_podprogram.c
+Transmitting file data ....done
+Committing transaction...
+Committed revision 312.
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn merge https://repo.cs.pwr.edu.pl/p-2/app_1/trunk
+svn: E195020: Cannot merge into mixed-revision working copy [304:312]; try updating first
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn status
+?       program
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn propset svn:mime-type 'text/plain;charset=utf-8' on s272366_podprogram.c
+'on' is not under version control
+svn: E155010: The node '/home/dorithegreat/Documents/programs/semestr_5/svn/272366/on' was not found.
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn propset svn:mime-type 'text/plain;charset=utf-8' s272366_podprogram.c
+
+property 'svn:mime-type' set on 's272366_podprogram.c'
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn merge https://repo.cs.pwr.edu.pl/p-2/app_1/trunk
+svn: E195020: Cannot merge into mixed-revision working copy [304:312]; try updating first
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn up
+Updating '.':
+At revision 312.
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn merge https://repo.cs.pwr.edu.pl/p-2/app_1/trunk
+--- Merging r304 through r312 into '.':
+U    README
+U    main.c
+U    makefile
+U    program.h
+A    s272373_podprogram.c
+ U   .
+--- Recording mergeinfo for merge of r304 through r312 into '.':
+ G   .
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ ls
+main.c                s272355_podprogram.c  s272369_podprogram.c  s272381_podprogram.c  s272397_podprogram.c
+main.o                s272355_podprogram.o  s272369_podprogram.o  s272381_podprogram.o  s272397_podprogram.o
+makefile              s272358_podprogram.c  s272370_podprogram.c  s272382_podprogram.c  s272398_podprogram.c
+program               s272358_podprogram.o  s272370_podprogram.o  s272382_podprogram.o  s272398_podprogram.o
+program.h             s272359_podprogram.c  s272372_podprogram.c  s272383_podprogram.c  s272402_podprogram.c
+program_usage.c       s272359_podprogram.o  s272372_podprogram.o  s272383_podprogram.o  s272402_podprogram.o
+program_usage.o       s272360_podprogram.c  s272373_podprogram.c  s272385_podprogram.c  s274037_podprogram.c
+README                s272360_podprogram.o  s272374_podprogram.c  s272385_podprogram.o  s274037_podprogram.o
+s0_podprogram.c       s272361_podprogram.c  s272374_podprogram.o  s272388_podprogram.c  s276588_podprogram.c
+s0_podprogram.o       s272361_podprogram.o  s272375_podprogram.c  s272388_podprogram.o  s276588_podprogram.o
+s272351_podprogram.c  s272362_podprogram.c  s272378_podprogram.c  s272389_podprogram.c  s276749_podprogram.c
+s272351_podprogram.o  s272362_podprogram.o  s272378_podprogram.o  s272389_podprogram.o  s276749_podprogram.o
+s272353_podprogram.c  s272366_podprogram.c  s272379_podprogram.c  s272392_podprogram.c  s999_podprogram.c
+s272353_podprogram.o  s272366_podprogram.o  s272379_podprogram.o  s272392_podprogram.o  s999_podprogram.o
+s272354_podprogram.c  s272368_podprogram.c  s272380_podprogram.c  s272395_podprogram.c
+s272354_podprogram.o  s272368_podprogram.o  s272380_podprogram.o  s272395_podprogram.o
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn diff help
+svn: E155010: The node '/home/dorithegreat/Documents/programs/semestr_5/svn/272366/help' was not found.
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn help diff
+diff (di): Display local changes or differences between two revisions or paths.
+usage: 1. diff
+       2. diff [-c M | -r N[:M]] [TARGET[@REV]...]
+       3. diff [-r N[:M]] --old=OLD-TGT[@OLDREV] [--new=NEW-TGT[@NEWREV]] \
+               [PATH...]
+       4. diff OLD-URL[@OLDREV] NEW-URL[@NEWREV]
+       5. diff OLD-URL[@OLDREV] NEW-PATH[@NEWREV]
+       6. diff OLD-PATH[@OLDREV] NEW-URL[@NEWREV]
+
+  1. Use just 'svn diff' to display local modifications in a working copy.
+
+  2. Display the changes made to TARGETs as they are seen in REV between
+     two revisions.  TARGETs may be all working copy paths or all URLs.
+     If TARGETs are working copy paths, N defaults to BASE and M to the
+     working copy; if URLs, N must be specified and M defaults to HEAD.
+     The '-c M' option is equivalent to '-r N:M' where N = M-1.
+     Using '-c -M' does the reverse: '-r M:N' where N = M-1.
+
+  3. Display the differences between OLD-TGT as it was seen in OLDREV and
+     NEW-TGT as it was seen in NEWREV.  PATHs, if given, are relative to
+     OLD-TGT and NEW-TGT and restrict the output to differences for those
+     paths.  OLD-TGT and NEW-TGT may be working copy paths or URL[@REV].
+     NEW-TGT defaults to OLD-TGT if not specified.  -r N makes OLDREV default
+     to N, -r N:M makes OLDREV default to N and NEWREV default to M.
+     If OLDREV or NEWREV are not specified, they default to WORKING for
+     working copy targets and to HEAD for URL targets.
+
+     Either or both OLD-TGT and NEW-TGT may also be paths to unversioned
+     targets. Revisions cannot be specified for unversioned targets.
+     Both targets must be of the same node kind (file or directory).
+     Diffing unversioned targets against URL targets is not supported.
+
+  4. Shorthand for 'svn diff --old=OLD-URL[@OLDREV] --new=NEW-URL[@NEWREV]'
+  5. Shorthand for 'svn diff --old=OLD-URL[@OLDREV] --new=NEW-PATH[@NEWREV]'
+  6. Shorthand for 'svn diff --old=OLD-PATH[@OLDREV] --new=NEW-URL[@NEWREV]'
+
+Valid options:
+  -r [--revision] ARG      : ARG (some commands also take ARG1:ARG2 range)
+                             A revision argument can be one of:
+                                NUMBER       revision number
+                                '{' DATE '}' revision at start of the date
+                                'HEAD'       latest in repository
+                                'BASE'       base rev of item's working copy
+                                'COMMITTED'  last commit at or before BASE
+                                'PREV'       revision just before COMMITTED
+  -c [--change] ARG        : the change made by revision ARG (like -r ARG-1:ARG)
+                             If ARG is negative this is like -r ARG:ARG-1
+                             If ARG is of the form ARG1-ARG2 then this is like
+                             ARG1:ARG2, where ARG1 is inclusive
+  --old ARG                : use ARG as the older target
+  --new ARG                : use ARG as the newer target
+  -N [--non-recursive]     : obsolete; same as --depth=files
+  --depth ARG              : limit operation by depth ARG ('empty', 'files',
+                             'immediates', or 'infinity')
+  --diff-cmd ARG           : use ARG as diff command
+  --internal-diff          : override diff-cmd specified in config file
+  -x [--extensions] ARG    : Specify differencing options for external diff or
+                             internal diff or blame. Default: '-u'. Options are
+                             separated by spaces. Internal diff and blame take:
+                               -u, --unified: Show 3 lines of unified context
+                               -b, --ignore-space-change: Ignore changes in
+                                 amount of white space
+                               -w, --ignore-all-space: Ignore all white space
+                               --ignore-eol-style: Ignore changes in EOL style
+                               -U ARG, --context ARG: Show ARG lines of context
+                               -p, --show-c-function: Show C function name
+  --no-diff-added          : do not print differences for added files
+  --no-diff-deleted        : do not print differences for deleted files
+  --ignore-properties      : ignore properties during the operation
+  --properties-only        : show only properties during the operation
+  --show-copies-as-adds    : don't diff copied or moved files with their source
+  --notice-ancestry        : diff unrelated nodes as delete and add
+  --summarize              : show a summary of the results
+  --changelist [--cl] ARG  : operate only on members of changelist ARG
+  --force                  : force operation to run
+  --xml                    : output in XML
+  --git                    : use git's extended diff format
+  --patch-compatible       : generate diff suitable for generic third-party
+                             patch tools; currently the same as
+                             --show-copies-as-adds --ignore-properties
+
+(Use '-v' to show global and experimental options.)
+
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn diff
+Index: README
+===================================================================
+--- README      (revision 312)
++++ README      (working copy)
+@@ -39,6 +39,7 @@
+     272368 - wczytuje liczbę i drukuje ją 3 razy.
+     272361 - wczytuje liczbę i drukuje ją 5 razy.
+     272351 - wczytuje liczbe i zwraca ją pomnożoną przez 103.
++    272373 - wczytuje liczbę i drukuje "Pwr" tyle razy.
+ Dodatkowo, po zreintegrowaniu swojej gałęzi do trunk-a student ma utworzyć
+ w katalogu:
+
+Index: main.c
+===================================================================
+--- main.c      (revision 312)
++++ main.c      (working copy)
+@@ -106,8 +106,11 @@
+       s272361_podprogram(); // podprogram studenta o numerze indeksu 272361
+       break;
+     case 272351:
+-       s272351_podprogram();
+-       break;
++      s272351_podprogram();
++      break;
++    case 272373:
++      s272373_podprogram();
++      break;
+     case 272366:
+        s272366_podprogram(); // podprogram studenta o numerze indeksu 272366
+        break;
+Index: makefile
+===================================================================
+--- makefile    (revision 312)
++++ makefile    (working copy)
+@@ -33,6 +33,7 @@
+          s276749_podprogram.o \
+          s272361_podprogram.o\
+          s272351_podprogram.o\
++         s272373_podprogram.o\
+
+
+ program : $(objects)
+@@ -108,6 +109,9 @@
+ s272361_podprogram.o : program.h
+
+ s272351_podprogram.o : program.h
++
++s272373_podprogram.o : program.h
++
+ .PHONY : clean
+
+ clean :
+Index: program.h
+===================================================================
+--- program.h   (revision 312)
++++ program.h   (working copy)
+@@ -44,3 +44,5 @@
+ void s276749_podprogram(); /* funkcja studenta 276749 */
+ void s272361_podprogram(); /* funkcja studenta 272361 */
+ void s272351_podprogram(); /* funkcja studenta 272351 */
++void s272373_podprogram(); /* funkcja studenta 272373 */
++
+Index: s272366_podprogram.c
+===================================================================
+--- s272366_podprogram.c        (revision 312)
++++ s272366_podprogram.c        (working copy)
+
+Property changes on: s272366_podprogram.c
+___________________________________________________________________
+Added: svn:mime-type
+## -0,0 +1 ##
++text/plain;charset=utf-8
+\ No newline at end of property
+Index: s272373_podprogram.c
+===================================================================
+Index: .
+===================================================================
+--- .   (revision 312)
++++ .   (working copy)
+
+Property changes on: .
+___________________________________________________________________
+Modified: svn:mergeinfo
+## -0,0 +0,2 ##
+   Merged /app_1/trunk:r304-312
+   Merged /app_1/branches/272373:r306-308
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn mergeinfo
+svn: E205000: Try 'svn help mergeinfo' for more information
+svn: E205000: Not enough arguments given
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn help mergeinfo
+mergeinfo: Display merge-related information.
+usage: 1. mergeinfo SOURCE[@REV] [TARGET[@REV]]
+       2. mergeinfo --show-revs=WHICH SOURCE[@REV] [TARGET[@REV]]
+
+  1. Summarize the history of merging between SOURCE and TARGET. The graph
+     shows, from left to right:
+       the youngest common ancestor of the branches;
+       the latest full merge in either direction, and thus the common base
+         that will be used for the next complete merge;
+       the repository path and revision number of the tip of each branch.
+
+  2. Print the revision numbers on SOURCE that have been merged to TARGET
+     (with --show-revs=merged), or that have not been merged to TARGET
+     (with --show-revs=eligible). Print only revisions in which there was
+     at least one change in SOURCE.
+
+     If --revision (-r) is provided, filter the displayed information to
+     show only that which is associated with the revisions within the
+     specified range.  Revision numbers, dates, and the 'HEAD' keyword are
+     valid range values.
+
+  SOURCE and TARGET are the source and target branch URLs, respectively.
+  (If a WC path is given, the corresponding base URL is used.) The default
+  TARGET is the current working directory ('.'). REV specifies the revision
+  to be considered the tip of the branch; the default for SOURCE is HEAD,
+  and the default for TARGET is HEAD for a URL or BASE for a WC path.
+
+  The depth can be 'empty' or 'infinity'; the default is 'empty'.
+
+Valid options:
+  -r [--revision] ARG      : ARG (some commands also take ARG1:ARG2 range)
+                             A revision argument can be one of:
+                                NUMBER       revision number
+                                '{' DATE '}' revision at start of the date
+                                'HEAD'       latest in repository
+                                'BASE'       base rev of item's working copy
+                                'COMMITTED'  last commit at or before BASE
+                                'PREV'       revision just before COMMITTED
+  -R [--recursive]         : descend recursively, same as --depth=infinity
+  -q [--quiet]             : print nothing, or only summary information
+  -v [--verbose]           : print extra information
+  --depth ARG              : limit operation by depth ARG ('empty', 'files',
+                             'immediates', or 'infinity')
+  --show-revs ARG          : specify which collection of revisions to display
+                             ('merged', 'eligible')
+  --log                    : show revision log message, author and date
+  --incremental            : give output suitable for concatenation
+
+(Use '-v' to show global and experimental options.)
+
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$  svn mergeinfo --show-revs merged ^/trunk ^/branches/272366
+svn: E160013: '/p-2/!svn/rvr/312/branches/272366' path not found
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn mergeinfo --show-revs merged https://repo.cs.pwr.edu.pl/p-2/app_1/trunk https://repo.cs.pwr.edu.pl/p-2/app_1/branches/272366
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn merge https://repo.cs.pwr.edu.pl/p-2/app_1/trunk
+--- Recording mergeinfo for merge of r304 through r312 into '.':
+ G   .
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn switch https://repo.cs.pwr.edu.pl/p-2/app_1/trunk/
+   C s272366_podprogram.c
+   C s272373_podprogram.c
+G    README
+C    main.c
+G    makefile
+G    program.h
+ G   .
+Updated to revision 312.
+Summary of conflicts:
+  Text conflicts: 1
+  Tree conflicts: 2
+Merge conflict discovered in file 'main.c'.
+Select: (p) Postpone, (df) Show diff, (e) Edit file, (m) Merge,
+        (s) Show all options: p
+Searching tree conflict details for 's272366_podprogram.c' in repository:
+Checking r312... done
+Tree conflict on 's272366_podprogram.c':
+File switched from
+'^/app_1/branches/272366/s272366_podprogram.c@312'
+to
+'^/app_1/trunk/s272366_podprogram.c@312'
+did not exist before it was added by 272366 in r312.
+A file containing uncommitted changes was found in the working copy.
+Select: (p) Postpone, (r) Mark as resolved, (i) Ignore incoming deletion,
+        (a) Accept incoming deletion, (h) Help, (q) Quit resolution: i
+Tree conflict at 's272366_podprogram.c' marked as resolved.
+Searching tree conflict details for 's272373_podprogram.c' in repository:
+Checking r307... done
+Tree conflict on 's272373_podprogram.c':
+A new file appeared during switch to
+'^/app_1/trunk/s272373_podprogram.c@312'.
+It was added by 272373 in r307.
+A file scheduled to be added to the repository in the next commit was found in the working copy.
+Select: (p) Postpone, (r) Mark as resolved, (m) Merge the files, (h) Help,
+        (q) Quit resolution: p
+Summary of conflicts:
+  Text conflicts: 1 remaining (and 0 already resolved)
+  Tree conflicts: 1 remaining (and 1 already resolved)
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn status
+ M      .
+C       main.c
+?       main.c.2.r312
+?       main.c.mine
+?       main.c.r312
+?       program
+A  +    s272366_podprogram.c
+R  +  C s272373_podprogram.c
+      >   local file add, incoming file add upon switch
+Summary of conflicts:
+  Text conflicts: 1
+  Tree conflicts: 1
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ cat main.c
+#include "program.h"
+
+int main(int argc, char *argv[])
+{
+
+  if (argc != 2)
+  {
+    program_usage();
+    exit(EXIT_FAILURE);
+  }
+
+  {
+    int idx = atoi(argv[1]);
+    switch (idx)
+    {
+    case 0:
+      s0_podprogram(); // podprogram studenta o numerze indeksu 0
+      break;
+    case 999:
+      s999_podprogram(); // podprogram studenta o numerze indeksu 999
+      break;
+    case 272372:
+      s272372_podprogram(); // podprogram studenta o numerze indeksu 272372
+    case 272397:
+      s272397_podprogram(); // podprogram studenta o numerze indeksu 272397
+      break;
+    case 272354:
+      s272354_podprogram(); // podprogram studenta o numerze indeksu 272354
+      break;
+    case 272385:
+      s272385_podprogram(); // podprogram studenta o numerze indeksu 272385
+      break;
+    case 272369:
+      s272369_podprogram(); // podprogram studenta o numerze indeksu 272369
+      break;
+    case 272388:
+      s272388_podprogram(); // podprogram studenta o numerze indeksu 272388
+      break;
+    case 272355:
+      s272355_podprogram(); // podprogram studenta o numerze indeksu 272355
+      break;
+    case 272379:
+      s272379_podprogram(); // podprogram studenta o numerze indeksu 272379
+      break;
+    case 272383:
+      s272383_podprogram(); // podprogram studenta o numerze indeksu 272383
+      break;
+    case 272370:
+      s272370_podprogram(); // podprogram studenta o numerze indeksu 272370
+      break;
+    case 272402:
+      s272402_podprogram(); // podprogram studenta o numerze indeksu 272402
+      break;
+    case 272389:
+      s272389_podprogram(); // podprogram studenta o numerze indeksu 272389
+      break;
+    case 272392:
+      s272392_podprogram(); // podprogram studenta o numerze indeksu 272392
+      break;
+    case 272374:
+      s272374_podprogram(); // podprogram studenta o numerze indeksu 272374
+      break;
+    case 272362:
+      s272362_podprogram(); // podprogram studenta o numerze indeksu 272362
+      break;
+    case 272395:
+      s272395_podprogram(); // podprogram studenta o numerze indeksu 272395
+      break;
+    case 274037:
+      s274037_podprogram(); // podprogram studenta o numerze indeksu 274037
+      break;
+    case 276588:
+      s276588_podprogram(); // podprogram studenta o numerze indeksu 276588
+      break;
+    case 272382:
+      s272382_podprogram(); // podprogram studenta o numerze indeksu 272382
+      break;
+    case 272378:
+      s272378_podprogram(); // podprogram studenta o numerze indeksu 272378
+      break;
+    case 272359:
+      s272359_podprogram(); // podprogram studenta o numerze indeksu 272359
+      break;
+    case 272358:
+      s272358_podprogram(); // podprogram studenta o numerze indeksu 272358
+      break;
+    case 272380:
+      s272380_podprogram(); // podprogram studenta o numerze indeksu 272380
+      break;
+    case 272353:
+      s272353_podprogram(); // podprogram studenta o numerze indeksu 272353
+      break;
+    case 272360:
+      s272360_podprogram(); // podprogram studenta o numerze indeksu 272380
+      break;
+    case 272381:
+      s272381_podprogram(); // podprogram studenta o numerze indeksu 272381
+      break;
+    case 272398:
+      s272398_podprogram(); // podprogram studenta o numerze indeksu 272398
+      break;
+    case 272368:
+      s272368_podprogram(); // podprogram studenta o numerze indeksu 272368
+      break;
+    case 272361:
+      s272361_podprogram(); // podprogram studenta o numerze indeksu 272361
+      break;
+    case 272351:
+<<<<<<< .mine
+      s272351_podprogram();
+      break;
+    case 272373:
+      s272373_podprogram();
+      break;
+    case 272366:
+        s272366_podprogram(); // podprogram studenta o numerze indeksu 272366
+        break;
+||||||| .r312
+        s272351_podprogram();
+        break;
+    case 272366:
+        s272366_podprogram(); // podprogram studenta o numerze indeksu 272366
+        break;
+=======
+      s272351_podprogram();
+      break;
+    case 272373:
+      s272373_podprogram();
+      break;
+>>>>>>> .r312
+
+    default:
+      printf("\nStudent o numerze indeksu %d nie wykonał jeszcze zadania\n\n",
+             idx);
+      break;
+    }
+  }
+  exit(EXIT_SUCCESS);
+}
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ nano main.c
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ ls
+main.c         program_usage.c       s272353_podprogram.o  s272359_podprogram.o  s272366_podprogram.o  s272372_podprogram.o  s272379_podprogram.o  s272383_podprogram.o  s272392_podprogram.o  s272402_podprogram.o  s999_podprogram.o
+main.c.2.r312  program_usage.o       s272354_podprogram.c  s272360_podprogram.c  s272368_podprogram.c  s272373_podprogram.c  s272380_podprogram.c  s272385_podprogram.c  s272395_podprogram.c  s274037_podprogram.c
+main.c.mine    README                s272354_podprogram.o  s272360_podprogram.o  s272368_podprogram.o  s272374_podprogram.c  s272380_podprogram.o  s272385_podprogram.o  s272395_podprogram.o  s274037_podprogram.o
+main.c.r312    s0_podprogram.c       s272355_podprogram.c  s272361_podprogram.c  s272369_podprogram.c  s272374_podprogram.o  s272381_podprogram.c  s272388_podprogram.c  s272397_podprogram.c  s276588_podprogram.c
+main.o         s0_podprogram.o       s272355_podprogram.o  s272361_podprogram.o  s272369_podprogram.o  s272375_podprogram.c  s272381_podprogram.o  s272388_podprogram.o  s272397_podprogram.o  s276588_podprogram.o
+makefile       s272351_podprogram.c  s272358_podprogram.c  s272362_podprogram.c  s272370_podprogram.c  s272378_podprogram.c  s272382_podprogram.c  s272389_podprogram.c  s272398_podprogram.c  s276749_podprogram.c
+program        s272351_podprogram.o  s272358_podprogram.o  s272362_podprogram.o  s272370_podprogram.o  s272378_podprogram.o  s272382_podprogram.o  s272389_podprogram.o  s272398_podprogram.o  s276749_podprogram.o
+program.h      s272353_podprogram.c  s272359_podprogram.c  s272366_podprogram.c  s272372_podprogram.c  s272379_podprogram.c  s272383_podprogram.c  s272392_podprogram.c  s272402_podprogram.c  s999_podprogram.c
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn resolve --accept mine main.c
+svn: E205000: 'mine' is not a valid --accept value
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn resolve --accept mine-full main.c
+Merge conflicts in 'main.c' marked as resolved.
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ ls
+main.c           s0_podprogram.c       s272355_podprogram.c  s272361_podprogram.c  s272369_podprogram.c  s272374_podprogram.o  s272381_podprogram.c  s272388_podprogram.c  s272397_podprogram.c  s276588_podprogram.c
+main.o           s0_podprogram.o       s272355_podprogram.o  s272361_podprogram.o  s272369_podprogram.o  s272375_podprogram.c  s272381_podprogram.o  s272388_podprogram.o  s272397_podprogram.o  s276588_podprogram.o
+makefile         s272351_podprogram.c  s272358_podprogram.c  s272362_podprogram.c  s272370_podprogram.c  s272378_podprogram.c  s272382_podprogram.c  s272389_podprogram.c  s272398_podprogram.c  s276749_podprogram.c
+program          s272351_podprogram.o  s272358_podprogram.o  s272362_podprogram.o  s272370_podprogram.o  s272378_podprogram.o  s272382_podprogram.o  s272389_podprogram.o  s272398_podprogram.o  s276749_podprogram.o
+program.h        s272353_podprogram.c  s272359_podprogram.c  s272366_podprogram.c  s272372_podprogram.c  s272379_podprogram.c  s272383_podprogram.c  s272392_podprogram.c  s272402_podprogram.c  s999_podprogram.c
+program_usage.c  s272353_podprogram.o  s272359_podprogram.o  s272366_podprogram.o  s272372_podprogram.o  s272379_podprogram.o  s272383_podprogram.o  s272392_podprogram.o  s272402_podprogram.o  s999_podprogram.o
+program_usage.o  s272354_podprogram.c  s272360_podprogram.c  s272368_podprogram.c  s272373_podprogram.c  s272380_podprogram.c  s272385_podprogram.c  s272395_podprogram.c  s274037_podprogram.c
+README           s272354_podprogram.o  s272360_podprogram.o  s272368_podprogram.o  s272374_podprogram.c  s272380_podprogram.o  s272385_podprogram.o  s272395_podprogram.o  s274037_podprogram.o
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ nano main.c
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ make
+cc    -c -o main.o main.c
+main.c: In function ‘main’:
+main.c:115:9: warning: implicit declaration of function ‘s272366_podprogram’; did you mean ‘s272361_podprogram’? [-Wimplicit-function-declaration]
+  115 |         s272366_podprogram(); // podprogram studenta o numerze indeksu 272366
+      |         ^~~~~~~~~~~~~~~~~~
+      |         s272361_podprogram
+cc    -c -o program_usage.o program_usage.c
+cc    -c -o s0_podprogram.o s0_podprogram.c
+cc    -c -o s999_podprogram.o s999_podprogram.c
+cc    -c -o s272372_podprogram.o s272372_podprogram.c
+cc    -c -o s272397_podprogram.o s272397_podprogram.c
+cc    -c -o s272354_podprogram.o s272354_podprogram.c
+cc    -c -o s272385_podprogram.o s272385_podprogram.c
+cc    -c -o s272369_podprogram.o s272369_podprogram.c
+cc    -c -o s272355_podprogram.o s272355_podprogram.c
+cc    -c -o s272388_podprogram.o s272388_podprogram.c
+cc    -c -o s272379_podprogram.o s272379_podprogram.c
+cc    -c -o s272383_podprogram.o s272383_podprogram.c
+cc    -c -o s272370_podprogram.o s272370_podprogram.c
+cc    -c -o s272402_podprogram.o s272402_podprogram.c
+cc    -c -o s272389_podprogram.o s272389_podprogram.c
+cc    -c -o s272392_podprogram.o s272392_podprogram.c
+cc    -c -o s272374_podprogram.o s272374_podprogram.c
+cc    -c -o s272362_podprogram.o s272362_podprogram.c
+cc    -c -o s272395_podprogram.o s272395_podprogram.c
+cc    -c -o s274037_podprogram.o s274037_podprogram.c
+cc    -c -o s276588_podprogram.o s276588_podprogram.c
+cc    -c -o s272378_podprogram.o s272378_podprogram.c
+cc    -c -o s272382_podprogram.o s272382_podprogram.c
+cc    -c -o s272359_podprogram.o s272359_podprogram.c
+cc    -c -o s272358_podprogram.o s272358_podprogram.c
+cc    -c -o s272380_podprogram.o s272380_podprogram.c
+cc    -c -o s272360_podprogram.o s272360_podprogram.c
+cc    -c -o s272381_podprogram.o s272381_podprogram.c
+cc    -c -o s272353_podprogram.o s272353_podprogram.c
+cc    -c -o s272398_podprogram.o s272398_podprogram.c
+cc    -c -o s272368_podprogram.o s272368_podprogram.c
+cc    -c -o s276749_podprogram.o s276749_podprogram.c
+cc    -c -o s272361_podprogram.o s272361_podprogram.c
+cc    -c -o s272351_podprogram.o s272351_podprogram.c
+cc    -c -o s272373_podprogram.o s272373_podprogram.c
+cc -o program main.o program_usage.o s0_podprogram.o s999_podprogram.o s272372_podprogram.o s272397_podprogram.o s272354_podprogram.o s272385_podprogram.o s272369_podprogram.o s272355_podprogram.o s272388_podprogram.o s272379_podprogram.o
+ s272383_podprogram.o s272370_podprogram.o s272402_podprogram.o s272389_podprogram.o s272392_podprogram.o s272374_podprogram.o s272362_podprogram.o s272395_podprogram.o s274037_podprogram.o s276588_podprogram.o s272378_podprogram.o s27238
+2_podprogram.o s272359_podprogram.o s272358_podprogram.o s272380_podprogram.o s272360_podprogram.o s272381_podprogram.o s272353_podprogram.o s272398_podprogram.o s272368_podprogram.o s276749_podprogram.o s272361_podprogram.o s272351_podpr
+ogram.o s272373_podprogram.o
+/usr/bin/ld: main.o: in function `main':
+main.c:(.text+0x2ad): undefined reference to `s272366_podprogram'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:39: program] Error 1
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ ls
+main.c           s0_podprogram.o       s272355_podprogram.o  s272361_podprogram.o  s272369_podprogram.o  s272374_podprogram.o  s272381_podprogram.c  s272388_podprogram.c  s272397_podprogram.c  s276588_podprogram.c
+main.o           s272351_podprogram.c  s272358_podprogram.c  s272362_podprogram.c  s272370_podprogram.c  s272375_podprogram.c  s272381_podprogram.o  s272388_podprogram.o  s272397_podprogram.o  s276588_podprogram.o
+makefile         s272351_podprogram.o  s272358_podprogram.o  s272362_podprogram.o  s272370_podprogram.o  s272378_podprogram.c  s272382_podprogram.c  s272389_podprogram.c  s272398_podprogram.c  s276749_podprogram.c
+program.h        s272353_podprogram.c  s272359_podprogram.c  s272366_podprogram.c  s272372_podprogram.c  s272378_podprogram.o  s272382_podprogram.o  s272389_podprogram.o  s272398_podprogram.o  s276749_podprogram.o
+program_usage.c  s272353_podprogram.o  s272359_podprogram.o  s272366_podprogram.o  s272372_podprogram.o  s272379_podprogram.c  s272383_podprogram.c  s272392_podprogram.c  s272402_podprogram.c  s999_podprogram.c
+program_usage.o  s272354_podprogram.c  s272360_podprogram.c  s272368_podprogram.c  s272373_podprogram.c  s272379_podprogram.o  s272383_podprogram.o  s272392_podprogram.o  s272402_podprogram.o  s999_podprogram.o
+README           s272354_podprogram.o  s272360_podprogram.o  s272368_podprogram.o  s272373_podprogram.o  s272380_podprogram.c  s272385_podprogram.c  s272395_podprogram.c  s274037_podprogram.c
+s0_podprogram.c  s272355_podprogram.c  s272361_podprogram.c  s272369_podprogram.c  s272374_podprogram.c  s272380_podprogram.o  s272385_podprogram.o  s272395_podprogram.o  s274037_podprogram.o
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn up
+Updating '.':
+At revision 312.
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn merge --reintegrate https://repo.cs.pwr.edu.pl/p-2/app_1/branches/272366/
+svn: E195016: Cannot merge into a working copy that has local modifications
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn up
+Updating '.':
+At revision 312.
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ ls
+main.c           s0_podprogram.o       s272355_podprogram.o  s272361_podprogram.o  s272369_podprogram.o  s272374_podprogram.o  s272381_podprogram.c  s272388_podprogram.c  s272397_podprogram.c  s276588_podprogram.c
+main.o           s272351_podprogram.c  s272358_podprogram.c  s272362_podprogram.c  s272370_podprogram.c  s272375_podprogram.c  s272381_podprogram.o  s272388_podprogram.o  s272397_podprogram.o  s276588_podprogram.o
+makefile         s272351_podprogram.o  s272358_podprogram.o  s272362_podprogram.o  s272370_podprogram.o  s272378_podprogram.c  s272382_podprogram.c  s272389_podprogram.c  s272398_podprogram.c  s276749_podprogram.c
+program.h        s272353_podprogram.c  s272359_podprogram.c  s272366_podprogram.c  s272372_podprogram.c  s272378_podprogram.o  s272382_podprogram.o  s272389_podprogram.o  s272398_podprogram.o  s276749_podprogram.o
+program_usage.c  s272353_podprogram.o  s272359_podprogram.o  s272366_podprogram.o  s272372_podprogram.o  s272379_podprogram.c  s272383_podprogram.c  s272392_podprogram.c  s272402_podprogram.c  s999_podprogram.c
+program_usage.o  s272354_podprogram.c  s272360_podprogram.c  s272368_podprogram.c  s272373_podprogram.c  s272379_podprogram.o  s272383_podprogram.o  s272392_podprogram.o  s272402_podprogram.o  s999_podprogram.o
+README           s272354_podprogram.o  s272360_podprogram.o  s272368_podprogram.o  s272373_podprogram.o  s272380_podprogram.c  s272385_podprogram.c  s272395_podprogram.c  s274037_podprogram.c
+s0_podprogram.c  s272355_podprogram.c  s272361_podprogram.c  s272369_podprogram.c  s272374_podprogram.c  s272380_podprogram.o  s272385_podprogram.o  s272395_podprogram.o  s274037_podprogram.o
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn status
+ M      .
+M       main.c
+A  +    s272366_podprogram.c
+R  +  C s272373_podprogram.c
+      >   local file add, incoming file add upon switch
+Summary of conflicts:
+  Tree conflicts: 1
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn resolve --accept working -R .
+Tree conflict at 's272373_podprogram.c' marked as resolved.
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn up
+Updating '.':
+At revision 312.
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ ls
+main.c           s0_podprogram.o       s272355_podprogram.o  s272361_podprogram.o  s272369_podprogram.o  s272374_podprogram.o  s272381_podprogram.c  s272388_podprogram.c  s272397_podprogram.c  s276588_podprogram.c
+main.o           s272351_podprogram.c  s272358_podprogram.c  s272362_podprogram.c  s272370_podprogram.c  s272375_podprogram.c  s272381_podprogram.o  s272388_podprogram.o  s272397_podprogram.o  s276588_podprogram.o
+makefile         s272351_podprogram.o  s272358_podprogram.o  s272362_podprogram.o  s272370_podprogram.o  s272378_podprogram.c  s272382_podprogram.c  s272389_podprogram.c  s272398_podprogram.c  s276749_podprogram.c
+program.h        s272353_podprogram.c  s272359_podprogram.c  s272366_podprogram.c  s272372_podprogram.c  s272378_podprogram.o  s272382_podprogram.o  s272389_podprogram.o  s272398_podprogram.o  s276749_podprogram.o
+program_usage.c  s272353_podprogram.o  s272359_podprogram.o  s272366_podprogram.o  s272372_podprogram.o  s272379_podprogram.c  s272383_podprogram.c  s272392_podprogram.c  s272402_podprogram.c  s999_podprogram.c
+program_usage.o  s272354_podprogram.c  s272360_podprogram.c  s272368_podprogram.c  s272373_podprogram.c  s272379_podprogram.o  s272383_podprogram.o  s272392_podprogram.o  s272402_podprogram.o  s999_podprogram.o
+README           s272354_podprogram.o  s272360_podprogram.o  s272368_podprogram.o  s272373_podprogram.o  s272380_podprogram.c  s272385_podprogram.c  s272395_podprogram.c  s274037_podprogram.c
+s0_podprogram.c  s272355_podprogram.c  s272361_podprogram.c  s272369_podprogram.c  s272374_podprogram.c  s272380_podprogram.o  s272385_podprogram.o  s272395_podprogram.o  s274037_podprogram.o
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn checkout https://repo.cs.pwr.edu.pl/p-2/app_1/trunk/
+A    trunk/s272369_podprogram.c
+A    trunk/s272388_podprogram.c
+A    trunk/README
+A    trunk/program_usage.c
+A    trunk/s272392_podprogram.c
+A    trunk/main.c
+A    trunk/makefile
+A    trunk/program.h
+A    trunk/s272373_podprogram.c
+A    trunk/s272351_podprogram.c
+A    trunk/s272372_podprogram.c
+A    trunk/s274037_podprogram.c
+A    trunk/s272395_podprogram.c
+A    trunk/s272354_podprogram.c
+A    trunk/s272397_podprogram.c
+A    trunk/s999_podprogram.c
+A    trunk/s272361_podprogram.c
+A    trunk/s272368_podprogram.c
+A    trunk/s276749_podprogram.c
+A    trunk/s272381_podprogram.c
+A    trunk/s272398_podprogram.c
+A    trunk/s272353_podprogram.c
+A    trunk/s272360_podprogram.c
+A    trunk/s272355_podprogram.c
+A    trunk/s272358_podprogram.c
+A    trunk/s272359_podprogram.c
+A    trunk/s272362_podprogram.c
+A    trunk/s272370_podprogram.c
+A    trunk/s272375_podprogram.c
+A    trunk/s272378_podprogram.c
+A    trunk/s272379_podprogram.c
+A    trunk/s272380_podprogram.c
+A    trunk/s272382_podprogram.c
+A    trunk/s272383_podprogram.c
+A    trunk/s272389_podprogram.c
+A    trunk/s272402_podprogram.c
+A    trunk/s276588_podprogram.c
+A    trunk/s272374_podprogram.c
+A    trunk/s272385_podprogram.c
+A    trunk/s0_podprogram.c
+ U   trunk
+Checked out revision 312.
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ ls
+main.c           s0_podprogram.o       s272355_podprogram.o  s272361_podprogram.o  s272369_podprogram.o  s272374_podprogram.o  s272381_podprogram.c  s272388_podprogram.c  s272397_podprogram.c  s276588_podprogram.c
+main.o           s272351_podprogram.c  s272358_podprogram.c  s272362_podprogram.c  s272370_podprogram.c  s272375_podprogram.c  s272381_podprogram.o  s272388_podprogram.o  s272397_podprogram.o  s276588_podprogram.o
+makefile         s272351_podprogram.o  s272358_podprogram.o  s272362_podprogram.o  s272370_podprogram.o  s272378_podprogram.c  s272382_podprogram.c  s272389_podprogram.c  s272398_podprogram.c  s276749_podprogram.c
+program.h        s272353_podprogram.c  s272359_podprogram.c  s272366_podprogram.c  s272372_podprogram.c  s272378_podprogram.o  s272382_podprogram.o  s272389_podprogram.o  s272398_podprogram.o  s276749_podprogram.o
+program_usage.c  s272353_podprogram.o  s272359_podprogram.o  s272366_podprogram.o  s272372_podprogram.o  s272379_podprogram.c  s272383_podprogram.c  s272392_podprogram.c  s272402_podprogram.c  s999_podprogram.c
+program_usage.o  s272354_podprogram.c  s272360_podprogram.c  s272368_podprogram.c  s272373_podprogram.c  s272379_podprogram.o  s272383_podprogram.o  s272392_podprogram.o  s272402_podprogram.o  s999_podprogram.o
+README           s272354_podprogram.o  s272360_podprogram.o  s272368_podprogram.o  s272373_podprogram.o  s272380_podprogram.c  s272385_podprogram.c  s272395_podprogram.c  s274037_podprogram.c  trunk
+s0_podprogram.c  s272355_podprogram.c  s272361_podprogram.c  s272369_podprogram.c  s272374_podprogram.c  s272380_podprogram.o  s272385_podprogram.o  s272395_podprogram.o  s274037_podprogram.o
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn merge --reintegrate https://repo.cs.pwr.edu.pl/p-2/app_1/branches/272366/
+svn: E195016: Cannot merge into a working copy that has local modifications
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ svn status
+ M      .
+M       main.c
+A  +    s272366_podprogram.c
+R  +    s272373_podprogram.c
+?       trunk
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/272366$ cd ..
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn$ ls
+272366
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn$ svn checkout https://repo.cs.pwr.edu.pl/p-2/app_1/branches/272366/
+svn: E155000: '/home/dorithegreat/Documents/programs/semestr_5/svn/272366' is already a working copy for a different URL
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn$ cd ..
+dorithegreat@DELLirium:~/Documents/programs/semestr_5$ rm svn
+rm: cannot remove 'svn': Is a directory
+dorithegreat@DELLirium:~/Documents/programs/semestr_5$ rm -r svn
+rm: remove write-protected regular file 'svn/272366/trunk/.svn/pristine/d4/d40c7856a5d5fc9bd613fc2ed730b4a8d95139fd.svn-base'? ^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[
+A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^C
+dorithegreat@DELLirium:~/Documents/programs/semestr_5$ cd svn
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn$ ls
+272366
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn$ svn up
+Skipped '.'
+svn: E155007: None of the targets are working copies
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn$ svn checkout https://repo.cs.pwr.edu.pl/p-2/app_1/trunk
+A    trunk/s272388_podprogram.c
+A    trunk/s272369_podprogram.c
+A    trunk/program_usage.c
+A    trunk/s272392_podprogram.c
+A    trunk/s274037_podprogram.c
+A    trunk/s272395_podprogram.c
+A    trunk/s272354_podprogram.c
+A    trunk/README
+A    trunk/s272397_podprogram.c
+A    trunk/main.c
+A    trunk/makefile
+A    trunk/s999_podprogram.c
+A    trunk/program.h
+A    trunk/s272373_podprogram.c
+A    trunk/s272351_podprogram.c
+A    trunk/s272372_podprogram.c
+A    trunk/s272361_podprogram.c
+A    trunk/s272368_podprogram.c
+A    trunk/s276749_podprogram.c
+A    trunk/s272381_podprogram.c
+A    trunk/s272398_podprogram.c
+A    trunk/s272353_podprogram.c
+A    trunk/s272360_podprogram.c
+A    trunk/s272355_podprogram.c
+A    trunk/s272358_podprogram.c
+A    trunk/s272359_podprogram.c
+A    trunk/s272362_podprogram.c
+A    trunk/s272370_podprogram.c
+A    trunk/s272375_podprogram.c
+A    trunk/s272378_podprogram.c
+A    trunk/s272379_podprogram.c
+A    trunk/s272380_podprogram.c
+A    trunk/s272382_podprogram.c
+A    trunk/s272383_podprogram.c
+A    trunk/s272389_podprogram.c
+A    trunk/s272402_podprogram.c
+A    trunk/s276588_podprogram.c
+A    trunk/s272374_podprogram.c
+A    trunk/s272385_podprogram.c
+A    trunk/s0_podprogram.c
+ U   trunk
+Checked out revision 312.
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn$ ls
+272366  trunk
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn$ rm -r 272366
+rm: remove write-protected regular file '272366/trunk/.svn/pristine/d4/d40c7856a5d5fc9bd613fc2ed730b4a8d95139fd.svn-base'? y
+rm: remove write-protected regular file '272366/trunk/.svn/pristine/69/69d2dd1c788cf60a4e44bf7b30a53c6e58f9d442.svn-base'?
+rm: cannot remove '272366/trunk/.svn/pristine/69': Directory not empty
+rm: remove write-protected regular file '272366/trunk/.svn/pristine/c6/c63496523cb58923684eaf672e6e5b415bdfda17.svn-base'? yes
+rm: remove write-protected regular file '272366/trunk/.svn/pristine/d2/d201b984e3aabee3f52e99f5e57716275a04f878.svn-base'? ^C
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn$ ls
+trunk
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn$ svn merge --reintegrate https://repo.cs.pwr.edu.pl/p-2/app_1/branches/272366/
+svn: E155007: '/home/dorithegreat/Documents/programs/semestr_5/svn' is not a working copy
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn$ cd trunk
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/trunk$ svn merge --reintegrate https://repo.cs.pwr.edu.pl/p-2/app_1/branches/272366/
+--- Merging differences between repository URLs into '.':
+U    main.c
+U    makefile
+U    program.h
+A    s272366_podprogram.c
+--- Recording mergeinfo for merge between repository URLs into '.':
+ U   .
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/trunk$ make
+cc    -c -o main.o main.c
+cc    -c -o program_usage.o program_usage.c
+cc    -c -o s0_podprogram.o s0_podprogram.c
+cc    -c -o s999_podprogram.o s999_podprogram.c
+cc    -c -o s272366_podprogram.o s272366_podprogram.c
+cc    -c -o s272372_podprogram.o s272372_podprogram.c
+cc    -c -o s272397_podprogram.o s272397_podprogram.c
+cc    -c -o s272354_podprogram.o s272354_podprogram.c
+cc    -c -o s272385_podprogram.o s272385_podprogram.c
+cc    -c -o s272369_podprogram.o s272369_podprogram.c
+cc    -c -o s272355_podprogram.o s272355_podprogram.c
+cc    -c -o s272388_podprogram.o s272388_podprogram.c
+cc    -c -o s272379_podprogram.o s272379_podprogram.c
+cc    -c -o s272383_podprogram.o s272383_podprogram.c
+cc    -c -o s272370_podprogram.o s272370_podprogram.c
+cc    -c -o s272402_podprogram.o s272402_podprogram.c
+cc    -c -o s272389_podprogram.o s272389_podprogram.c
+cc    -c -o s272392_podprogram.o s272392_podprogram.c
+cc    -c -o s272374_podprogram.o s272374_podprogram.c
+cc    -c -o s272362_podprogram.o s272362_podprogram.c
+cc    -c -o s272395_podprogram.o s272395_podprogram.c
+cc    -c -o s274037_podprogram.o s274037_podprogram.c
+cc    -c -o s276588_podprogram.o s276588_podprogram.c
+cc    -c -o s272378_podprogram.o s272378_podprogram.c
+cc    -c -o s272382_podprogram.o s272382_podprogram.c
+cc    -c -o s272359_podprogram.o s272359_podprogram.c
+cc    -c -o s272358_podprogram.o s272358_podprogram.c
+cc    -c -o s272380_podprogram.o s272380_podprogram.c
+cc    -c -o s272360_podprogram.o s272360_podprogram.c
+cc    -c -o s272381_podprogram.o s272381_podprogram.c
+cc    -c -o s272353_podprogram.o s272353_podprogram.c
+cc    -c -o s272398_podprogram.o s272398_podprogram.c
+cc    -c -o s272368_podprogram.o s272368_podprogram.c
+cc    -c -o s276749_podprogram.o s276749_podprogram.c
+cc    -c -o s272361_podprogram.o s272361_podprogram.c
+cc    -c -o s272351_podprogram.o s272351_podprogram.c
+cc    -c -o s272373_podprogram.o s272373_podprogram.c
+cc -o program main.o program_usage.o s0_podprogram.o s999_podprogram.o s272366_podprogram.o s272372_podprogram.o s272397_podprogram.o s272354_podprogram.o s272385_podprogram.o s272369_podprogram.o s272355_podprogram.o s272388_podprogram.o
+ s272379_podprogram.o s272383_podprogram.o s272370_podprogram.o s272402_podprogram.o s272389_podprogram.o s272392_podprogram.o s272374_podprogram.o s272362_podprogram.o s272395_podprogram.o s274037_podprogram.o s276588_podprogram.o s27237
+8_podprogram.o s272382_podprogram.o s272359_podprogram.o s272358_podprogram.o s272380_podprogram.o s272360_podprogram.o s272381_podprogram.o s272353_podprogram.o s272398_podprogram.o s272368_podprogram.o s276749_podprogram.o s272361_podpr
+ogram.o s272351_podprogram.o s272373_podprogram.o
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/trunk$ ./program 272366
+Student nr indeksu: 272366
+Program wczytuje liczbę całkowitą i drukuje ją pomnożoną przez 128
+Podaj liczbę x: 2
+Liczba x pomnożona przez 128 wynosi: 256
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/trunk$ svn copy https://repo.cs.pwr.edu.pl/p-2/app_1/trunk https://repo.cs.pwr.edu.pl/p-2/app_1/tags/v_272366 -m "tag of student 272366's work"
+Committing transaction...
+Committed revision 313.
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/trunk$ svn diff https://repo.cs.pwr.edu.pl/p-2/app_1/trunk https://repo.cs.pwr.edu.pl/p-2/app_1/tags/v_272366
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/trunk$ svn log https://repo.cs.pwr.edu.pl/p-2/app_1/trunk
+------------------------------------------------------------------------
+r309 | 272373 | 2024-11-19 12:30:17 +0100 (Tue, 19 Nov 2024) | 1 line
+
+merged 272373
+------------------------------------------------------------------------
+r301 | 272351 | 2024-11-18 22:56:10 +0100 (Mon, 18 Nov 2024) | 1 line
+
+zmergowano branch 272351
+------------------------------------------------------------------------
+r298 | 272372 | 2024-11-18 21:27:52 +0100 (Mon, 18 Nov 2024) | 1 line
+
+propset
+------------------------------------------------------------------------
+r296 | 272372 | 2024-11-18 21:12:36 +0100 (Mon, 18 Nov 2024) | 1 line
+
+added
+------------------------------------------------------------------------
+r292 | 272372 | 2024-11-18 20:55:52 +0100 (Mon, 18 Nov 2024) | 1 line
+
+integracja
+------------------------------------------------------------------------
+r285 | 272361 | 2024-11-18 18:50:55 +0100 (Mon, 18 Nov 2024) | 1 line
+
+Polaczenie galezi z trunkiem
+------------------------------------------------------------------------
+r280 | 272368 | 2024-11-18 18:08:19 +0100 (Mon, 18 Nov 2024) | 1 line
+
+Dołączenie gałęzi 272368 do trunk
+------------------------------------------------------------------------
+r277 | 276749 | 2024-11-18 17:50:41 +0100 (Mon, 18 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r274 | 276749 | 2024-11-18 17:35:01 +0100 (Mon, 18 Nov 2024) | 1 line
+
+Reintegracja gałęzi branches_s276749 do trunk
+------------------------------------------------------------------------
+r264 | 272381 | 2024-11-17 23:37:38 +0100 (Sun, 17 Nov 2024) | 1 line
+
+Dodanie opcji kodowania utf-8 dla pliku s272381_podprogram.c
+------------------------------------------------------------------------
+r261 | 272398 | 2024-11-17 23:32:08 +0100 (Sun, 17 Nov 2024) | 1 line
+
+Reintegracja trunka z branchem 272398
+------------------------------------------------------------------------
+r256 | 272381 | 2024-11-17 23:17:32 +0100 (Sun, 17 Nov 2024) | 1 line
+
+Reintegracja gałęzi 272381 z trunk
+------------------------------------------------------------------------
+r247 | 272353 | 2024-11-17 17:36:31 +0100 (Sun, 17 Nov 2024) | 1 line
+
+utf8
+------------------------------------------------------------------------
+r244 | 272353 | 2024-11-17 17:10:25 +0100 (Sun, 17 Nov 2024) | 1 line
+
+Reintegracja gałęzi 272353 do trunk
+------------------------------------------------------------------------
+r237 | 272360 | 2024-11-17 11:16:02 +0100 (Sun, 17 Nov 2024) | 1 line
+
+272360 proba II - przywrocenie trunka
+------------------------------------------------------------------------
+r234 | 272360 | 2024-11-17 11:02:46 +0100 (Sun, 17 Nov 2024) | 1 line
+
+272360 proba II - merge brancha do trunka
+------------------------------------------------------------------------
+r226 | 272360 | 2024-11-17 09:58:35 +0100 (Sun, 17 Nov 2024) | 1 line
+
+272360 cofnieto zmiany w tagach
+------------------------------------------------------------------------
+r218 | 272380 | 2024-11-16 21:29:09 +0100 (Sat, 16 Nov 2024) | 1 line
+
+Merged branch 272380 to trunk
+------------------------------------------------------------------------
+r213 | 272358 | 2024-11-16 21:15:39 +0100 (Sat, 16 Nov 2024) | 1 line
+
+mała zmiana o pomylone z 0
+------------------------------------------------------------------------
+r208 | 272358 | 2024-11-16 21:04:11 +0100 (Sat, 16 Nov 2024) | 1 line
+
+Reintegracja gałęzi 272358 do trunk
+------------------------------------------------------------------------
+r207 | 272358 | 2024-11-16 21:02:24 +0100 (Sat, 16 Nov 2024) | 1 line
+
+Committing mergeinfo update after merging trunk revisions r203-205
+------------------------------------------------------------------------
+r200 | 272359 | 2024-11-16 19:37:28 +0100 (Sat, 16 Nov 2024) | 1 line
+
+merge to trunk
+------------------------------------------------------------------------
+r195 | 272378 | 2024-11-16 18:08:49 +0100 (Sat, 16 Nov 2024) | 1 line
+
+272378 merge
+------------------------------------------------------------------------
+r190 | 272378 | 2024-11-16 17:53:54 +0100 (Sat, 16 Nov 2024) | 1 line
+
+272378 failed merge revert
+------------------------------------------------------------------------
+r184 | 272382 | 2024-11-16 16:53:16 +0100 (Sat, 16 Nov 2024) | 1 line
+
+Resolved conflicts and merged branch into trunk
+------------------------------------------------------------------------
+r179 | 276588 | 2024-11-16 15:52:05 +0100 (Sat, 16 Nov 2024) | 1 line
+
+reintegracja
+------------------------------------------------------------------------
+r178 | 276588 | 2024-11-16 15:50:45 +0100 (Sat, 16 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r172 | 274037 | 2024-11-16 15:05:07 +0100 (Sat, 16 Nov 2024) | 1 line
+
+Reintegracja
+------------------------------------------------------------------------
+r168 | 272395 | 2024-11-15 20:17:57 +0100 (Fri, 15 Nov 2024) | 1 line
+
+Ustawienie właściwości svn:mime-type w trunk dla s272395_podprogram.c
+------------------------------------------------------------------------
+r166 | 272362 | 2024-11-15 17:18:03 +0100 (Fri, 15 Nov 2024) | 1 line
+
+correct subprogram 272362
+------------------------------------------------------------------------
+r164 | 272362 | 2024-11-15 16:29:38 +0100 (Fri, 15 Nov 2024) | 1 line
+
+modify s272362_podprogram.c
+------------------------------------------------------------------------
+r161 | 272362 | 2024-11-15 16:03:57 +0100 (Fri, 15 Nov 2024) | 2 lines
+
+merge (2) 272362
+
+------------------------------------------------------------------------
+r159 | 272362 | 2024-11-15 15:59:45 +0100 (Fri, 15 Nov 2024) | 2 lines
+
+merge 272362
+
+------------------------------------------------------------------------
+r153 | 272395 | 2024-11-15 09:01:25 +0100 (Fri, 15 Nov 2024) | 1 line
+
+Reintegracja
+------------------------------------------------------------------------
+r150 | 272374 | 2024-11-14 23:33:34 +0100 (Thu, 14 Nov 2024) | 1 line
+
+Dodanie property svn:mime-type na moje pliki
+------------------------------------------------------------------------
+r147 | 272374 | 2024-11-14 23:14:02 +0100 (Thu, 14 Nov 2024) | 1 line
+
+Branch 272374 merged into trunk
+------------------------------------------------------------------------
+r142 | 272375 | 2024-11-14 21:16:34 +0100 (Thu, 14 Nov 2024) | 1 line
+
+Reintegrated branch 272375 into trunk
+------------------------------------------------------------------------
+r136 | 272392 | 2024-11-14 20:53:15 +0100 (Thu, 14 Nov 2024) | 1 line
+
+dodanie zmian - 272392
+------------------------------------------------------------------------
+r130 | 272389 | 2024-11-14 17:00:26 +0100 (Thu, 14 Nov 2024) | 1 line
+
+merge branch 272389
+------------------------------------------------------------------------
+r123 | 272402 | 2024-11-13 21:56:41 +0100 (Wed, 13 Nov 2024) | 1 line
+
+Scalenie zmian z gałęzi 272402 do trunka
+------------------------------------------------------------------------
+r117 | 272370 | 2024-11-13 20:24:27 +0100 (Wed, 13 Nov 2024) | 1 line
+
+reintegracja branch 272370
+------------------------------------------------------------------------
+r113 | 272383 | 2024-11-12 22:31:20 +0100 (Tue, 12 Nov 2024) | 1 line
+
+trunk 272383
+------------------------------------------------------------------------
+r109 | 272383 | 2024-11-12 22:19:36 +0100 (Tue, 12 Nov 2024) | 1 line
+
+reintegracja 272383 (ponownie)
+------------------------------------------------------------------------
+r102 | 272383 | 2024-11-12 21:54:46 +0100 (Tue, 12 Nov 2024) | 1 line
+
+reintegracja gałęzi 272383 do trunk
+------------------------------------------------------------------------
+r98 | 272383 | 2024-11-12 21:20:53 +0100 (Tue, 12 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r97 | 272383 | 2024-11-12 21:11:58 +0100 (Tue, 12 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r93 | 272383 | 2024-11-12 20:51:20 +0100 (Tue, 12 Nov 2024) | 1 line
+
+reintegracja gałęzi 272383 do trunk
+------------------------------------------------------------------------
+r87 | 272379 | 2024-11-11 23:21:00 +0100 (Mon, 11 Nov 2024) | 1 line
+
+merged 272379 z trunk
+------------------------------------------------------------------------
+r86 | 272379 | 2024-11-11 23:12:59 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r85 | 272379 | 2024-11-11 23:12:02 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r83 | 272379 | 2024-11-11 23:06:13 +0100 (Mon, 11 Nov 2024) | 1 line
+
+Rozwiązanie konfliktu tekstowego w pliku s272379_podprogram.c
+------------------------------------------------------------------------
+r82 | 272379 | 2024-11-11 23:05:03 +0100 (Mon, 11 Nov 2024) | 1 line
+
+Rozwiązanie konfliktu tekstowego w pliku s272379_podprogram.c
+------------------------------------------------------------------------
+r81 | 272379 | 2024-11-11 23:04:07 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r80 | 272379 | 2024-11-11 23:01:36 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r79 | 272379 | 2024-11-11 23:01:15 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r78 | 272379 | 2024-11-11 22:57:51 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r77 | 272379 | 2024-11-11 22:56:32 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r76 | 272379 | 2024-11-11 22:50:53 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r74 | 272379 | 2024-11-11 22:45:48 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r73 | 272379 | 2024-11-11 22:43:52 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r72 | 272379 | 2024-11-11 22:42:36 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r71 | 272379 | 2024-11-11 22:41:43 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r70 | 272379 | 2024-11-11 22:40:41 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r69 | 272379 | 2024-11-11 22:38:23 +0100 (Mon, 11 Nov 2024) | 1 line
+
+synchronizacja 272379 z trunk
+------------------------------------------------------------------------
+r68 | 272379 | 2024-11-11 22:37:10 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r67 | 272379 | 2024-11-11 22:34:18 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r66 | 272379 | 2024-11-11 22:31:21 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r65 | 272379 | 2024-11-11 22:29:34 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r64 | 272379 | 2024-11-11 22:19:30 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r58 | 272355 | 2024-11-08 23:03:11 +0100 (Fri, 08 Nov 2024) | 1 line
+
+272355 integruje swoją gałąź z trunk
+------------------------------------------------------------------------
+r52 | 272388 | 2024-11-08 17:55:50 +0100 (Fri, 08 Nov 2024) | 1 line
+
+merge, tag 272388
+------------------------------------------------------------------------
+r49 | 272369 | 2024-11-07 18:20:37 +0100 (Thu, 07 Nov 2024) | 1 line
+
+Changed propset.
+------------------------------------------------------------------------
+r46 | 272369 | 2024-11-07 18:09:29 +0100 (Thu, 07 Nov 2024) | 1 line
+
+Zmergowano prace studenta 272369 do trunk.
+------------------------------------------------------------------------
+r42 | 272354 | 2024-11-05 22:40:50 +0100 (Tue, 05 Nov 2024) | 1 line
+
+encoding added
+------------------------------------------------------------------------
+r38 | 272385 | 2024-11-05 22:16:57 +0100 (Tue, 05 Nov 2024) | 1 line
+
+Merge 272385 do trunk.
+------------------------------------------------------------------------
+r33 | 272354 | 2024-11-05 21:41:29 +0100 (Tue, 05 Nov 2024) | 1 line
+
+encoding set
+------------------------------------------------------------------------
+r32 | 272354 | 2024-11-05 21:40:21 +0100 (Tue, 05 Nov 2024) | 1 line
+
+encoding set
+------------------------------------------------------------------------
+r29 | 272354 | 2024-11-05 21:06:45 +0100 (Tue, 05 Nov 2024) | 1 line
+
+merged 272354 z trunk
+------------------------------------------------------------------------
+r26 | 272354 | 2024-11-05 20:58:36 +0100 (Tue, 05 Nov 2024) | 1 line
+
+reintegracja 272354 z trunk
+------------------------------------------------------------------------
+r17 | 272397 | 2024-11-04 23:38:26 +0100 (Mon, 04 Nov 2024) | 1 line
+
+merge 272397 into trunk
+------------------------------------------------------------------------
+r13 | mk1 | 2024-10-29 13:45:35 +0100 (Tue, 29 Oct 2024) | 2 lines
+
+wykonano: `svn propset svn:mime-type 'text/plain;charset=utf-8' $(find app_1/ -type f )`
+
+------------------------------------------------------------------------
+r12 | admin | 2020-11-12 10:52:01 +0100 (Thu, 12 Nov 2020) | 2 lines
+
+Poprawione kodowanie README i względny adres katalogu z tagami.
+
+------------------------------------------------------------------------
+r10 | 999 | 2016-10-24 13:55:29 +0200 (Mon, 24 Oct 2016) | 3 lines
+
+999 zreintegrował swoją gałąź z trunk-iem
+
+
+------------------------------------------------------------------------
+r7 | admin | 2016-10-24 13:44:15 +0200 (Mon, 24 Oct 2016) | 3 lines
+
+Dodatkowe wyjaśnienia w pliku README o tworzeniu tag-ów
+
+
+------------------------------------------------------------------------
+r3 | 999 | 2016-10-24 13:04:10 +0200 (Mon, 24 Oct 2016) | 2 lines
+
+dodano plik README w trunk
+
+------------------------------------------------------------------------
+r1 | admin | 2016-10-17 14:28:36 +0200 (Mon, 17 Oct 2016) | 3 lines
+
+początkowa wersja projektu.
+
+
+------------------------------------------------------------------------
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/trunk$ svn log https://repo.cs.pwr.edu.pl/p-2/app_1/trunk -r 313
+------------------------------------------------------------------------
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/trunk$ svn log https://repo.cs.pwr.edu.pl/p-2/app_1/trunk -r 312
+------------------------------------------------------------------------
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/trunk$ svn log https://repo.cs.pwr.edu.pl/p-2/app_1/trunk -r 311
+------------------------------------------------------------------------
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/trunk$ svn log s272366_podprogram.c
+------------------------------------------------------------------------
+r312 | 272366 | 2024-11-19 12:48:53 +0100 (Tue, 19 Nov 2024) | 1 line
+
+created a subprogram 272366
+------------------------------------------------------------------------
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/trunk$ svn log https://repo.cs.pwr.edu.pl/p-2/app_1/tags/v_272366
+------------------------------------------------------------------------
+r313 | 272366 | 2024-11-19 13:21:02 +0100 (Tue, 19 Nov 2024) | 1 line
+
+tag of student 272366's work
+------------------------------------------------------------------------
+r309 | 272373 | 2024-11-19 12:30:17 +0100 (Tue, 19 Nov 2024) | 1 line
+
+merged 272373
+------------------------------------------------------------------------
+r301 | 272351 | 2024-11-18 22:56:10 +0100 (Mon, 18 Nov 2024) | 1 line
+
+zmergowano branch 272351
+------------------------------------------------------------------------
+r298 | 272372 | 2024-11-18 21:27:52 +0100 (Mon, 18 Nov 2024) | 1 line
+
+propset
+------------------------------------------------------------------------
+r296 | 272372 | 2024-11-18 21:12:36 +0100 (Mon, 18 Nov 2024) | 1 line
+
+added
+------------------------------------------------------------------------
+r292 | 272372 | 2024-11-18 20:55:52 +0100 (Mon, 18 Nov 2024) | 1 line
+
+integracja
+------------------------------------------------------------------------
+r285 | 272361 | 2024-11-18 18:50:55 +0100 (Mon, 18 Nov 2024) | 1 line
+
+Polaczenie galezi z trunkiem
+------------------------------------------------------------------------
+r280 | 272368 | 2024-11-18 18:08:19 +0100 (Mon, 18 Nov 2024) | 1 line
+
+Dołączenie gałęzi 272368 do trunk
+------------------------------------------------------------------------
+r277 | 276749 | 2024-11-18 17:50:41 +0100 (Mon, 18 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r274 | 276749 | 2024-11-18 17:35:01 +0100 (Mon, 18 Nov 2024) | 1 line
+
+Reintegracja gałęzi branches_s276749 do trunk
+------------------------------------------------------------------------
+r264 | 272381 | 2024-11-17 23:37:38 +0100 (Sun, 17 Nov 2024) | 1 line
+
+Dodanie opcji kodowania utf-8 dla pliku s272381_podprogram.c
+------------------------------------------------------------------------
+r261 | 272398 | 2024-11-17 23:32:08 +0100 (Sun, 17 Nov 2024) | 1 line
+
+Reintegracja trunka z branchem 272398
+------------------------------------------------------------------------
+r256 | 272381 | 2024-11-17 23:17:32 +0100 (Sun, 17 Nov 2024) | 1 line
+
+Reintegracja gałęzi 272381 z trunk
+------------------------------------------------------------------------
+r247 | 272353 | 2024-11-17 17:36:31 +0100 (Sun, 17 Nov 2024) | 1 line
+
+utf8
+------------------------------------------------------------------------
+r244 | 272353 | 2024-11-17 17:10:25 +0100 (Sun, 17 Nov 2024) | 1 line
+
+Reintegracja gałęzi 272353 do trunk
+------------------------------------------------------------------------
+r237 | 272360 | 2024-11-17 11:16:02 +0100 (Sun, 17 Nov 2024) | 1 line
+
+272360 proba II - przywrocenie trunka
+------------------------------------------------------------------------
+r234 | 272360 | 2024-11-17 11:02:46 +0100 (Sun, 17 Nov 2024) | 1 line
+
+272360 proba II - merge brancha do trunka
+------------------------------------------------------------------------
+r226 | 272360 | 2024-11-17 09:58:35 +0100 (Sun, 17 Nov 2024) | 1 line
+
+272360 cofnieto zmiany w tagach
+------------------------------------------------------------------------
+r218 | 272380 | 2024-11-16 21:29:09 +0100 (Sat, 16 Nov 2024) | 1 line
+
+Merged branch 272380 to trunk
+------------------------------------------------------------------------
+r213 | 272358 | 2024-11-16 21:15:39 +0100 (Sat, 16 Nov 2024) | 1 line
+
+mała zmiana o pomylone z 0
+------------------------------------------------------------------------
+r208 | 272358 | 2024-11-16 21:04:11 +0100 (Sat, 16 Nov 2024) | 1 line
+
+Reintegracja gałęzi 272358 do trunk
+------------------------------------------------------------------------
+r207 | 272358 | 2024-11-16 21:02:24 +0100 (Sat, 16 Nov 2024) | 1 line
+
+Committing mergeinfo update after merging trunk revisions r203-205
+------------------------------------------------------------------------
+r200 | 272359 | 2024-11-16 19:37:28 +0100 (Sat, 16 Nov 2024) | 1 line
+
+merge to trunk
+------------------------------------------------------------------------
+r195 | 272378 | 2024-11-16 18:08:49 +0100 (Sat, 16 Nov 2024) | 1 line
+
+272378 merge
+------------------------------------------------------------------------
+r190 | 272378 | 2024-11-16 17:53:54 +0100 (Sat, 16 Nov 2024) | 1 line
+
+272378 failed merge revert
+------------------------------------------------------------------------
+r184 | 272382 | 2024-11-16 16:53:16 +0100 (Sat, 16 Nov 2024) | 1 line
+
+Resolved conflicts and merged branch into trunk
+------------------------------------------------------------------------
+r179 | 276588 | 2024-11-16 15:52:05 +0100 (Sat, 16 Nov 2024) | 1 line
+
+reintegracja
+------------------------------------------------------------------------
+r178 | 276588 | 2024-11-16 15:50:45 +0100 (Sat, 16 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r172 | 274037 | 2024-11-16 15:05:07 +0100 (Sat, 16 Nov 2024) | 1 line
+
+Reintegracja
+------------------------------------------------------------------------
+r168 | 272395 | 2024-11-15 20:17:57 +0100 (Fri, 15 Nov 2024) | 1 line
+
+Ustawienie właściwości svn:mime-type w trunk dla s272395_podprogram.c
+------------------------------------------------------------------------
+r166 | 272362 | 2024-11-15 17:18:03 +0100 (Fri, 15 Nov 2024) | 1 line
+
+correct subprogram 272362
+------------------------------------------------------------------------
+r164 | 272362 | 2024-11-15 16:29:38 +0100 (Fri, 15 Nov 2024) | 1 line
+
+modify s272362_podprogram.c
+------------------------------------------------------------------------
+r161 | 272362 | 2024-11-15 16:03:57 +0100 (Fri, 15 Nov 2024) | 2 lines
+
+merge (2) 272362
+
+------------------------------------------------------------------------
+r159 | 272362 | 2024-11-15 15:59:45 +0100 (Fri, 15 Nov 2024) | 2 lines
+
+merge 272362
+
+------------------------------------------------------------------------
+r153 | 272395 | 2024-11-15 09:01:25 +0100 (Fri, 15 Nov 2024) | 1 line
+
+Reintegracja
+------------------------------------------------------------------------
+r150 | 272374 | 2024-11-14 23:33:34 +0100 (Thu, 14 Nov 2024) | 1 line
+
+Dodanie property svn:mime-type na moje pliki
+------------------------------------------------------------------------
+r147 | 272374 | 2024-11-14 23:14:02 +0100 (Thu, 14 Nov 2024) | 1 line
+
+Branch 272374 merged into trunk
+------------------------------------------------------------------------
+r142 | 272375 | 2024-11-14 21:16:34 +0100 (Thu, 14 Nov 2024) | 1 line
+
+Reintegrated branch 272375 into trunk
+------------------------------------------------------------------------
+r136 | 272392 | 2024-11-14 20:53:15 +0100 (Thu, 14 Nov 2024) | 1 line
+
+dodanie zmian - 272392
+------------------------------------------------------------------------
+r130 | 272389 | 2024-11-14 17:00:26 +0100 (Thu, 14 Nov 2024) | 1 line
+
+merge branch 272389
+------------------------------------------------------------------------
+r123 | 272402 | 2024-11-13 21:56:41 +0100 (Wed, 13 Nov 2024) | 1 line
+
+Scalenie zmian z gałęzi 272402 do trunka
+------------------------------------------------------------------------
+r117 | 272370 | 2024-11-13 20:24:27 +0100 (Wed, 13 Nov 2024) | 1 line
+
+reintegracja branch 272370
+------------------------------------------------------------------------
+r113 | 272383 | 2024-11-12 22:31:20 +0100 (Tue, 12 Nov 2024) | 1 line
+
+trunk 272383
+------------------------------------------------------------------------
+r109 | 272383 | 2024-11-12 22:19:36 +0100 (Tue, 12 Nov 2024) | 1 line
+
+reintegracja 272383 (ponownie)
+------------------------------------------------------------------------
+r102 | 272383 | 2024-11-12 21:54:46 +0100 (Tue, 12 Nov 2024) | 1 line
+
+reintegracja gałęzi 272383 do trunk
+------------------------------------------------------------------------
+r98 | 272383 | 2024-11-12 21:20:53 +0100 (Tue, 12 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r97 | 272383 | 2024-11-12 21:11:58 +0100 (Tue, 12 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r93 | 272383 | 2024-11-12 20:51:20 +0100 (Tue, 12 Nov 2024) | 1 line
+
+reintegracja gałęzi 272383 do trunk
+------------------------------------------------------------------------
+r87 | 272379 | 2024-11-11 23:21:00 +0100 (Mon, 11 Nov 2024) | 1 line
+
+merged 272379 z trunk
+------------------------------------------------------------------------
+r86 | 272379 | 2024-11-11 23:12:59 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r85 | 272379 | 2024-11-11 23:12:02 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r83 | 272379 | 2024-11-11 23:06:13 +0100 (Mon, 11 Nov 2024) | 1 line
+
+Rozwiązanie konfliktu tekstowego w pliku s272379_podprogram.c
+------------------------------------------------------------------------
+r82 | 272379 | 2024-11-11 23:05:03 +0100 (Mon, 11 Nov 2024) | 1 line
+
+Rozwiązanie konfliktu tekstowego w pliku s272379_podprogram.c
+------------------------------------------------------------------------
+r81 | 272379 | 2024-11-11 23:04:07 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r80 | 272379 | 2024-11-11 23:01:36 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r79 | 272379 | 2024-11-11 23:01:15 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r78 | 272379 | 2024-11-11 22:57:51 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r77 | 272379 | 2024-11-11 22:56:32 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r76 | 272379 | 2024-11-11 22:50:53 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r74 | 272379 | 2024-11-11 22:45:48 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r73 | 272379 | 2024-11-11 22:43:52 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r72 | 272379 | 2024-11-11 22:42:36 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r71 | 272379 | 2024-11-11 22:41:43 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r70 | 272379 | 2024-11-11 22:40:41 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r69 | 272379 | 2024-11-11 22:38:23 +0100 (Mon, 11 Nov 2024) | 1 line
+
+synchronizacja 272379 z trunk
+------------------------------------------------------------------------
+r68 | 272379 | 2024-11-11 22:37:10 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r67 | 272379 | 2024-11-11 22:34:18 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r66 | 272379 | 2024-11-11 22:31:21 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r65 | 272379 | 2024-11-11 22:29:34 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r64 | 272379 | 2024-11-11 22:19:30 +0100 (Mon, 11 Nov 2024) | 1 line
+
+
+------------------------------------------------------------------------
+r58 | 272355 | 2024-11-08 23:03:11 +0100 (Fri, 08 Nov 2024) | 1 line
+
+272355 integruje swoją gałąź z trunk
+------------------------------------------------------------------------
+r52 | 272388 | 2024-11-08 17:55:50 +0100 (Fri, 08 Nov 2024) | 1 line
+
+merge, tag 272388
+------------------------------------------------------------------------
+r49 | 272369 | 2024-11-07 18:20:37 +0100 (Thu, 07 Nov 2024) | 1 line
+
+Changed propset.
+------------------------------------------------------------------------
+r46 | 272369 | 2024-11-07 18:09:29 +0100 (Thu, 07 Nov 2024) | 1 line
+
+Zmergowano prace studenta 272369 do trunk.
+------------------------------------------------------------------------
+r42 | 272354 | 2024-11-05 22:40:50 +0100 (Tue, 05 Nov 2024) | 1 line
+
+encoding added
+------------------------------------------------------------------------
+r38 | 272385 | 2024-11-05 22:16:57 +0100 (Tue, 05 Nov 2024) | 1 line
+
+Merge 272385 do trunk.
+------------------------------------------------------------------------
+r33 | 272354 | 2024-11-05 21:41:29 +0100 (Tue, 05 Nov 2024) | 1 line
+
+encoding set
+------------------------------------------------------------------------
+r32 | 272354 | 2024-11-05 21:40:21 +0100 (Tue, 05 Nov 2024) | 1 line
+
+encoding set
+------------------------------------------------------------------------
+r29 | 272354 | 2024-11-05 21:06:45 +0100 (Tue, 05 Nov 2024) | 1 line
+
+merged 272354 z trunk
+------------------------------------------------------------------------
+r26 | 272354 | 2024-11-05 20:58:36 +0100 (Tue, 05 Nov 2024) | 1 line
+
+reintegracja 272354 z trunk
+------------------------------------------------------------------------
+r17 | 272397 | 2024-11-04 23:38:26 +0100 (Mon, 04 Nov 2024) | 1 line
+
+merge 272397 into trunk
+------------------------------------------------------------------------
+r13 | mk1 | 2024-10-29 13:45:35 +0100 (Tue, 29 Oct 2024) | 2 lines
+
+wykonano: `svn propset svn:mime-type 'text/plain;charset=utf-8' $(find app_1/ -type f )`
+
+------------------------------------------------------------------------
+r12 | admin | 2020-11-12 10:52:01 +0100 (Thu, 12 Nov 2020) | 2 lines
+
+Poprawione kodowanie README i względny adres katalogu z tagami.
+
+------------------------------------------------------------------------
+r10 | 999 | 2016-10-24 13:55:29 +0200 (Mon, 24 Oct 2016) | 3 lines
+
+999 zreintegrował swoją gałąź z trunk-iem
+
+
+------------------------------------------------------------------------
+r7 | admin | 2016-10-24 13:44:15 +0200 (Mon, 24 Oct 2016) | 3 lines
+
+Dodatkowe wyjaśnienia w pliku README o tworzeniu tag-ów
+
+
+------------------------------------------------------------------------
+r3 | 999 | 2016-10-24 13:04:10 +0200 (Mon, 24 Oct 2016) | 2 lines
+
+dodano plik README w trunk
+
+------------------------------------------------------------------------
+r1 | admin | 2016-10-17 14:28:36 +0200 (Mon, 17 Oct 2016) | 3 lines
+
+początkowa wersja projektu.
+
+
+------------------------------------------------------------------------
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/trunk$ svn blame main.c
+     1      admin #include "program.h"
+     1      admin
+   184     272382 int main(int argc, char *argv[])
+   184     272382 {
+     1      admin
+   184     272382   if (argc != 2)
+   184     272382   {
+   161     272362     program_usage();
+   161     272362     exit(EXIT_FAILURE);
+   161     272362   }
+     1      admin
+     1      admin   {
+   161     272362     int idx = atoi(argv[1]);
+   184     272382     switch (idx)
+   184     272382     {
+   161     272362     case 0:
+   161     272362       s0_podprogram(); // podprogram studenta o numerze indeksu 0
+   161     272362       break;
+   161     272362     case 999:
+   161     272362       s999_podprogram(); // podprogram studenta o numerze indeksu 999
+   161     272362       break;
+   296     272372     case 272372:
+   296     272372       s272372_podprogram(); // podprogram studenta o numerze indeksu 272372
+   161     272362     case 272397:
+   161     272362       s272397_podprogram(); // podprogram studenta o numerze indeksu 272397
+   161     272362       break;
+   161     272362     case 272354:
+   161     272362       s272354_podprogram(); // podprogram studenta o numerze indeksu 272354
+   161     272362       break;
+   161     272362     case 272385:
+   161     272362       s272385_podprogram(); // podprogram studenta o numerze indeksu 272385
+   161     272362       break;
+   161     272362     case 272369:
+   161     272362       s272369_podprogram(); // podprogram studenta o numerze indeksu 272369
+   161     272362       break;
+   161     272362     case 272388:
+   161     272362       s272388_podprogram(); // podprogram studenta o numerze indeksu 272388
+   161     272362       break;
+   161     272362     case 272355:
+   161     272362       s272355_podprogram(); // podprogram studenta o numerze indeksu 272355
+   161     272362       break;
+   161     272362     case 272379:
+   161     272362       s272379_podprogram(); // podprogram studenta o numerze indeksu 272379
+   161     272362       break;
+   161     272362     case 272383:
+   161     272362       s272383_podprogram(); // podprogram studenta o numerze indeksu 272383
+   161     272362       break;
+   117     272370     case 272370:
+   161     272362       s272370_podprogram(); // podprogram studenta o numerze indeksu 272370
+   161     272362       break;
+   123     272402     case 272402:
+   161     272362       s272402_podprogram(); // podprogram studenta o numerze indeksu 272402
+   161     272362       break;
+   161     272362     case 272389:
+   161     272362       s272389_podprogram(); // podprogram studenta o numerze indeksu 272389
+   161     272362       break;
+   161     272362     case 272392:
+   161     272362       s272392_podprogram(); // podprogram studenta o numerze indeksu 272392
+   161     272362       break;
+   161     272362     case 272374:
+   161     272362       s272374_podprogram(); // podprogram studenta o numerze indeksu 272374
+   161     272362       break;
+   161     272362     case 272362:
+   161     272362       s272362_podprogram(); // podprogram studenta o numerze indeksu 272362
+   161     272362       break;
+   161     272362     case 272395:
+   161     272362       s272395_podprogram(); // podprogram studenta o numerze indeksu 272395
+   161     272362       break;
+   172     274037     case 274037:
+   184     272382       s274037_podprogram(); // podprogram studenta o numerze indeksu 274037
+   172     274037       break;
+   179     276588     case 276588:
+   184     272382       s276588_podprogram(); // podprogram studenta o numerze indeksu 276588
+   179     276588       break;
+   184     272382     case 272382:
+   184     272382       s272382_podprogram(); // podprogram studenta o numerze indeksu 272382
+   184     272382       break;
+   195     272378     case 272378:
+   195     272378       s272378_podprogram(); // podprogram studenta o numerze indeksu 272378
+   195     272378       break;
+   200     272359     case 272359:
+   200     272359       s272359_podprogram(); // podprogram studenta o numerze indeksu 272359
+   200     272359       break;
+   208     272358     case 272358:
+   208     272358       s272358_podprogram(); // podprogram studenta o numerze indeksu 272358
+   218     272380       break;
+   218     272380     case 272380:
+   218     272380       s272380_podprogram(); // podprogram studenta o numerze indeksu 272380
+   234     272360       break;
+   244     272353     case 272353:
+   244     272353       s272353_podprogram(); // podprogram studenta o numerze indeksu 272353
+   244     272353       break;
+   234     272360     case 272360:
+   234     272360       s272360_podprogram(); // podprogram studenta o numerze indeksu 272380
+   208     272358       break;
+   256     272381     case 272381:
+   256     272381       s272381_podprogram(); // podprogram studenta o numerze indeksu 272381
+   256     272381       break;
+   261     272398     case 272398:
+   261     272398       s272398_podprogram(); // podprogram studenta o numerze indeksu 272398
+   274     276749       break;
+   280     272368     case 272368:
+   280     272368       s272368_podprogram(); // podprogram studenta o numerze indeksu 272368
+   285     272361       break;
+   285     272361     case 272361:
+   285     272361       s272361_podprogram(); // podprogram studenta o numerze indeksu 272361
+   285     272361       break;
+   301     272351     case 272351:
+   309     272373       s272351_podprogram();
+   309     272373       break;
+   309     272373     case 272373:
+   309     272373       s272373_podprogram();
+   309     272373       break;
+     -          -     case 272366:
+     -          -       s272366_podprogram(); // podprogram studenta o numerze indeksu 272366
+     -          -       break;
+   208     272358
+   117     272370     default:
+   161     272362       printf("\nStudent o numerze indeksu %d nie wykonał jeszcze zadania\n\n",
+   161     272362              idx);
+     1      admin       break;
+   161     272362     }
+     1      admin   }
+     1      admin   exit(EXIT_SUCCESS);
+     1      admin }
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/trunk$ svn commit -m "student 272366 finished work"
+Sending        .
+Sending        main.c
+Sending        makefile
+Sending        program.h
+Adding         s272366_podprogram.c
+Transmitting file data ...done
+Committing transaction...
+Committed revision 314.
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/trunk$ svn blame main.c
+     1      admin #include "program.h"
+     1      admin
+   184     272382 int main(int argc, char *argv[])
+   184     272382 {
+     1      admin
+   184     272382   if (argc != 2)
+   184     272382   {
+   161     272362     program_usage();
+   161     272362     exit(EXIT_FAILURE);
+   161     272362   }
+     1      admin
+     1      admin   {
+   161     272362     int idx = atoi(argv[1]);
+   184     272382     switch (idx)
+   184     272382     {
+   161     272362     case 0:
+   161     272362       s0_podprogram(); // podprogram studenta o numerze indeksu 0
+   161     272362       break;
+   161     272362     case 999:
+   161     272362       s999_podprogram(); // podprogram studenta o numerze indeksu 999
+   161     272362       break;
+   296     272372     case 272372:
+   296     272372       s272372_podprogram(); // podprogram studenta o numerze indeksu 272372
+   161     272362     case 272397:
+   161     272362       s272397_podprogram(); // podprogram studenta o numerze indeksu 272397
+   161     272362       break;
+   161     272362     case 272354:
+   161     272362       s272354_podprogram(); // podprogram studenta o numerze indeksu 272354
+   161     272362       break;
+   161     272362     case 272385:
+   161     272362       s272385_podprogram(); // podprogram studenta o numerze indeksu 272385
+   161     272362       break;
+   161     272362     case 272369:
+   161     272362       s272369_podprogram(); // podprogram studenta o numerze indeksu 272369
+   161     272362       break;
+   161     272362     case 272388:
+   161     272362       s272388_podprogram(); // podprogram studenta o numerze indeksu 272388
+   161     272362       break;
+   161     272362     case 272355:
+   161     272362       s272355_podprogram(); // podprogram studenta o numerze indeksu 272355
+   161     272362       break;
+   161     272362     case 272379:
+   161     272362       s272379_podprogram(); // podprogram studenta o numerze indeksu 272379
+   161     272362       break;
+   161     272362     case 272383:
+   161     272362       s272383_podprogram(); // podprogram studenta o numerze indeksu 272383
+   161     272362       break;
+   117     272370     case 272370:
+   161     272362       s272370_podprogram(); // podprogram studenta o numerze indeksu 272370
+   161     272362       break;
+   123     272402     case 272402:
+   161     272362       s272402_podprogram(); // podprogram studenta o numerze indeksu 272402
+   161     272362       break;
+   161     272362     case 272389:
+   161     272362       s272389_podprogram(); // podprogram studenta o numerze indeksu 272389
+   161     272362       break;
+   161     272362     case 272392:
+   161     272362       s272392_podprogram(); // podprogram studenta o numerze indeksu 272392
+   161     272362       break;
+   161     272362     case 272374:
+   161     272362       s272374_podprogram(); // podprogram studenta o numerze indeksu 272374
+   161     272362       break;
+   161     272362     case 272362:
+   161     272362       s272362_podprogram(); // podprogram studenta o numerze indeksu 272362
+   161     272362       break;
+   161     272362     case 272395:
+   161     272362       s272395_podprogram(); // podprogram studenta o numerze indeksu 272395
+   161     272362       break;
+   172     274037     case 274037:
+   184     272382       s274037_podprogram(); // podprogram studenta o numerze indeksu 274037
+   172     274037       break;
+   179     276588     case 276588:
+   184     272382       s276588_podprogram(); // podprogram studenta o numerze indeksu 276588
+   179     276588       break;
+   184     272382     case 272382:
+   184     272382       s272382_podprogram(); // podprogram studenta o numerze indeksu 272382
+   184     272382       break;
+   195     272378     case 272378:
+   195     272378       s272378_podprogram(); // podprogram studenta o numerze indeksu 272378
+   195     272378       break;
+   200     272359     case 272359:
+   200     272359       s272359_podprogram(); // podprogram studenta o numerze indeksu 272359
+   200     272359       break;
+   208     272358     case 272358:
+   208     272358       s272358_podprogram(); // podprogram studenta o numerze indeksu 272358
+   218     272380       break;
+   218     272380     case 272380:
+   218     272380       s272380_podprogram(); // podprogram studenta o numerze indeksu 272380
+   234     272360       break;
+   244     272353     case 272353:
+   244     272353       s272353_podprogram(); // podprogram studenta o numerze indeksu 272353
+   244     272353       break;
+   234     272360     case 272360:
+   234     272360       s272360_podprogram(); // podprogram studenta o numerze indeksu 272380
+   208     272358       break;
+   256     272381     case 272381:
+   256     272381       s272381_podprogram(); // podprogram studenta o numerze indeksu 272381
+   256     272381       break;
+   261     272398     case 272398:
+   261     272398       s272398_podprogram(); // podprogram studenta o numerze indeksu 272398
+   274     276749       break;
+   280     272368     case 272368:
+   280     272368       s272368_podprogram(); // podprogram studenta o numerze indeksu 272368
+   285     272361       break;
+   285     272361     case 272361:
+   285     272361       s272361_podprogram(); // podprogram studenta o numerze indeksu 272361
+   285     272361       break;
+   301     272351     case 272351:
+   309     272373       s272351_podprogram();
+   309     272373       break;
+   309     272373     case 272373:
+   309     272373       s272373_podprogram();
+   309     272373       break;
+   314     272366     case 272366:
+   314     272366       s272366_podprogram(); // podprogram studenta o numerze indeksu 272366
+   314     272366       break;
+   208     272358
+   117     272370     default:
+   161     272362       printf("\nStudent o numerze indeksu %d nie wykonał jeszcze zadania\n\n",
+   161     272362              idx);
+     1      admin       break;
+   161     272362     }
+     1      admin   }
+     1      admin   exit(EXIT_SUCCESS);
+     1      admin }
+dorithegreat@DELLirium:~/Documents/programs/semestr_5/svn/trunk$ cd ../..
+dorithegreat@DELLirium:~/Documents/programs/semestr_5$ tmux capture-pane -p -S'-' -E'-' >> my-log
+
