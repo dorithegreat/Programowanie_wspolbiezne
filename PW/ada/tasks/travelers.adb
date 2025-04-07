@@ -8,7 +8,7 @@ procedure  Travelers is
 
 -- Travelers moving on the board
 
-  Nr_Of_Travelers : constant Integer :=2;
+  Nr_Of_Travelers : constant Integer := 15;
 
   Min_Steps : constant Integer := 10 ;
   Max_Steps : constant Integer := 100 ;
@@ -18,8 +18,8 @@ procedure  Travelers is
 
 -- 2D Board with torus topology
 
-  Board_Width  : constant Integer := 5;
-  Board_Height : constant Integer := 5;
+  Board_Width  : constant Integer := 7;
+  Board_Height : constant Integer := 7;
 
 -- Timing
 
@@ -47,7 +47,6 @@ procedure  Travelers is
     protected body Board_Cell is
       entry Enter when not Occupied is
       begin
-        Put_Line (Standard_Error, Boolean'Image(Occupied));
         Occupied := True;
       end Enter;
 
@@ -204,9 +203,9 @@ procedure  Travelers is
           --  & Integer'Image(New_Position.X)
           --  & ", "
           --  & Integer'Image(New_Position.Y));
-          --  Board (Traveler.Position.X, Traveler.Position.Y).Leave;
+          Board (Traveler.Position.X, Traveler.Position.Y).Leave;
           Traveler.Position := New_Position;
-        or 
+        else 
           delay Max_Delay;
           Traveler.Symbol := Character'Val (Character'Pos (Traveler.Symbol) + 32);
 
@@ -229,7 +228,7 @@ procedure  Travelers is
         select
             Board(Traveler.Position.X, Traveler.Position.Y).Enter;
             exit; -- got a free cell
-        or
+        else
             delay 0.0; -- try again immediately
         end select;
       end loop;
