@@ -8,7 +8,7 @@ import (
 	"unicode"
 )
 
-const Nr_Of_Travelers int = 15
+const Nr_Of_Travelers int = 26
 
 const Min_Steps int = 10
 const Max_Steps int = 100

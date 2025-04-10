@@ -1,14 +1,14 @@
 with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 with Ada.Numerics.Float_Random; use Ada.Numerics.Float_Random;
 with Random_Seeds; use Random_Seeds;
 with Ada.Real_Time; use Ada.Real_Time;
 
 procedure  Travelers is
 
-
 -- Travelers moving on the board
 
-  Nr_Of_Travelers : constant Integer := 15;
+  Nr_Of_Travelers : Integer :=26;
 
   Min_Steps : constant Integer := 10 ;
   Max_Steps : constant Integer := 100 ;
@@ -18,8 +18,8 @@ procedure  Travelers is
 
 -- 2D Board with torus topology
 
-  Board_Width  : constant Integer := 7;
-  Board_Height : constant Integer := 7;
+  Board_Width  : constant Integer := 15;
+  Board_Height : constant Integer := 15;
 
 -- Timing
 
@@ -37,49 +37,30 @@ procedure  Travelers is
     Y: Integer range 0 .. Board_Height - 1; 
   end record;
 
-    protected type Board_Cell is 
-        entry Enter;
-        entry Leave;
-    private
-          Occupied : Boolean := False;
-    end Board_Cell;
+	   
+   protected type Cell_Lock is
+      entry Occupy;
+      procedure Leave;
+   private
+      Occupied : Boolean := False;
+   end Cell_Lock;
 
-    protected body Board_Cell is
-      entry Enter when not Occupied is
+   protected body Cell_Lock is
+      entry Occupy when not Occupied is
       begin
-        Occupied := True;
-      end Enter;
+         Occupied := True;
+      end Occupy;
 
-      entry Leave when Occupied is
+      procedure Leave is
       begin
-        Occupied := False;
+         Occupied := False;
       end Leave;
-    end Board_Cell;
 
-   type Board_Type is array (0 .. Board_Width - 1, 0 .. Board_Height - 1) of Board_Cell;
+   end Cell_Lock;
 
+   type Board_Type is array (0 .. Board_Width - 1, 0 .. Board_Height - 1) of Cell_Lock;
    Board : Board_Type;
 
-  -- elementary steps
-  procedure Move_Down( Position: in out Position_Type ) is
-  begin
-    Position.Y := ( Position.Y + 1 ) mod Board_Height;
-  end Move_Down;
-
-  procedure Move_Up( Position: in out Position_Type ) is
-  begin
-    Position.Y := ( Position.Y + Board_Height - 1 ) mod Board_Height;
-  end Move_Up;
-
-  procedure Move_Right( Position: in out Position_Type ) is
-  begin
-    Position.X := ( Position.X + 1 ) mod Board_Width;
-  end Move_Right;
-
-  procedure Move_Left( Position: in out Position_Type ) is
-  begin
-    Position.X := ( Position.X + Board_Width - 1 ) mod Board_Width;
-  end Move_Left;
 
   -- traces of travelers
   type Trace_Type is record 	      
@@ -130,7 +111,6 @@ procedure  Travelers is
       end loop;
   end Printer;
 
-
   -- travelers
   type Traveler_Type is record
     Id: Integer;
@@ -138,14 +118,12 @@ procedure  Travelers is
     Position: Position_Type;    
   end record;
 
-
   task type Traveler_Task_Type is	
     entry Init(Id: Integer; Seed: Integer; Symbol: Character);
     entry Start;
   end Traveler_Task_Type;	
 
   task body Traveler_Task_Type is
-    Done : Boolean := False;
     G : Generator;
     Traveler : Traveler_Type;
     Time_Stamp : Duration;
@@ -162,76 +140,63 @@ procedure  Travelers is
           Symbol => Traveler.Symbol
         );
     end Store_Trace;
-    
-    procedure Make_Step is
-      N : Integer; 
-      New_Position : Position_Type;
-    begin
-      if Traveler.Symbol in 'a' .. 'z' then
-         Done := True;
-         return;
-      end if;
 
-      N := Integer( Float'Floor(4.0 * Random(G)) );    
-      New_Position := Traveler.Position;
-      case N is
-        when 0 =>
-         --   Move_Up( Traveler.Position );
-         New_Position.Y := (Traveler.Position.Y + Board_Height - 1) mod Board_Height;
-        when 1 =>
-         --   Move_Down( Traveler.Position );
-         New_Position.Y := (Traveler.Position.Y + 1) mod Board_Height;
-        when 2 =>
-         --   Move_Left( Traveler.Position );
-         New_Position.X := (Traveler.Position.X + Board_Width - 1) mod Board_Width;
-        when 3 =>
-         --   Move_Right( Traveler.Position );
-         New_Position.X := (Traveler.Position.X + 1) mod Board_Width;
-        when others =>
-          Put_Line( " ?????????????? " & Integer'Image( N ) );
-        end case;
+   function Make_Step return Boolean is
+         Old_Position : Position_Type := Traveler.Position;
+         New_Position : Position_Type := Old_Position;
+         N : Integer := Integer( Float'Floor(4.0 * Random(G)) );
+      begin
+         case N is
+            when 0 => New_Position.Y := (Old_Position.Y + Board_Height - 1) mod Board_Height;
+            when 1 => New_Position.Y := (Old_Position.Y + 1) mod Board_Height;
+            when 2 => New_Position.X := (Old_Position.X + Board_Width - 1) mod Board_Width;
+            when 3 => New_Position.X := (Old_Position.X + 1) mod Board_Width;
+            when others =>  return False;
+         end case;
 
-        select
-          Board (New_Position.X, New_Position.Y).Enter;
-          --  Put_Line (Standard_Error, "Traveler " 
-          --  & Traveler.Symbol 
-          --  & " leaving " 
-          --  & Integer'Image(Traveler.Position.X)
-          --  & ", " 
-          --  & Integer'Image(Traveler.Position.Y)
-          --  & " and entering "
-          --  & Integer'Image(New_Position.X)
-          --  & ", "
-          --  & Integer'Image(New_Position.Y));
-          Board (Traveler.Position.X, Traveler.Position.Y).Leave;
-          Traveler.Position := New_Position;
-        else 
-          delay Max_Delay;
-          Traveler.Symbol := Character'Val (Character'Pos (Traveler.Symbol) + 32);
+         -- Try to occupy the new cell with timeout
+         select
+            Board(New_Position.X, New_Position.Y).Occupy;
+            Traveler.Position := New_Position;
+            Time_Stamp := To_Duration(Clock - Start_Time);
+            Store_Trace;
+            Board(Old_Position.X, Old_Position.Y).Leave;
+            return True;
+         or
+            delay Max_Delay;
+            --Put_Line("deadlock "& Integer'Image( Traveler.Id )& " " &  Integer'Image( New_Position.X ) & " " & Integer'Image( New_Position.Y ));
+            return False;  
+         end select;
 
-        end select;
+      end Make_Step;
 
-
-    end Make_Step;
-
+   Done : Boolean := False;
   begin
     accept Init(Id: Integer; Seed: Integer; Symbol: Character) do
       Reset(G, Seed); 
       Traveler.Id := Id;
       Traveler.Symbol := Symbol;
+      
       -- Random initial position:
-      loop
-        Traveler.Position := (
-            X => Integer( Float'Floor( Float( Board_Width )  * Random(G)  ) ),
-            Y => Integer( Float'Floor( Float( Board_Height ) * Random(G) ) )          
+      Traveler.Position := (
+          X => Integer( Float'Floor( Float( Board_Width )  * Random(G)  ) ),
+          Y => Integer( Float'Floor( Float( Board_Height ) * Random(G) ) )          
         );
-        select
-            Board(Traveler.Position.X, Traveler.Position.Y).Enter;
-            exit; -- got a free cell
-        else
-            delay 0.0; -- try again immediately
-        end select;
+
+      loop
+         exit when Done = True;
+         select 
+            Board(Traveler.Position.X, Traveler.Position.Y).Occupy;
+            Done := True;
+         else
+            Traveler.Position := (
+               X => Integer( Float'Floor( Float( Board_Width )  * Random(G)  ) ),
+               Y => Integer( Float'Floor( Float( Board_Height ) * Random(G) ) )          
+            );
+            --Put_Line("new start");
+         end select;
       end loop;
+
       Store_Trace; -- store starting position
       -- Number of steps to be made by the traveler  
       Nr_of_Steps := Min_Steps + Integer( Float(Max_Steps - Min_Steps) * Random(G));
@@ -244,14 +209,25 @@ procedure  Travelers is
       null;
     end Start;
 
-    for Step in 0 .. Nr_of_Steps loop
-      delay Min_Delay+(Max_Delay-Min_Delay)*Duration(Random(G));
-      -- do action ...
-      Make_Step;
-      Store_Trace;
-      Time_Stamp := To_Duration ( Clock - Start_Time ); -- reads global clock
-    end loop;
-    Printer.Report( Traces );
+   for Step in 0 .. Nr_of_Steps loop
+
+      delay Min_Delay + (Max_Delay - Min_Delay) * Duration(Random(G));
+      Time_Stamp := To_Duration(Clock - Start_Time);
+
+      declare
+         Success : Boolean := Make_Step;
+      begin
+         if not Success then
+            Traveler.Symbol := Character'Val(Character'Pos(Traveler.Symbol) + 32); 
+            --Put_Line("deadlock " & Integer'Image( Traveler.Id ));
+            Store_Trace;
+            exit;
+         end if;
+      end;
+   end loop;
+
+   Printer.Report(Traces);
+
   end Traveler_Task_Type;
 
 
@@ -259,7 +235,9 @@ procedure  Travelers is
 
   Travel_Tasks: array (0 .. Nr_Of_Travelers-1) of Traveler_Task_Type; -- for tests
   Symbol : Character := 'A';
+
 begin 
+   --Get(Nr_Of_Travelers);
   
   -- Prit the line with the parameters needed for display script:
   Put_Line(
@@ -269,7 +247,6 @@ begin
       Integer'Image( Board_Height )      
     );
 
-
   -- init tarvelers tasks
   for I in Travel_Tasks'Range loop
     Travel_Tasks(I).Init( I, Seeds(I+1), Symbol );   -- `Seeds(I+1)` is ugly :-(
@@ -278,8 +255,7 @@ begin
 
   -- start tarvelers tasks
   for I in Travel_Tasks'Range loop
-    Travel_Tasks(I).Start;
+      Travel_Tasks(I).Start;
   end loop;
 
 end Travelers;
-
