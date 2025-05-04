@@ -4,11 +4,13 @@ with Ada.Numerics.Float_Random; use Ada.Numerics.Float_Random;
 with Random_Seeds; use Random_Seeds;
 with Ada.Real_Time; use Ada.Real_Time;
 
+with Ada.Containers.Vectors;
+
 procedure  Travelers is
 
 -- Travelers moving on the board
 
-  Nr_Of_Travelers : Integer :=26;
+  Nr_Of_Travelers : Integer :=10;
 
   Min_Steps : constant Integer := 10 ;
   Max_Steps : constant Integer := 100 ;
@@ -31,38 +33,12 @@ procedure  Travelers is
 
 -- Types, procedures and functions
 
-  -- Postitions on the board
+  -- traces of travelers
   type Position_Type is record	
     X: Integer range 0 .. Board_Width - 1; 
     Y: Integer range 0 .. Board_Height - 1; 
   end record;
 
-	   
-   protected type Cell_Lock is
-      entry Occupy;
-      procedure Leave;
-   private
-      Occupied : Boolean := False;
-   end Cell_Lock;
-
-   protected body Cell_Lock is
-      entry Occupy when not Occupied is
-      begin
-         Occupied := True;
-      end Occupy;
-
-      procedure Leave is
-      begin
-         Occupied := False;
-      end Leave;
-
-   end Cell_Lock;
-
-   type Board_Type is array (0 .. Board_Width - 1, 0 .. Board_Height - 1) of Cell_Lock;
-   Board : Board_Type;
-
-
-  -- traces of travelers
   type Trace_Type is record 	      
     Time_Stamp:  Duration;	      
     Id : Integer;
@@ -110,6 +86,61 @@ procedure  Travelers is
         end Report;
       end loop;
   end Printer;
+
+  -- Postitions on the board
+
+
+	   
+  task type Board_Cell_Task_Type is
+   
+    entry Occupy;
+    entry Leave;
+    entry Stop;
+
+    entry Add_Wildcard(Symbol : in Character; Lifespan : in Duration);
+  end Board_Cell_Task_Type;
+
+  task body Board_Cell_Task_Type is
+      --  Occupant : Traveler_Type;
+      Occupied : Boolean := False;
+      Running  : Boolean := True;
+
+      Has_Wildcard : Boolean := False;
+      Wildcard_Trace : Traces_Sequence_Type;
+      Wildcard_Symbol : Character;
+      Wildcard_Lifespan : Duration;
+
+  begin
+      loop
+        exit when not Running;
+        select
+           when not Occupied =>
+              accept Occupy do
+                 Occupied := True;
+              end Occupy;
+        or
+           when Occupied =>
+              accept Leave do
+                 Occupied := False;
+              end Leave;
+        or
+            accept Stop do
+                Running := False;
+            end Stop;
+        or
+            accept Add_Wildcard (Symbol : in Character; Lifespan : in Duration) do
+                Has_Wildcard := True;
+                Wildcard_Symbol := Symbol;
+            end Add_Wildcard;
+        end select;
+     end loop;
+  end Board_Cell_Task_Type;
+
+  -- Board as a 2D array of cell tasks
+  type Board_Type is array (0 .. Board_Width - 1, 0 .. Board_Height - 1) of Board_Cell_Task_Type;
+  Board : Board_Type;
+
+
 
   -- travelers
   type Traveler_Type is record
@@ -230,6 +261,95 @@ procedure  Travelers is
 
   end Traveler_Task_Type;
 
+  type Wildcard_Traveler_Type is record
+    Id: Integer;
+    Symbol: Character;
+    Position: Position_Type; 
+    Lifespan : Duration;
+    Start_Time : Time := Clock;
+  end record;
+
+
+  task type Wildcard_Manager is
+    
+  end Wildcard_Manager;
+
+  task body Wildcard_Manager is
+    G : Generator;
+    X : Integer;
+    Y : Integer;
+    Digit : Character;
+    package Wildcard_Vector is new Ada.Containers.Vectors (Index_Type   => Natural, Element_Type => Wildcard_Traveler_Type);
+    use Wildcard_Vector;
+    V : Vector;
+    Wildcard : Wildcard_Traveler_Type;
+    C : Cursor;
+  begin
+    Reset (G);
+    
+    loop
+      for E of V loop
+        if To_Duration(Clock - E.Start_Time) > E.Lifespan then
+          C := V.Find(E);
+          V.Delete(C);
+        end if;
+      end loop;
+
+      --  TODO add all wildcard travelers to a list, in a loop check every one if they should finish, kill the ones that do, check if it's time to spawn a new one
+
+    end loop;
+  end Wildcard_Manager;
+
+  --  task type Wildcard_Traveler is
+  --    entry Start;
+  --    entry Stop;
+  --    entry Evict(X : Integer; Y : Integer);
+    
+  --  end Wildcard_Traveler;
+
+  --  task body Wildcard_Traveler is
+  --    Symbol : Character;
+  --    Lifespan : Duration;
+  --    Position : Position_Type;
+  --    Time_Stamp : Duration;
+  --    Traces: Traces_Sequence_Type;
+  --    Beginning_Time : Time := Clock;
+
+  --    procedure Store_Trace is
+  --      begin  
+  --        Traces.Last := Traces.Last + 1;
+  --        Traces.Trace_Array( Traces.Last ) := ( 
+  --            Time_Stamp => Time_Stamp,
+  --            Id => -1,
+  --            Position => Position,
+  --            Symbol => Symbol
+  --          );
+  --      end Store_Trace;
+  --  begin
+  --    accept Start do
+  --      null;
+  --    end Start;
+
+  --    loop
+  --      select
+  --        accept Evict(X : Integer; Y : Integer) do
+  --        New_Position := Position;
+  --        New_Position.X := X;
+  --        New_Position.y := Y;
+
+  --        Time_Stamp := To_Duration(Clock - Start_Time);
+  --        Store_Trace;
+
+  --        end Evict;
+  --      or
+  --        accept Stop do
+  --          exit;
+  --        end Stop ;
+        
+  --      end select;
+
+  --    end loop;
+  --  end Wildcard_Traveler;
 
 -- local for main task
 
@@ -257,5 +377,12 @@ begin
   for I in Travel_Tasks'Range loop
       Travel_Tasks(I).Start;
   end loop;
+
+  --  for X in 0 .. Board_Width - 1 loop
+  --   for Y in 0 .. Board_Height - 1 loop
+  --      Board(X, Y).Stop;
+  --   end loop;
+  --  end loop;
+
 
 end Travelers;
