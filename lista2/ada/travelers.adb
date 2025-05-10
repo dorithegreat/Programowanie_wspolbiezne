@@ -10,7 +10,7 @@ procedure  Travelers is
 
 -- Travelers moving on the board
 
-  Nr_Of_Travelers : Integer :=10;
+  Nr_Of_Travelers : Integer :=1;
 
   Min_Steps : constant Integer := 10 ;
   Max_Steps : constant Integer := 100 ;
@@ -20,8 +20,8 @@ procedure  Travelers is
 
 -- 2D Board with torus topology
 
-  Board_Width  : constant Integer := 15;
-  Board_Height : constant Integer := 15;
+  Board_Width  : constant Integer := 5;
+  Board_Height : constant Integer := 5;
 
 -- Timing
 
@@ -80,11 +80,11 @@ procedure  Travelers is
   
   task body Printer is 
   begin
-    for I in 1 .. Nr_Of_Travelers loop -- range for TESTS !!!
-        accept Report( Traces : Traces_Sequence_Type ) do
-          Print_Traces( Traces );
-        end Report;
-      end loop;
+    loop
+      accept Report( Traces : Traces_Sequence_Type ) do
+      Print_Traces( Traces );
+      end Report;
+    end loop;
   end Printer;
 
   -- Postitions on the board
@@ -97,47 +97,17 @@ procedure  Travelers is
     entry Leave;
     entry Stop;
 
-    entry Add_Wildcard(Symbol : in Character; Lifespan : in Duration);
+    entry Add_Wildcard(Id : Integer);
+    entry Remove_Wildcard;
+    entry Request_Wildcard_Move(Id : Integer);
+
   end Board_Cell_Task_Type;
 
-  task body Board_Cell_Task_Type is
-      --  Occupant : Traveler_Type;
-      Occupied : Boolean := False;
-      Running  : Boolean := True;
+  type Board_Cell_Access is access all Board_Cell_Task_Type;
 
-      Has_Wildcard : Boolean := False;
-      Wildcard_Trace : Traces_Sequence_Type;
-      Wildcard_Symbol : Character;
-      Wildcard_Lifespan : Duration;
-
-  begin
-      loop
-        exit when not Running;
-        select
-           when not Occupied =>
-              accept Occupy do
-                 Occupied := True;
-              end Occupy;
-        or
-           when Occupied =>
-              accept Leave do
-                 Occupied := False;
-              end Leave;
-        or
-            accept Stop do
-                Running := False;
-            end Stop;
-        or
-            accept Add_Wildcard (Symbol : in Character; Lifespan : in Duration) do
-                Has_Wildcard := True;
-                Wildcard_Symbol := Symbol;
-            end Add_Wildcard;
-        end select;
-     end loop;
-  end Board_Cell_Task_Type;
-
+  
   -- Board as a 2D array of cell tasks
-  type Board_Type is array (0 .. Board_Width - 1, 0 .. Board_Height - 1) of Board_Cell_Task_Type;
+  type Board_Type is array (0 .. Board_Width - 1, 0 .. Board_Height - 1) of Board_Cell_Access;
   Board : Board_Type;
 
 
@@ -267,97 +237,190 @@ procedure  Travelers is
     Position: Position_Type; 
     Lifespan : Duration;
     Start_Time : Time := Clock;
+    Traces: Traces_Sequence_Type; 
+    Finished : Boolean := False;
   end record;
 
+  type Wildcard_Access is access all Wildcard_Traveler_Type;
 
   task type Wildcard_Manager is
-    
+    entry Evict(Id : Integer);
+    entry Confirm;
   end Wildcard_Manager;
 
   task body Wildcard_Manager is
     G : Generator;
-    X : Integer;
-    Y : Integer;
+    --  X : Integer;
+    --  Y : Integer;
     Digit : Character;
-    package Wildcard_Vector is new Ada.Containers.Vectors (Index_Type   => Natural, Element_Type => Wildcard_Traveler_Type);
+    package Wildcard_Vector is new Ada.Containers.Vectors (Index_Type   => Natural, Element_Type => Wildcard_Access);
     use Wildcard_Vector;
     V : Vector;
-    Wildcard : Wildcard_Traveler_Type;
+    --  Wildcard : Wildcard_Traveler_Type;
     C : Cursor;
+    Id_Counter : Integer := Nr_Of_Travelers;
+
+    Last_Time : Time := Clock;
+
+    procedure Store_Trace(Wildcard : Wildcard_Access) is
+    begin  
+      Wildcard.Traces.Last := Wildcard.Traces.Last + 1;
+      Wildcard.Traces.Trace_Array( Wildcard.Traces.Last ) := ( 
+          Time_Stamp => To_Duration (Clock - Start_Time),
+          Id => Wildcard.Id,
+          Position => Wildcard.Position,
+          Symbol => Wildcard.Symbol
+        );
+    end Store_Trace;
+
+
   begin
     Reset (G);
-    
     loop
+          -- Operate on wildcards after X seconds
       for E of V loop
-        if To_Duration(Clock - E.Start_Time) > E.Lifespan then
-          C := V.Find(E);
-          V.Delete(C);
-        end if;
+         if not E.Finished and then To_Duration(Clock - E.Start_Time) >= 0.2 then
+            -- Example operation: change symbol or mark as operated
+            E.Symbol := '?';
+            E.Finished := True;
+            Store_Trace (E);
+            Printer.Report(E.Traces);
+            --  Put_Line("Operated on wildcard " & Integer'Image(E.Id));
+         end if;
       end loop;
 
-      --  TODO add all wildcard travelers to a list, in a loop check every one if they should finish, kill the ones that do, check if it's time to spawn a new one
+      -- Spawn new wildcard every Y seconds
+      if To_Duration(Clock - Last_Time) >= 0.5 then
+         declare
+            Wildcard : constant Wildcard_Access := new Wildcard_Traveler_Type;
+            X      : Integer := Integer(Float'Floor(Float(Board_Width) * Random(G)));
+            Y      : Integer := Integer(Float'Floor(Float(Board_Height) * Random(G)));
+            Digit  : Character := Character'Val(Character'Pos('0') + Integer(Float'Floor(10.0 * Random(G))));
+         begin
+            Wildcard.Id := Id_Counter;
+            Id_Counter := Id_Counter + 1;
+            Wildcard.Start_Time := Clock;
+            Wildcard.Lifespan := 0.5;  -- or set dynamically
+            Wildcard.Position.X := X;
+            Wildcard.Position.Y := Y;
+            Wildcard.Symbol := Digit;
+            Wildcard.Finished := False;
+
+            --  Put_Line (Duration'Image(To_Duration(Wildcard.Start_Time - Start_Time)));
+            Store_Trace (Wildcard);
+            V.Append(Wildcard);
+            --  Put_Line("Spawned new wildcard " & Integer'Image(Wildcard.Id));
+         end;
+         Last_Time := Clock;
+      end if;
+  
+      
+      select
+        accept Evict(Id : Integer) do
+          for E of V loop
+            if E.Id = Id then
+                --  Old_Position : Position_Type := Traveler.Position;
+                --     New_Position : Position_Type := Old_Position;
+                --     N : Integer := Integer( Float'Floor(4.0 * Random(G)) );
+                --  begin
+                --     case N is
+                --        when 0 => New_Position.Y := (Old_Position.Y + Board_Height - 1) mod Board_Height;
+                --        when 1 => New_Position.Y := (Old_Position.Y + 1) mod Board_Height;
+                --        when 2 => New_Position.X := (Old_Position.X + Board_Width - 1) mod Board_Width;
+                --        when 3 => New_Position.X := (Old_Position.X + 1) mod Board_Width;
+                --        when others =>  return False;
+                --     end case;
+
+              declare
+                Old_Position : Position_Type := E.Position;
+                New_Position : Position_Type := Old_Position;
+                N : Integer := Integer( Float'Floor(4.0 * Random(G)) );
+              begin
+                case N is
+                  when 0 => New_Position.Y := (Old_Position.Y + Board_Height - 1) mod Board_Height;
+                  when 1 => New_Position.Y := (Old_Position.Y + 1) mod Board_Height;
+                  when 2 => New_Position.X := (Old_Position.X + Board_Width - 1) mod Board_Width;
+                  when 3 => New_Position.X := (Old_Position.X + 1) mod Board_Width;
+                  when others =>  null;
+                end case;
+                
+                Board(New_Position.X, New_Position.Y).Add_Wildcard (E.Id);
+                E.Position := New_Position;
+                Store_Trace (E);
+              end;
+              --  TODO move to a neigboring square
+              requeue Board(E.Position.X, E.Position.Y).all.Remove_Wildcard;
+            end if;
+          end loop;
+        end Evict;
+      or
+        accept Confirm;
+      or
+        delay 0.0;
+      end select;
 
     end loop;
   end Wildcard_Manager;
 
-  --  task type Wildcard_Traveler is
-  --    entry Start;
-  --    entry Stop;
-  --    entry Evict(X : Integer; Y : Integer);
-    
-  --  end Wildcard_Traveler;
-
-  --  task body Wildcard_Traveler is
-  --    Symbol : Character;
-  --    Lifespan : Duration;
-  --    Position : Position_Type;
-  --    Time_Stamp : Duration;
-  --    Traces: Traces_Sequence_Type;
-  --    Beginning_Time : Time := Clock;
-
-  --    procedure Store_Trace is
-  --      begin  
-  --        Traces.Last := Traces.Last + 1;
-  --        Traces.Trace_Array( Traces.Last ) := ( 
-  --            Time_Stamp => Time_Stamp,
-  --            Id => -1,
-  --            Position => Position,
-  --            Symbol => Symbol
-  --          );
-  --      end Store_Trace;
-  --  begin
-  --    accept Start do
-  --      null;
-  --    end Start;
-
-  --    loop
-  --      select
-  --        accept Evict(X : Integer; Y : Integer) do
-  --        New_Position := Position;
-  --        New_Position.X := X;
-  --        New_Position.y := Y;
-
-  --        Time_Stamp := To_Duration(Clock - Start_Time);
-  --        Store_Trace;
-
-  --        end Evict;
-  --      or
-  --        accept Stop do
-  --          exit;
-  --        end Stop ;
-        
-  --      end select;
-
-  --    end loop;
-  --  end Wildcard_Traveler;
-
--- local for main task
 
   Travel_Tasks: array (0 .. Nr_Of_Travelers-1) of Traveler_Task_Type; -- for tests
   Symbol : Character := 'A';
 
+  Wildcard_Manager_Task : Wildcard_Manager;
+
+  task body Board_Cell_Task_Type is
+      --  Occupant : Traveler_Type;
+      Occupied : Boolean := False;
+      Running  : Boolean := True;
+
+      Has_Wildcard : Boolean := False;
+      Wildcard_Trace : Traces_Sequence_Type;
+      Wildcard_Id : Integer := -1;
+
+  begin
+      loop
+        exit when not Running;
+        select
+           when not Occupied =>
+              accept Occupy do
+                if Has_Wildcard then
+                  Wildcard_Manager_Task.Evict(Wildcard_Id);
+                  
+                end if;
+                 Occupied := True;
+              end Occupy;
+        or
+           when Occupied =>
+              accept Leave do
+                 Occupied := False;
+              end Leave;
+        or  
+              accept Stop do
+                  Running := False;
+              end Stop;
+        or
+          when not Occupied and not Has_Wildcard =>
+            accept Add_Wildcard (Id : Integer) do
+                Has_Wildcard := True;
+                Wildcard_Id := Id;
+            end Add_Wildcard;
+        or
+          when Has_Wildcard =>
+            accept Remove_Wildcard do
+              Has_Wildcard := False;
+              Wildcard_Id := -1;
+            end Remove_Wildcard;
+        end select;
+     end loop;
+  end Board_Cell_Task_Type;
+
+
 begin 
-   --Get(Nr_Of_Travelers);
+   for X in 0 .. Board_Width - 1 loop
+    for Y in 0 .. Board_Height - 1 loop
+        Board(X, Y) := new Board_Cell_Task_Type;
+    end loop;
+  end loop;
   
   -- Prit the line with the parameters needed for display script:
   Put_Line(

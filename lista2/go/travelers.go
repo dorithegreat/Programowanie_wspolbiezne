@@ -88,6 +88,57 @@ type Traveler_Type struct {
 	Position Position_Type
 }
 
+type Board_Cell_Type struct {
+	Occupied bool
+	Wildcard int
+
+	Occupy chan struct{}
+	Leave  chan struct{}
+	Stop   chan struct{}
+
+	Add_Wildcard    chan int
+	Remove_Wildcard chan struct{}
+	// TODO: figure out the rest of the channels
+}
+
+func Board_Cell(cell Board_Cell_Type) {
+	// var Occupied bool = false
+	// var Wildcard int
+	var Has_Wildcard = false
+
+	for {
+		if cell.Occupied == true {
+			select {
+			case <-cell.Leave:
+				cell.Occupied = false
+
+			}
+
+		}
+
+		if cell.Occupied == false {
+			select {
+			case <-cell.Leave:
+				cell.Occupied = true
+
+			case cell.Wildcard = <-cell.Add_Wildcard:
+				if !Has_Wildcard {
+					Has_Wildcard = false
+				}
+
+			}
+
+		}
+
+		select {
+		case <-cell.Remove_Wildcard:
+			cell.Wildcard = -1
+			Has_Wildcard = false
+		}
+
+	}
+}
+
 // empty struct for passing around through channels
 type T = struct{}
 
@@ -132,11 +183,11 @@ func Traveler_Task_Type(Id int, Seed int, Symbol rune,
 		}
 
 		select {
-		case <-Board[New_Position.X][New_Position.Y]:
+		case Board[New_Position.X][New_Position.Y].Occupy <- struct{}{}:
 			Traveler.Position = New_Position
 			Time_Stamp = time.Since(Start_Time)
 			Store_Trace()
-			Board[Old_Position.X][Old_Position.Y] <- struct{}{}
+			Board[Old_Position.X][Old_Position.Y].Leave <- struct{}{}
 
 		case <-time.After(Max_Delay):
 			Traveler.Symbol = unicode.ToLower(Traveler.Symbol)
@@ -156,8 +207,8 @@ func Traveler_Task_Type(Id int, Seed int, Symbol rune,
 	for {
 		Traveler.Position.X = rand.Intn(Board_Width)
 		Traveler.Position.Y = rand.Intn(Board_Height)
-		if len(Board[Traveler.Position.X][Traveler.Position.Y]) == 1 {
-			<-Board[Traveler.Position.X][Traveler.Position.Y]
+		if Board[Traveler.Position.X][Traveler.Position.Y].Occupied {
+			Board[Traveler.Position.X][Traveler.Position.Y].Occupy <- struct{}{}
 			break
 		}
 
@@ -187,13 +238,86 @@ func Traveler_Task_Type(Id int, Seed int, Symbol rune,
 
 var rSymbol rune = 'A'
 var wg sync.WaitGroup
-var Board [Board_Width][Board_Height]chan struct{}
+var Board [Board_Width][Board_Height]Board_Cell_Type
+
+type Wildcard_Traveler_Type struct {
+	Id         int
+	Symbol     rune
+	Position   Position_Type
+	Lifestpan  time.Duration
+	Start_Time time.Time
+	Traces     Traces_Sequence_Type
+	Finished   bool
+}
+
+func Wildcard_Manager(Stop chan struct{}, printer chan<- Traces_Sequence_Type) {
+	Wildcards := []Wildcard_Traveler_Type{}
+	last_time := time.Now()
+	id_counter := Nr_Of_Travelers
+
+	Store_Trace := func(wildcard Wildcard_Traveler_Type) {
+		wildcard.Traces.Trace_Array[wildcard.Traces.Last].Time_Stamp = time.Now().Sub(wildcard.Start_Time)
+		wildcard.Traces.Trace_Array[wildcard.Traces.Last].Id = wildcard.Id
+		wildcard.Traces.Trace_Array[wildcard.Traces.Last].Position = wildcard.Position
+		wildcard.Traces.Trace_Array[wildcard.Traces.Last].Symbol = wildcard.Symbol
+		wildcard.Traces.Last = wildcard.Traces.Last + 1
+		// println(Traces.Trace_Array[Traces.Last].Symbol)
+	}
+
+	for {
+		select {
+		case <-Stop:
+			return
+		default:
+
+		}
+
+		for i, v := range Wildcards {
+			if !v.Finished && time.Now().Sub(v.Start_Time) > 200*time.Millisecond {
+				v.Symbol = '.'
+				v.Finished = true
+				Store_Trace(v)
+				printer <- v.Traces
+
+				// v is a copy so we need to update the slice
+				Wildcards[i] = v
+			}
+
+		}
+
+		if time.Now().Sub(last_time) > 500*time.Millisecond {
+			var Wildcard Wildcard_Traveler_Type
+			X := rand.Intn(Board_Width)
+			Y := rand.Intn(Board_Height)
+			Digit := '0' + rand.Intn(10)
+
+			Wildcard.Id = id_counter
+			id_counter += 1
+
+			Wildcard.Start_Time = time.Now()
+			Wildcard.Position.X = X
+			Wildcard.Position.Y = Y
+			Wildcard.Symbol = rune(Digit)
+			Wildcard.Finished = false
+
+			Store_Trace(Wildcard)
+			Wildcards = append(Wildcards, Wildcard)
+			last_time = time.Now()
+
+		}
+
+		select {}
+
+	}
+}
 
 func main() {
 	for i := 0; i < Board_Width; i++ {
 		for j := 0; j < Board_Height; j++ {
-			Board[i][j] = make(chan struct{}, 1)
-			Board[i][j] <- struct{}{}
+			Board[i][j] = Board_Cell_Type{}
+
+			go Board_Cell(Board[i][j])
+			// Board[i][j] <- struct{}{}
 		}
 	}
 
