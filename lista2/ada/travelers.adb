@@ -281,6 +281,8 @@ procedure  Travelers is
       for E of V loop
          if not E.Finished and then To_Duration(Clock - E.Start_Time) >= 0.2 then
             -- Example operation: change symbol or mark as operated
+            --  E.Position.X := Board_Width;
+            --  E.Position.Y := Board_Height;
             E.Symbol := '?';
             E.Finished := True;
             Store_Trace (E);

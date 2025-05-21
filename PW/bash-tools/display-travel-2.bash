@@ -18,6 +18,16 @@ then
   exit -1;
 fi;
 
+
+echo "LABELS: "
+
+read -a LABELS < <(echo ${ARGS[4]} | tr ';' ' ');
+
+echo ${LABELS[@]}
+
+echo -n $'\nPress "ENTER"'
+read;
+
 declare -i TRAVELERS=${ARGS[1]:? 'number of travelers missing'}
 declare -i WIDTH=${ARGS[2]:? 'display width missing'}
 declare -i HEIGHT=${ARGS[3]:? 'display height missing'}
@@ -56,7 +66,7 @@ function line_y {
     do
       echo -n '.'"${SYMBOL_ID[${DISPLAY[$(d_idx $X $Y)]}]}";
     done;
-    echo
+    echo ' <- '${LABELS[Y]}
 }
 
 declare -a LINE_Y;

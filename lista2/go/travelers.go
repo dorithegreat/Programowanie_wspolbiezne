@@ -22,6 +22,9 @@ const Board_Height int = 15
 var Start_Time time.Time = time.Now()
 var Seeds [Nr_Of_Travelers]int
 
+var evict chan int = make(chan int)
+var evict_confirmation chan struct{} = make(chan struct{})
+
 type Position_Type struct {
 	X int
 	Y int
@@ -75,10 +78,17 @@ func Print_Traces(Traces Traces_Sequence_Type) {
 }
 
 // task Printer
-func Printer(Report chan Traces_Sequence_Type) {
-	defer wg.Done()
-	for i := 0; i < Nr_Of_Travelers; i++ {
-		Print_Traces(<-Report)
+func Printer(Report chan Traces_Sequence_Type, Stop chan struct{}) {
+	// defer wg.Done()
+	for {
+		select {
+		case report := <-Report:
+			Print_Traces(report)
+
+		case <-Stop:
+			return
+		}
+		// Print_Traces(<-Report)
 	}
 }
 
@@ -101,41 +111,40 @@ type Board_Cell_Type struct {
 	// TODO: figure out the rest of the channels
 }
 
-func Board_Cell(cell Board_Cell_Type) {
-	// var Occupied bool = false
-	// var Wildcard int
+func Board_Cell(cell *Board_Cell_Type) {
 	var Has_Wildcard = false
+	cell.Occupied = false
 
 	for {
-		if cell.Occupied == true {
+		if cell.Occupied {
 			select {
 			case <-cell.Leave:
 				cell.Occupied = false
-
+			default:
 			}
-
 		}
 
-		if cell.Occupied == false {
+		if !cell.Occupied {
 			select {
-			case <-cell.Leave:
+			case <-cell.Occupy:
 				cell.Occupied = true
-
 			case cell.Wildcard = <-cell.Add_Wildcard:
 				if !Has_Wildcard {
 					Has_Wildcard = false
 				}
-
+			default:
 			}
-
 		}
 
 		select {
+		case <-cell.Stop:
+			return
+
 		case <-cell.Remove_Wildcard:
 			cell.Wildcard = -1
 			Has_Wildcard = false
+		default:
 		}
-
 	}
 }
 
@@ -188,15 +197,17 @@ func Traveler_Task_Type(Id int, Seed int, Symbol rune,
 			Time_Stamp = time.Since(Start_Time)
 			Store_Trace()
 			Board[Old_Position.X][Old_Position.Y].Leave <- struct{}{}
+			// fmt.Println("moved")
 
 		case <-time.After(Max_Delay):
 			Traveler.Symbol = unicode.ToLower(Traveler.Symbol)
 			Done = true
+			// fmt.Println("timeout")
 		}
 
 	}
 	// fmt.Printf("Created a traveler with letter %c\n", Symbol)
-	// defer println(Traveler.Symbol)
+	defer println(Id)
 	defer wg.Done()
 
 	Traveler.Id = Id
@@ -205,9 +216,10 @@ func Traveler_Task_Type(Id int, Seed int, Symbol rune,
 	Traces.Last = 0
 
 	for {
+		// fmt.Println("A")
 		Traveler.Position.X = rand.Intn(Board_Width)
 		Traveler.Position.Y = rand.Intn(Board_Height)
-		if Board[Traveler.Position.X][Traveler.Position.Y].Occupied {
+		if !Board[Traveler.Position.X][Traveler.Position.Y].Occupied {
 			Board[Traveler.Position.X][Traveler.Position.Y].Occupy <- struct{}{}
 			break
 		}
@@ -233,6 +245,7 @@ func Traveler_Task_Type(Id int, Seed int, Symbol rune,
 		}
 
 	}
+	// fmt.Println("Ddne")
 	printer <- Traces
 }
 
@@ -251,12 +264,12 @@ type Wildcard_Traveler_Type struct {
 }
 
 func Wildcard_Manager(Stop chan struct{}, printer chan<- Traces_Sequence_Type) {
-	Wildcards := []Wildcard_Traveler_Type{}
+	Wildcards := []*Wildcard_Traveler_Type{}
 	last_time := time.Now()
 	id_counter := Nr_Of_Travelers
 
-	Store_Trace := func(wildcard Wildcard_Traveler_Type) {
-		wildcard.Traces.Trace_Array[wildcard.Traces.Last].Time_Stamp = time.Now().Sub(wildcard.Start_Time)
+	Store_Trace := func(wildcard *Wildcard_Traveler_Type) {
+		wildcard.Traces.Trace_Array[wildcard.Traces.Last].Time_Stamp = time.Now().Sub(Start_Time)
 		wildcard.Traces.Trace_Array[wildcard.Traces.Last].Id = wildcard.Id
 		wildcard.Traces.Trace_Array[wildcard.Traces.Last].Position = wildcard.Position
 		wildcard.Traces.Trace_Array[wildcard.Traces.Last].Symbol = wildcard.Symbol
@@ -267,8 +280,41 @@ func Wildcard_Manager(Stop chan struct{}, printer chan<- Traces_Sequence_Type) {
 	for {
 		select {
 		case <-Stop:
+			fmt.Println("stopped")
 			return
-		default:
+
+		case id := <-evict:
+			fmt.Println("received evict")
+			for i, v := range Wildcards {
+				if v.Id == id {
+					var n int
+					n = rand.Intn(4)
+					var New_Position Position_Type = v.Position
+					var Old_Position Position_Type = v.Position
+
+					switch n {
+					case 0:
+						Move_Up(&New_Position)
+					case 1:
+						Move_Down(&New_Position)
+					case 2:
+						Move_Left(&New_Position)
+					case 3:
+						Move_Right(&New_Position)
+					default:
+						fmt.Printf("??????? %d\n", n)
+					}
+
+					Board[New_Position.X][New_Position.Y].Add_Wildcard <- v.Id
+					<-evict_confirmation
+					v.Position = New_Position
+					Store_Trace(v)
+					Wildcards[i] = v
+					Board[Old_Position.X][Old_Position.Y].Remove_Wildcard <- struct{}{}
+				}
+			}
+		case <-time.After(50 * time.Millisecond):
+			// fmt.Println("timeout")
 
 		}
 
@@ -285,7 +331,11 @@ func Wildcard_Manager(Stop chan struct{}, printer chan<- Traces_Sequence_Type) {
 
 		}
 
+		// fmt.Println(time.Now().Sub(last_time))
+
 		if time.Now().Sub(last_time) > 500*time.Millisecond {
+			// fmt.Println("created a wildcard")
+
 			var Wildcard Wildcard_Traveler_Type
 			X := rand.Intn(Board_Width)
 			Y := rand.Intn(Board_Height)
@@ -300,13 +350,13 @@ func Wildcard_Manager(Stop chan struct{}, printer chan<- Traces_Sequence_Type) {
 			Wildcard.Symbol = rune(Digit)
 			Wildcard.Finished = false
 
-			Store_Trace(Wildcard)
-			Wildcards = append(Wildcards, Wildcard)
+			Store_Trace(&Wildcard)
+			Wildcards = append(Wildcards, &Wildcard)
 			last_time = time.Now()
 
 		}
 
-		select {}
+		// select {}
 
 	}
 }
@@ -314,12 +364,26 @@ func Wildcard_Manager(Stop chan struct{}, printer chan<- Traces_Sequence_Type) {
 func main() {
 	for i := 0; i < Board_Width; i++ {
 		for j := 0; j < Board_Height; j++ {
-			Board[i][j] = Board_Cell_Type{}
+			Board[i][j] = Board_Cell_Type{
+				Occupy:          make(chan struct{}),
+				Leave:           make(chan struct{}),
+				Stop:            make(chan struct{}),
+				Add_Wildcard:    make(chan int),
+				Remove_Wildcard: make(chan struct{}),
+			}
 
-			go Board_Cell(Board[i][j])
+			go Board_Cell(&Board[i][j])
 			// Board[i][j] <- struct{}{}
 		}
 	}
+
+	p := make(chan Traces_Sequence_Type)
+	s := make(chan struct{})
+	go Printer(p, s)
+
+	// evict := make(chan int)
+	Stop := make(chan struct{})
+	go Wildcard_Manager(Stop, p)
 
 	for i := 0; i < Nr_Of_Travelers; i++ {
 		Seeds[i] = rand.Intn(1000000)
@@ -327,11 +391,8 @@ func main() {
 
 	fmt.Printf("-1 %d %d %d\n", Nr_Of_Travelers, Board_Width, Board_Height)
 
-	p := make(chan Traces_Sequence_Type)
-	go Printer(p)
-
 	ready := make(chan T)
-	wg.Add(Nr_Of_Travelers + 1)
+	wg.Add(Nr_Of_Travelers)
 
 	// fmt.Println(Nr_Of_Travelers)
 	for i := 0; i < Nr_Of_Travelers; i++ {
@@ -341,4 +402,18 @@ func main() {
 	close(ready)
 
 	wg.Wait()
+
+	fmt.Println("stopped waiting")
+
+	// Stop <- struct{}{}
+	close(Stop)
+	for i := 0; i < Board_Width; i++ {
+		for j := 0; j < Board_Height; j++ {
+			Board[i][j].Stop <- struct{}{}
+		}
+	}
+	// fmt.Println("stopped board")
+
+	s <- struct{}{}
+
 }
