@@ -1,0 +1,2088 @@
+process  9 locking
+process  9 locked
+process  12 locking
+process  8 locking
+process  4 locking
+process  1 locking
+process  2 locking
+process  14 locking
+process  11 locking
+process  13 locking
+process  10 locking
+process  7 locking
+process  5 locking
+process  6 locking
+process  3 locking
+process  0 locking
+process  12 locked
+process  9 unlocked
+process  9 locking
+process  12 unlocked
+process  8 locked
+process  12 locking
+process  8 unlocked
+process  4 locked
+process  4 unlocked
+process  1 locked
+process  8 locking
+process  4 locking
+process  1 unlocked
+process  2 locked
+process  2 unlocked
+process  14 locked
+process  14 unlocked
+process  11 locked
+process  2 locking
+process  1 locking
+process  11 unlocked
+process  13 locked
+process  14 locking
+process  13 unlocked
+process  10 locked
+process  11 locking
+process  10 unlocked
+process  7 locked
+process  13 locking
+process  10 locking
+process  7 unlocked
+process  5 locked
+process  7 locking
+process  5 unlocked
+process  6 locked
+process  6 unlocked
+process  3 locked
+process  5 locking
+process  3 unlocked
+process  0 locked
+process  0 unlocked
+process  9 locked
+process  6 locking
+process  0 locking
+process  3 locking
+process  9 unlocked
+process  12 locked
+process  9 locking
+process  12 unlocked
+process  8 locked
+process  12 locking
+process  8 unlocked
+process  4 locked
+process  8 locking
+process  4 unlocked
+process  2 locked
+process  2 unlocked
+process  1 locked
+process  4 locking
+process  1 unlocked
+process  14 locked
+process  2 locking
+process  14 unlocked
+process  11 locked
+process  1 locking
+process  11 unlocked
+process  13 locked
+process  11 locking
+process  14 locking
+process  13 unlocked
+process  10 locked
+process  13 locking
+process  10 unlocked
+process  7 locked
+process  10 locking
+process  7 unlocked
+process  5 locked
+process  5 unlocked
+process  6 locked
+process  7 locking
+process  5 locking
+process  6 unlocked
+process  0 locked
+process  0 unlocked
+process  3 locked
+process  3 unlocked
+process  9 locked
+process  6 locking
+process  9 unlocked
+process  12 locked
+process  0 locking
+process  3 locking
+process  9 locking
+process  12 unlocked
+process  8 locked
+process  12 locking
+process  8 unlocked
+process  4 locked
+process  8 locking
+process  4 unlocked
+process  2 locked
+process  4 locking
+process  2 unlocked
+process  1 locked
+process  1 unlocked
+process  11 locked
+process  2 locking
+process  1 locking
+process  11 unlocked
+process  14 locked
+process  11 locking
+process  14 unlocked
+process  13 locked
+process  13 unlocked
+process  10 locked
+process  14 locking
+process  10 unlocked
+process  7 locked
+process  13 locking
+process  7 unlocked
+process  5 locked
+process  10 locking
+process  5 unlocked
+process  6 locked
+process  5 locking
+process  7 locking
+process  6 unlocked
+process  0 locked
+process  6 locking
+process  0 unlocked
+process  3 locked
+process  3 unlocked
+process  9 locked
+process  0 locking
+process  3 locking
+process  9 unlocked
+process  12 locked
+process  9 locking
+process  12 unlocked
+process  8 locked
+process  8 unlocked
+process  4 locked
+process  12 locking
+process  8 locking
+process  4 unlocked
+process  2 locked
+process  4 locking
+process  2 unlocked
+process  1 locked
+process  1 unlocked
+process  11 locked
+process  2 locking
+process  1 locking
+process  11 unlocked
+process  14 locked
+process  11 locking
+process  14 unlocked
+process  13 locked
+process  13 unlocked
+process  10 locked
+process  14 locking
+process  13 locking
+process  10 unlocked
+process  5 locked
+process  7 locked
+process  5 unlocked
+process  7 unlocked
+process  6 locked
+process  10 locking
+process  5 locking
+process  6 unlocked
+process  0 locked
+process  7 locking
+process  6 locking
+process  0 unlocked
+process  3 locked
+process  0 locking
+process  3 unlocked
+process  9 locked
+process  3 locking
+process  9 unlocked
+process  12 locked
+process  9 locking
+process  8 locked
+process  12 unlocked
+process  8 unlocked
+process  4 locked
+process  12 locking
+process  4 unlocked
+process  2 locked
+process  8 locking
+process  2 unlocked
+process  1 locked
+process  1 unlocked
+process  11 locked
+process  4 locking
+process  2 locking
+process  1 locking
+process  11 unlocked
+process  14 locked
+process  14 unlocked
+process  13 locked
+process  11 locking
+process  13 unlocked
+process  10 locked
+process  10 unlocked
+process  5 locked
+process  14 locking
+process  13 locking
+process  5 unlocked
+process  7 locked
+process  7 unlocked
+process  6 locked
+process  5 locking
+process  10 locking
+process  7 locking
+process  6 unlocked
+process  0 locked
+process  6 locking
+process  0 unlocked
+process  3 locked
+process  0 locking
+process  3 unlocked
+process  9 locked
+process  3 locking
+process  9 unlocked
+process  12 locked
+process  12 unlocked
+process  9 locking
+process  8 locked
+process  12 locking
+process  8 unlocked
+process  4 locked
+process  8 locking
+process  4 unlocked
+process  2 locked
+process  4 locking
+process  2 unlocked
+process  1 locked
+process  2 locking
+process  1 unlocked
+process  11 locked
+process  1 locking
+process  11 unlocked
+process  14 locked
+process  11 locking
+process  14 unlocked
+process  13 locked
+process  14 locking
+process  13 unlocked
+process  5 locked
+process  5 unlocked
+process  10 locked
+process  5 locking
+process  13 locking
+process  10 unlocked
+process  7 locked
+process  7 unlocked
+process  6 locked
+process  10 locking
+process  7 locking
+process  6 unlocked
+process  0 locked
+process  6 locking
+process  0 unlocked
+process  3 locked
+process  3 unlocked
+process  9 locked
+process  9 unlocked
+process  12 locked
+process  0 locking
+process  3 locking
+process  12 unlocked
+process  8 locked
+process  9 locking
+process  8 unlocked
+process  4 locked
+process  12 locking
+process  4 unlocked
+process  2 locked
+process  4 locking
+process  2 unlocked
+process  1 locked
+process  8 locking
+process  2 locking
+process  1 unlocked
+process  11 locked
+process  11 unlocked
+process  14 locked
+process  1 locking
+process  14 unlocked
+process  5 locked
+process  5 unlocked
+process  13 locked
+process  14 locking
+process  11 locking
+process  5 locking
+process  13 unlocked
+process  10 locked
+process  13 locking
+process  10 unlocked
+process  7 locked
+process  10 locking
+process  7 unlocked
+process  6 locked
+process  6 unlocked
+process  0 locked
+process  7 locking
+process  0 unlocked
+process  3 locked
+process  6 locking
+process  3 unlocked
+process  9 locked
+process  0 locking
+process  9 unlocked
+process  12 locked
+process  3 locking
+process  9 locking
+process  12 unlocked
+process  4 locked
+process  12 locking
+process  4 unlocked
+process  8 locked
+process  8 unlocked
+process  2 locked
+process  4 locking
+process  2 unlocked
+process  1 locked
+process  8 locking
+process  2 locking
+process  1 unlocked
+process  14 locked
+process  14 unlocked
+process  11 locked
+process  11 unlocked
+process  5 locked
+process  14 locking
+process  11 locking
+process  1 locking
+process  5 unlocked
+process  13 locked
+process  5 locking
+process  13 unlocked
+process  10 locked
+process  13 locking
+process  7 locked
+process  10 unlocked
+process  10 locking
+process  7 unlocked
+process  6 locked
+process  7 locking
+process  6 unlocked
+process  0 locked
+process  6 locking
+process  3 locked
+process  0 unlocked
+process  3 unlocked
+process  9 locked
+process  0 locking
+process  9 unlocked
+process  12 locked
+process  3 locking
+process  12 unlocked
+process  4 locked
+process  4 unlocked
+process  8 locked
+process  9 locking
+process  8 unlocked
+process  2 locked
+process  12 locking
+process  2 unlocked
+process  14 locked
+process  4 locking
+process  8 locking
+process  2 locking
+process  14 unlocked
+process  11 locked
+process  11 unlocked
+process  1 locked
+process  14 locking
+process  1 unlocked
+process  5 locked
+process  11 locking
+process  5 unlocked
+process  13 locked
+process  1 locking
+process  5 locking
+process  13 unlocked
+process  10 locked
+process  10 unlocked
+process  7 locked
+process  13 locking
+process  7 unlocked
+process  6 locked
+process  10 locking
+process  7 locking
+process  6 unlocked
+process  0 locked
+process  0 unlocked
+process  3 locked
+process  3 unlocked
+process  9 locked
+process  0 locking
+process  6 locking
+process  9 unlocked
+process  12 locked
+process  3 locking
+process  12 unlocked
+process  4 locked
+process  9 locking
+process  12 locking
+process  4 unlocked
+process  8 locked
+process  2 locked
+process  8 unlocked
+process  4 locking
+process  2 unlocked
+process  14 locked
+process  8 locking
+process  2 locking
+process  14 unlocked
+process  11 locked
+process  11 unlocked
+process  1 locked
+process  14 locking
+process  1 unlocked
+process  5 locked
+process  1 locking
+process  11 locking
+process  5 unlocked
+process  13 locked
+process  13 unlocked
+process  10 locked
+process  13 locking
+process  5 locking
+process  10 unlocked
+process  7 locked
+process  7 unlocked
+process  0 locked
+process  10 locking
+process  7 locking
+process  0 unlocked
+process  6 locked
+process  0 locking
+process  6 unlocked
+process  3 locked
+process  6 locking
+process  3 unlocked
+process  9 locked
+process  9 unlocked
+process  12 locked
+process  3 locking
+process  9 locking
+process  4 locked
+process  12 unlocked
+process  12 locking
+process  4 unlocked
+process  8 locked
+process  4 locking
+process  8 unlocked
+process  2 locked
+process  2 unlocked
+process  14 locked
+process  2 locking
+process  8 locking
+process  14 unlocked
+process  1 locked
+process  14 locking
+process  1 unlocked
+process  11 locked
+process  1 locking
+process  11 unlocked
+process  13 locked
+process  11 locking
+process  13 unlocked
+process  5 locked
+process  13 locking
+process  5 unlocked
+process  10 locked
+process  5 locking
+process  10 unlocked
+process  7 locked
+process  7 unlocked
+process  0 locked
+process  10 locking
+process  7 locking
+process  6 locked
+process  0 unlocked
+process  0 locking
+process  6 unlocked
+process  3 locked
+process  6 locking
+process  3 unlocked
+process  9 locked
+process  9 unlocked
+process  12 locked
+process  3 locking
+process  9 locking
+process  12 unlocked
+process  4 locked
+process  12 locking
+process  4 unlocked
+process  2 locked
+process  2 unlocked
+process  8 locked
+process  4 locking
+process  2 locking
+process  8 unlocked
+process  14 locked
+process  8 locking
+process  14 unlocked
+process  1 locked
+process  14 locking
+process  1 unlocked
+process  11 locked
+process  1 locking
+process  11 unlocked
+process  13 locked
+process  13 unlocked
+process  5 locked
+process  11 locking
+process  13 locking
+process  5 unlocked
+process  10 locked
+process  5 locking
+process  10 unlocked
+process  7 locked
+process  7 unlocked
+process  0 locked
+process  7 locking
+process  0 unlocked
+process  6 locked
+process  10 locking
+process  0 locking
+process  6 unlocked
+process  3 locked
+process  3 unlocked
+process  9 locked
+process  9 unlocked
+process  6 locking
+process  12 locked
+process  3 locking
+process  9 locking
+process  12 unlocked
+process  4 locked
+process  12 locking
+process  4 unlocked
+process  2 locked
+process  2 unlocked
+process  8 locked
+process  4 locking
+process  2 locking
+process  8 unlocked
+process  14 locked
+ 0.002178567  8  8  0  I
+ 0.021370226  8  8  1  I
+ 0.089199605  8  8  2  I
+ 0.134382716  8  8  3  I
+ 0.134472854  8  8  0  I
+ 0.163380619  8  8  1  I
+ 0.470199924  8  8  2  I
+ 0.501594424  8  8  3  I
+ 0.501620231  8  8  0  I
+ 0.531749451  8  8  1  I
+ 0.871185881  8  8  2  I
+ 0.893563277  8  8  3  I
+ 0.893594727  8  8  0  I
+ 0.905194972  8  8  1  I
+ 1.380766838  8  8  2  I
+ 1.398720863  8  8  3  I
+ 1.398749623  8  8  0  I
+ 1.419533300  8  8  1  I
+ 1.821435495  8  8  2  I
+ 1.841141183  8  8  3  I
+ 1.841174886  8  8  0  I
+ 1.878782678  8  8  1  I
+ 2.231543272  8  8  2  I
+ 2.274639320  8  8  3  I
+ 2.274660590  8  8  0  I
+ 2.296132175  8  8  1  I
+ 2.750639188  8  8  2  I
+ 2.782361837  8  8  3  I
+ 2.782389183  8  8  0  I
+ 2.829619458  8  8  1  I
+ 3.195870863  8  8  2  I
+ 3.206751670  8  8  3  I
+ 3.206772260  8  8  0  I
+ 3.226216476  8  8  1  I
+ 3.606782026  8  8  2  I
+ 3.618819581  8  8  3  I
+ 3.618852359  8  8  0  I
+ 3.642060647  8  8  1  I
+ 4.036809012  8  8  2  I
+ 4.054703165  8  8  3  I
+ 4.054876470  8  8  0  I
+ 4.098593286  8  8  1  I
+ 4.520108743  8  8  2  I
+ 4.568481118  8  8  3  I
+ 4.568521654  8  8  0  I
+ 4.610133448  8  8  1  I
+ 5.082920427  8  8  2  I
+ 5.105134735  8  8  3  I
+ 5.105159684  8  8  0  I
+ 5.134964899  8  8  1  I
+ 5.492275975  8  8  2  I
+ 5.535964806  8  8  3  I
+ 5.536010817  8  8  0  I
+process  14 unlocked
+process  1 locked
+process  14 locking
+process  1 unlocked
+process  11 locked
+process  11 unlocked
+process  13 locked
+process  1 locking
+process  11 locking
+process  13 unlocked
+process  5 locked
+process  13 locking
+process  5 unlocked
+process  7 locked
+process  7 unlocked
+process  10 locked
+process  5 locking
+process  10 unlocked
+process  0 locked
+process  10 locking
+process  7 locking
+process  0 unlocked
+process  6 locked
+process  6 unlocked
+process  3 locked
+process  0 locking
+process  6 locking
+process  3 unlocked
+process  9 locked
+process  3 locking
+process  9 unlocked
+process  12 locked
+process  9 locking
+process  12 unlocked
+process  4 locked
+process  12 locking
+process  4 unlocked
+process  2 locked
+process  2 unlocked
+process  14 locked
+process  4 locking
+process  14 unlocked
+process  1 locked
+process  2 locking
+process  1 unlocked
+process  11 locked
+process  14 locking
+process  11 unlocked
+process  13 locked
+process  1 locking
+process  11 locking
+process  13 unlocked
+process  5 locked
+ 0.002747853  13  13  0  N
+ 0.033749817  13  13  1  N
+ 0.250715565  13  13  2  N
+ 0.269199930  13  13  3  N
+ 0.269222556  13  13  0  N
+ 0.286650265  13  13  1  N
+ 0.622687776  13  13  2  N
+ 0.654257474  13  13  3  N
+ 0.654281865  13  13  0  N
+ 0.682635962  13  13  1  N
+ 1.065494344  13  13  2  N
+ 1.090735321  13  13  3  N
+ 1.090775206  13  13  0  N
+ 1.126318503  13  13  1  N
+ 1.581756001  13  13  2  N
+ 1.607133821  13  13  3  N
+ 1.607160784  13  13  0  N
+ 1.618521384  13  13  1  N
+ 1.972775807  13  13  2  N
+ 1.987049922  13  13  3  N
+ 1.987078010  13  13  0  N
+ 2.032650345  13  13  1  N
+ 2.468994366  13  13  2  N
+ 2.509434555  13  13  3  N
+ 2.509470808  13  13  0  N
+ 2.556141317  13  13  1  N
+ 2.932833056  13  13  2  N
+ 2.978218299  13  13  3  N
+ 2.978253783  13  13  0  N
+ 2.993019570  13  13  1  N
+ 3.341424489  13  13  2  N
+ 3.370784692  13  13  3  N
+ 3.370825457  13  13  0  N
+ 3.386977627  13  13  1  N
+ 3.755326846  13  13  2  N
+ 3.803134544  13  13  3  N
+ 3.803184321  13  13  0  N
+ 3.841537259  13  13  1  N
+ 4.245672964  13  13  2  N
+ 4.263252728  13  13  3  N
+ 4.263278314  13  13  0  N
+ 4.276398264  13  13  1  N
+ 4.680279555  13  13  2  N
+ 4.716052663  13  13  3  N
+ 4.716071006  13  13  0  N
+ 4.756882818  13  13  1  N
+ 5.224739325  13  13  2  N
+ 5.246141434  13  13  3  N
+ 5.246180935  13  13  0  N
+ 5.274350533  13  13  1  N
+ 5.609800358  13  13  2  N
+ 5.640629988  13  13  3  N
+ 5.640670896  13  13  0  N
+ 5.668624245  13  13  1  N
+ 6.057240974  13  13  2  N
+ 6.092878856  13  13  3  N
+ 6.092906404  13  13  0  N
+process  5 unlocked
+process  10 locked
+process  10 unlocked
+process  7 locked
+process  10 locking
+process  5 locking
+process  7 unlocked
+process  0 locked
+process  0 unlocked
+process  6 locked
+process  7 locking
+process  0 locking
+process  6 unlocked
+process  3 locked
+process  6 locking
+process  3 unlocked
+process  9 locked
+process  9 unlocked
+process  12 locked
+process  9 locking
+process  3 locking
+process  4 locked
+process  12 unlocked
+process  4 unlocked
+process  2 locked
+process  12 locking
+process  4 locking
+process  2 unlocked
+process  14 locked
+process  2 locking
+process  14 unlocked
+process  1 locked
+process  14 locking
+process  1 unlocked
+process  11 locked
+process  1 locking
+process  11 unlocked
+process  10 locked
+process  11 locking
+process  10 unlocked
+process  5 locked
+process  5 unlocked
+process  7 locked
+process  10 locking
+process  5 locking
+process  7 unlocked
+process  0 locked
+process  0 unlocked
+process  6 locked
+process  6 unlocked
+process  9 locked
+process  7 locking
+process  6 locking
+process  0 locking
+process  9 unlocked
+process  3 locked
+process  3 unlocked
+process  12 locked
+process  9 locking
+process  3 locking
+process  12 unlocked
+process  4 locked
+process  12 locking
+process  2 locked
+process  4 unlocked
+process  4 locking
+process  2 unlocked
+process  14 locked
+process  1 locked
+process  14 unlocked
+process  2 locking
+process  1 unlocked
+process  11 locked
+process  1 locking
+process  11 unlocked
+process  10 locked
+process  14 locking
+process  10 unlocked
+process  5 locked
+process  11 locking
+process  5 unlocked
+process  7 locked
+process  10 locking
+process  7 unlocked
+process  6 locked
+process  6 unlocked
+ 0.002134870  6  6  0  G
+ 0.045354357  6  6  1  G
+ 0.350478763  6  6  2  G
+ 0.382270314  6  6  3  G
+ 0.382296751  6  6  0  G
+ 0.421366278  6  6  1  G
+ 0.750164747  6  6  2  G
+ 0.792540085  6  6  3  G
+ 0.792564937  6  6  0  G
+ 0.827091944  6  6  1  G
+ 1.172964468  6  6  2  G
+ 1.215053893  6  6  3  G
+ 1.215086589  6  6  0  G
+ 1.242030391  6  6  1  G
+ 1.671489226  6  6  2  G
+ 1.694025701  6  6  3  G
+ 1.694112169  6  6  0  G
+ 1.718552268  6  6  1  G
+ 2.044994999  6  6  2  G
+ 2.091984879  6  6  3  G
+ 2.092104859  6  6  0  G
+ 2.111621768  6  6  1  G
+ 2.591766748  6  6  2  G
+ 2.624036946  6  6  3  G
+ 2.624077302  6  6  0  G
+ 2.641618195  6  6  1  G
+ 3.009698837  6  6  2  G
+ 3.026706192  6  6  3  G
+ 3.026751321  6  6  0  G
+ 3.057481390  6  6  1  G
+ 3.444856274  6  6  2  G
+ 3.480910854  6  6  3  G
+ 3.480943077  6  6  0  G
+ 3.511082463  6  6  1  G
+ 3.881398548  6  6  2  G
+ 3.925140209  6  6  3  G
+ 3.925176790  6  6  0  G
+ 3.962708615  6  6  1  G
+ 4.385212237  6  6  2  G
+ 4.427225588  6  6  3  G
+ 4.427277440  6  6  0  G
+ 4.448131367  6  6  1  G
+ 4.891937612  6  6  2  G
+ 4.931015513  6  6  3  G
+ 4.931148258  6  6  0  G
+ 4.949842901  6  6  1  G
+ 5.359698107  6  6  2  G
+ 5.390379394  6  6  3  G
+ 5.390425463  6  6  0  G
+ 5.414711672  6  6  1  G
+ 5.748595277  6  6  2  G
+ 5.793560243  6  6  3  G
+ 5.793599224  6  6  0  G
+ 5.820323716  6  6  1  G
+ 6.213277863  6  6  2  G
+ 6.257141447  6  6  3  G
+ 6.257169222  6  6  0  G
+ 6.268399685  6  6  1  G
+ 6.707990864  6  6  2  G
+ 6.727548533  6  6  3  G
+ 6.727580748  6  6  0  G
+ 6.750754684  6  6  1  G
+ 7.033354737  6  6  2  G
+ 7.047121372  6  6  3  G
+ 7.047152801  6  6  0  G
+process  0 locked
+process  5 locking
+process  0 unlocked
+process  9 locked
+process  7 locking
+process  3 locked
+process  9 unlocked
+process  0 locking
+process  3 unlocked
+process  12 locked
+process  9 locking
+process  3 locking
+process  12 unlocked
+process  4 locked
+process  12 locking
+process  4 unlocked
+process  2 locked
+ 0.002095832  4  4  0  E
+ 0.022266144  4  4  1  E
+ 0.134503055  4  4  2  E
+ 0.147706201  4  4  3  E
+ 0.147730831  4  4  0  E
+ 0.197143486  4  4  1  E
+ 0.501758231  4  4  2  E
+ 0.532564012  4  4  3  E
+ 0.532589776  4  4  0  E
+ 0.564844766  4  4  1  E
+ 0.893628557  4  4  2  E
+ 0.927448815  4  4  3  E
+ 0.927480005  4  4  0  E
+ 0.943852260  4  4  1  E
+ 1.398786057  4  4  2  E
+ 1.440332971  4  4  3  E
+ 1.440380421  4  4  0  E
+ 1.465321607  4  4  1  E
+ 1.841334723  4  4  2  E
+ 1.869131972  4  4  3  E
+ 1.869148256  4  4  0  E
+ 1.899332646  4  4  1  E
+ 2.274796065  4  4  2  E
+ 2.315134531  4  4  3  E
+ 2.315159153  4  4  0  E
+ 2.352692960  4  4  1  E
+ 2.782519993  4  4  2  E
+ 2.805381749  4  4  3  E
+ 2.805420263  4  4  0  E
+ 2.822243091  4  4  1  E
+ 3.159432155  4  4  2  E
+ 3.195820518  4  4  3  E
+ 3.195848100  4  4  0  E
+ 3.222459513  4  4  1  E
+ 3.580949179  4  4  2  E
+ 3.606718752  4  4  3  E
+ 3.606760633  4  4  0  E
+ 3.640873802  4  4  1  E
+ 3.996394111  4  4  2  E
+ 4.036613943  4  4  3  E
+ 4.036637918  4  4  0  E
+ 4.073739390  4  4  1  E
+ 4.485287269  4  4  2  E
+ 4.520001765  4  4  3  E
+ 4.520064081  4  4  0  E
+ 4.563656014  4  4  1  E
+ 5.040385354  4  4  2  E
+ 5.056131450  4  4  3  E
+ 5.056169709  4  4  0  E
+ 5.092651580  4  4  1  E
+ 5.439403737  4  4  2  E
+ 5.464783616  4  4  3  E
+ 5.464837267  4  4  0  E
+ 5.497680413  4  4  1  E
+ 5.929207077  4  4  2  E
+ 5.957634654  4  4  3  E
+ 5.957680912  4  4  0  E
+ 5.993376761  4  4  1  E
+ 6.370590387  4  4  2  E
+ 6.399414526  4  4  3  E
+ 6.399445672  4  4  0  E
+ 6.425980453  4  4  1  E
+ 6.834000540  4  4  2  E
+ 6.877302080  4  4  3  E
+ 6.877347194  4  4  0  E
+ 6.902609197  4  4  1  E
+ 7.162949553  4  4  2  E
+ 7.211353527  4  4  3  E
+ 7.211381381  4  4  0  E
+process  2 unlocked
+process  1 locked
+process  1 unlocked
+process  14 locked
+process  2 locking
+process  14 unlocked
+process  11 locked
+process  1 locking
+process  14 locking
+process  11 unlocked
+process  10 locked
+process  10 unlocked
+process  5 locked
+process  10 locking
+process  11 locking
+process  5 unlocked
+process  7 locked
+process  7 unlocked
+process  0 locked
+process  5 locking
+process  0 unlocked
+process  9 locked
+process  7 locking
+process  0 locking
+process  3 locked
+process  9 unlocked
+process  3 unlocked
+process  12 locked
+process  9 locking
+process  12 unlocked
+process  2 locked
+process  3 locking
+process  2 unlocked
+process  1 locked
+process  2 locking
+process  12 locking
+process  14 locked
+process  1 unlocked
+process  14 unlocked
+process  10 locked
+process  14 locking
+process  1 locking
+process  10 unlocked
+process  11 locked
+process  11 unlocked
+process  5 locked
+process  10 locking
+process  5 unlocked
+process  7 locked
+process  5 locking
+process  11 locking
+process  7 unlocked
+process  0 locked
+process  0 unlocked
+process  9 locked
+process  0 locking
+process  7 locking
+process  3 locked
+process  9 unlocked
+process  9 locking
+process  3 unlocked
+process  2 locked
+process  2 unlocked
+process  12 locked
+process  12 unlocked
+process  14 locked
+process  3 locking
+process  12 locking
+process  2 locking
+process  14 unlocked
+process  1 locked
+process  14 locking
+process  1 unlocked
+process  10 locked
+process  5 locked
+process  10 unlocked
+process  1 locking
+process  5 unlocked
+process  11 locked
+process  5 locking
+process  10 locking
+process  0 locked
+process  11 unlocked
+process  0 unlocked
+process  7 locked
+process  11 locking
+process  7 unlocked
+process  9 locked
+process  0 locking
+process  7 locking
+process  9 unlocked
+process  3 locked
+process  9 locking
+process  3 unlocked
+process  12 locked
+process  3 locking
+process  12 unlocked
+process  2 locked
+ 0.002556795  12  12  0  M
+ 0.019058199  12  12  1  M
+ 0.048636409  12  12  2  M
+ 0.089008906  12  12  3  M
+ 0.089063961  12  12  0  M
+ 0.104570043  12  12  1  M
+ 0.442262076  12  12  2  M
+ 0.470135915  12  12  3  M
+ 0.470171061  12  12  0  M
+ 0.487230415  12  12  1  M
+ 0.839371275  12  12  2  M
+ 0.871132529  12  12  3  M
+ 0.871162559  12  12  0  M
+ 0.890386280  12  12  1  M
+ 1.331526869  12  12  2  M
+ 1.380544790  12  12  3  M
+ 1.380574839  12  12  0  M
+ 1.406874774  12  12  1  M
+ 1.797182179  12  12  2  M
+ 1.821379160  12  12  3  M
+ 1.821522200  12  12  0  M
+ 1.843831097  12  12  1  M
+ 2.217724017  12  12  2  M
+ 2.231350012  12  12  3  M
+ 2.231374268  12  12  0  M
+ 2.244676192  12  12  1  M
+ 2.715858624  12  12  2  M
+ 2.750535082  12  12  3  M
+ 2.750614870  12  12  0  M
+ 2.786943081  12  12  1  M
+ 3.125660303  12  12  2  M
+ 3.159269843  12  12  3  M
+ 3.159308537  12  12  0  M
+ 3.195536063  12  12  1  M
+ 3.568754404  12  12  2  M
+ 3.580703540  12  12  3  M
+ 3.580735744  12  12  0  M
+ 3.626406099  12  12  1  M
+ 3.973945717  12  12  2  M
+ 3.996291328  12  12  3  M
+ 3.996369244  12  12  0  M
+ 4.026618528  12  12  1  M
+ 4.467776260  12  12  2  M
+ 4.485226211  12  12  3  M
+ 4.485305092  12  12  0  M
+ 4.507376116  12  12  1  M
+ 5.019012418  12  12  2  M
+ 5.040215959  12  12  3  M
+ 5.040251065  12  12  0  M
+ 5.052456038  12  12  1  M
+ 5.414881614  12  12  2  M
+ 5.439310777  12  12  3  M
+ 5.439361215  12  12  0  M
+ 5.461613656  12  12  1  M
+ 5.884440770  12  12  2  M
+ 5.929137810  12  12  3  M
+ 5.929181672  12  12  0  M
+ 5.942428994  12  12  1  M
+ 6.322883104  12  12  2  M
+ 6.370565302  12  12  3  M
+ 6.370630647  12  12  0  M
+ 6.399503042  12  12  1  M
+ 6.807206306  12  12  2  M
+ 6.833842163  12  12  3  M
+ 6.833873131  12  12  0  M
+ 6.864594801  12  12  1  M
+ 7.136537670  12  12  2  M
+ 7.162769483  12  12  3  M
+ 7.162798471  12  12  0  M
+ 7.210020410  12  12  1  M
+ 7.570617757  12  12  2  M
+ 7.590350503  12  12  3  M
+ 7.590367965  12  12  0  M
+ 7.634140658  12  12  1  M
+ 7.864657774  12  12  2  M
+ 7.883093764  12  12  3  M
+ 7.883136458  12  12  0  M
+ 7.911119968  12  12  1  M
+ 8.201208867  12  12  2  M
+ 8.232179563  12  12  3  M
+ 8.232196660  12  12  0  M
+process  2 unlocked
+process  14 locked
+ 0.002055652  2  2  0  C
+ 0.025588116  2  2  1  C
+ 0.197266431  2  2  2  C
+ 0.207603252  2  2  3  C
+ 0.207633423  2  2  0  C
+ 0.240633388  2  2  1  C
+ 0.532615235  2  2  2  C
+ 0.545768746  2  2  3  C
+ 0.545793272  2  2  0  C
+ 0.592958305  2  2  1  C
+ 0.927622734  2  2  2  C
+ 0.961306299  2  2  3  C
+ 0.961327474  2  2  0  C
+ 0.998275600  2  2  1  C
+ 1.440512934  2  2  2  C
+ 1.471411692  2  2  3  C
+ 1.471441264  2  2  0  C
+ 1.521075885  2  2  1  C
+ 1.869175276  2  2  2  C
+ 1.883080474  2  2  3  C
+ 1.883105837  2  2  0  C
+ 1.918182083  2  2  1  C
+ 2.315181445  2  2  2  C
+ 2.359130721  2  2  3  C
+ 2.359158824  2  2  0  C
+ 2.380133282  2  2  1  C
+ 2.805446906  2  2  2  C
+ 2.824819564  2  2  3  C
+ 2.824844868  2  2  0  C
+ 2.856009197  2  2  1  C
+ 3.206916360  2  2  2  C
+ 3.223901680  2  2  3  C
+ 3.223925286  2  2  0  C
+ 3.255767191  2  2  1  C
+ 3.619034768  2  2  2  C
+ 3.630724683  2  2  3  C
+ 3.630756747  2  2  0  C
+ 3.660090510  2  2  1  C
+ 4.054752270  2  2  2  C
+ 4.094612195  2  2  3  C
+ 4.094658642  2  2  0  C
+ 4.132943275  2  2  1  C
+ 4.572161971  2  2  2  C
+ 4.586490316  2  2  3  C
+ 4.586523137  2  2  0  C
+ 4.609627256  2  2  1  C
+ 5.056191193  2  2  2  C
+ 5.082860264  2  2  3  C
+ 5.082891924  2  2  0  C
+ 5.103397705  2  2  1  C
+ 5.464859829  2  2  2  C
+ 5.492046866  2  2  3  C
+ 5.492092903  2  2  0  C
+ 5.504121151  2  2  1  C
+ 5.957713771  2  2  2  C
+ 5.972137942  2  2  3  C
+ 5.972172186  2  2  0  C
+ 6.012524013  2  2  1  C
+ 6.399463116  2  2  2  C
+ 6.434415749  2  2  3  C
+ 6.434442678  2  2  0  C
+ 6.445735493  2  2  1  C
+ 6.877322583  2  2  2  C
+ 6.919594912  2  2  3  C
+ 6.919633686  2  2  0  C
+ 6.943817469  2  2  1  C
+ 7.211539976  2  2  2  C
+ 7.256592978  2  2  3  C
+ 7.256619904  2  2  0  C
+ 7.292410738  2  2  1  C
+ 7.590385573  2  2  2  C
+ 7.611148575  2  2  3  C
+ 7.611177308  2  2  0  C
+ 7.632398282  2  2  1  C
+ 7.847623186  2  2  2  C
+ 7.864623639  2  2  3  C
+ 7.864641906  2  2  0  C
+ 7.914286342  2  2  1  C
+ 8.232211749  2  2  2  C
+ 8.247203394  2  2  3  C
+ 8.247217967  2  2  0  C
+process  14 unlocked
+ 0.002780494  14  14  0  O
+ 0.030674954  14  14  1  O
+ 0.207649630  14  14  2  O
+ 0.229552190  14  14  3  O
+ 0.229578282  14  14  0  O
+ 0.256633542  14  14  1  O
+ 0.588644211  14  14  2  O
+ 0.609484309  14  14  3  O
+ 0.609505101  14  14  0  O
+ 0.646784402  14  14  1  O
+ 1.024222167  14  14  2  O
+ 1.065411689  14  14  3  O
+ 1.065472067  14  14  0  O
+ 1.098739583  14  14  1  O
+ 1.547092460  14  14  2  O
+ 1.581699081  14  14  3  O
+ 1.581724091  14  14  0  O
+ 1.617665901  14  14  1  O
+ 1.945044095  14  14  2  O
+ 1.972538934  14  14  3  O
+ 1.972558003  14  14  0  O
+ 2.011442945  14  14  1  O
+ 2.427392471  14  14  2  O
+ 2.468932297  14  14  3  O
+ 2.468965540  14  14  0  O
+ 2.503278377  14  14  1  O
+ 2.896870613  14  14  2  O
+ 2.908346592  14  14  3  O
+ 2.908372914  14  14  0  O
+ 2.937811562  14  14  1  O
+ 3.271387838  14  14  2  O
+ 3.285326494  14  14  3  O
+ 3.285368936  14  14  0  O
+ 3.307046489  14  14  1  O
+ 3.630902886  14  14  2  O
+ 3.680115156  14  14  3  O
+ 3.680144208  14  14  0  O
+ 3.718128696  14  14  1  O
+ 4.094788812  14  14  2  O
+ 4.140833538  14  14  3  O
+ 4.140863648  14  14  0  O
+ 4.179555749  14  14  1  O
+ 4.586656638  14  14  2  O
+ 4.611998140  14  14  3  O
+ 4.612020728  14  14  0  O
+ 4.632853582  14  14  1  O
+ 5.105193991  14  14  2  O
+ 5.154212643  14  14  3  O
+ 5.154243683  14  14  0  O
+ 5.171282766  14  14  1  O
+ 5.536048418  14  14  2  O
+ 5.549137292  14  14  3  O
+ 5.549177149  14  14  0  O
+ 5.569330508  14  14  1  O
+ 5.972302264  14  14  2  O
+ 6.005839095  14  14  3  O
+ 6.005870859  14  14  0  O
+ 6.030021882  14  14  1  O
+process  1 locked
+ 6.434484535  14  14  2  O
+ 6.473478294  14  14  3  O
+ 6.473521334  14  14  0  O
+ 6.484044124  14  14  1  O
+ 6.919847961  14  14  2  O
+ 6.931219342  14  14  3  O
+ 6.931275530  14  14  0  O
+ 6.979980921  14  14  1  O
+ 7.287364331  14  14  2  O
+ 7.312707647  14  14  3  O
+ 7.312733191  14  14  0  O
+ 7.361076560  14  14  1  O
+ 7.660172035  14  14  2  O
+ 7.679284357  14  14  3  O
+ 7.679313845  14  14  0  O
+ 7.694280397  14  14  1  O
+ 7.883256527  14  14  2  O
+ 7.932033437  14  14  3  O
+ 7.932065835  14  14  0  O
+ 7.950056761  14  14  1  O
+ 8.247238368  14  14  2  O
+ 8.260635305  14  14  3  O
+ 8.260657032  14  14  0  O
+process  1 unlocked
+process  5 locked
+process  5 unlocked
+process  10 locked
+process  5 locking
+process  10 unlocked
+process  11 locked
+process  1 locking
+process  10 locking
+process  0 locked
+process  11 unlocked
+process  11 locking
+process  0 unlocked
+process  7 locked
+process  9 locked
+process  7 unlocked
+ 0.002149841  7  7  0  H
+ 0.040017456  7  7  1  H
+ 0.286198102  7  7  2  H
+ 0.310135888  7  7  3  H
+ 0.310163748  7  7  0  H
+ 0.330447959  7  7  1  H
+ 0.702021888  7  7  2  H
+ 0.730130946  7  7  3  H
+ 0.730166175  7  7  0  H
+ 0.779824227  7  7  1  H
+ 1.114199421  7  7  2  H
+ 1.154814519  7  7  3  H
+ 1.154840253  7  7  0  H
+ 1.202302172  7  7  1  H
+ 1.657292633  7  7  2  H
+ 1.671421822  7  7  3  H
+ 1.671449256  7  7  0  H
+ 1.704184720  7  7  1  H
+ 2.034388995  7  7  2  H
+ 2.044927000  7  7  3  H
+ 2.044966296  7  7  0  H
+ 2.083378869  7  7  1  H
+ 2.577398674  7  7  2  H
+ 2.591558993  7  7  3  H
+ 2.591587403  7  7  0  H
+ 2.614748171  7  7  1  H
+ 2.993319765  7  7  2  H
+ 3.009512434  7  7  3  H
+ 3.009537859  7  7  0  H
+ 3.033460121  7  7  1  H
+ 3.405320967  7  7  2  H
+ 3.444713835  7  7  3  H
+ 3.444823520  7  7  0  H
+ 3.473997257  7  7  1  H
+ 3.841269692  7  7  2  H
+ 3.881319615  7  7  3  H
+ 3.881365101  7  7  0  H
+ 3.918845968  7  7  1  H
+ 4.300198029  7  7  2  H
+ 4.341364730  7  7  3  H
+ 4.341398465  7  7  0  H
+ 4.374875823  7  7  1  H
+ 4.812098796  7  7  2  H
+ 4.850906875  7  7  3  H
+ 4.850930966  7  7  0  H
+ 4.883066632  7  7  1  H
+ 5.329187120  7  7  2  H
+ 5.339880425  7  7  3  H
+ 5.339904461  7  7  0  H
+ 5.355545564  7  7  1  H
+ 5.683180561  7  7  2  H
+ 5.694023915  7  7  3  H
+ 5.694036817  7  7  0  H
+ 5.742017476  7  7  1  H
+ 6.153292439  7  7  2  H
+ 6.200525195  7  7  3  H
+ 6.200555541  7  7  0  H
+ 6.221798068  7  7  1  H
+ 6.643272988  7  7  2  H
+ 6.688654389  7  7  3  H
+ 6.688693031  7  7  0  H
+ 6.728601779  7  7  1  H
+ 7.008057510  7  7  2  H
+ 7.033300048  7  7  3  H
+ 7.033334570  7  7  0  H
+ 7.081882715  7  7  1  H
+ 7.417776198  7  7  2  H
+ 7.452607592  7  7  3  H
+ 7.452659957  7  7  0  H
+ 7.499110366  7  7  1  H
+ 7.736659953  7  7  2  H
+ 7.784514637  7  7  3  H
+ 7.784565984  7  7  0  H
+ 7.815835920  7  7  1  H
+ 8.080896095  7  7  2  H
+ 8.114235202  7  7  3  H
+ 8.114269875  7  7  0  H
+ 8.135404597  7  7  1  H
+ 8.405283243  7  7  2  H
+ 8.432672058  7  7  3  H
+ 8.432711838  7  7  0  H
+process  0 locking
+process  9 unlocked
+process  3 locked
+process  9 locking
+process  3 unlocked
+process  5 locked
+process  5 unlocked
+process  1 locked
+process  3 locking
+process  5 locking
+process  1 unlocked
+process  10 locked
+process  10 unlocked
+process  11 locked
+ 0.002395261  10  10  0  K
+ 0.037507739  10  10  1  K
+ 0.269246524  10  10  2  K
+ 0.286032450  10  10  3  K
+ 0.286057542  10  10  0  K
+ 0.302239012  10  10  1  K
+ 0.654421749  10  10  2  K
+ 0.701856886  10  10  3  K
+ 0.701882246  10  10  0  K
+ 0.728930065  10  10  1  K
+ 1.090926713  10  10  2  K
+ 1.114130495  10  10  3  K
+ 1.114169281  10  10  0  K
+ 1.158563055  10  10  1  K
+ 1.607322527  10  10  2  K
+ 1.641814976  10  10  3  K
+ 1.641851955  10  10  0  K
+ 1.672145092  10  10  1  K
+ 1.987105859  10  10  2  K
+ 2.011433824  10  10  3  K
+ 2.011460895  10  10  0  K
+ 2.048190695  10  10  1  K
+ 2.534803566  10  10  2  K
+ 2.577123440  10  10  3  K
+ 2.577197532  10  10  0  K
+ 2.613667528  10  10  1  K
+ 2.978373075  10  10  2  K
+ 2.993143124  10  10  3  K
+ 2.993178831  10  10  0  K
+ 3.008279232  10  10  1  K
+ 3.370973743  10  10  2  K
+ 3.405274485  10  10  3  K
+ 3.405486455  10  10  0  K
+ 3.426368919  10  10  1  K
+ 3.803225345  10  10  2  K
+ 3.841138674  10  10  3  K
+ 3.841240084  10  10  0  K
+ 3.883841572  10  10  1  K
+ 4.263456943  10  10  2  K
+ 4.300131771  10  10  3  K
+ 4.300173742  10  10  0  K
+ 4.348308906  10  10  1  K
+ 4.765454301  10  10  2  K
+ 4.811952156  10  10  3  K
+ 4.811994053  10  10  0  K
+ 4.856224643  10  10  1  K
+ 5.287254071  10  10  2  K
+ 5.329133132  10  10  3  K
+ 5.329163141  10  10  0  K
+ 5.371656641  10  10  1  K
+ 5.694067195  10  10  2  K
+ 5.709098370  10  10  3  K
+ 5.709119944  10  10  0  K
+ 5.727222723  10  10  1  K
+ 6.138928876  10  10  2  K
+ 6.153242087  10  10  3  K
+ 6.153266689  10  10  0  K
+ 6.178806951  10  10  1  K
+ 6.561091974  10  10  2  K
+ 6.601865293  10  10  3  K
+ 6.601922963  10  10  0  K
+ 6.646853564  10  10  1  K
+ 6.958960923  10  10  2  K
+ 6.986001850  10  10  3  K
+ 6.986038825  10  10  0  K
+ 7.017345749  10  10  1  K
+ 7.361664729  10  10  2  K
+ 7.372760662  10  10  3  K
+ 7.372809576  10  10  0  K
+ 7.387388389  10  10  1  K
+ 7.679361694  10  10  2  K
+ 7.712445483  10  10  3  K
+ 7.712474160  10  10  0  K
+ 7.734027517  10  10  1  K
+ 7.958241448  10  10  2  K
+ 7.983282191  10  10  3  K
+ 7.983429673  10  10  0  K
+ 8.016803056  10  10  1  K
+ 8.289693770  10  10  2  K
+ 8.315210395  10  10  3  K
+ 8.315230794  10  10  0  K
+ 8.346785097  10  10  1  K
+ 8.562584504  10  10  2  K
+ 8.583474514  10  10  3  K
+ 8.583503481  10  10  0  K
+process  1 locking
+process  11 unlocked
+process  0 locked
+process  9 locked
+process  0 unlocked
+process  11 locking
+process  0 locking
+process  3 locked
+process  9 unlocked
+process  9 locking
+process  3 unlocked
+process  5 locked
+ 0.002074254  3  3  0  D
+ 0.047616998  3  3  1  D
+ 0.382430122  3  3  2  D
+ 0.400892794  3  3  3  D
+ 0.400915719  3  3  0  D
+ 0.438362995  3  3  1  D
+ 0.812463823  3  3  2  D
+ 0.826613085  3  3  3  D
+ 0.826636367  3  3  0  D
+ 0.858893350  3  3  1  D
+ 1.257191810  3  3  2  D
+ 1.283613978  3  3  3  D
+ 1.283630057  3  3  0  D
+ 1.313403584  3  3  1  D
+ 1.723204679  3  3  2  D
+ 1.756390383  3  3  3  D
+ 1.756423083  3  3  0  D
+ 1.787394329  3  3  1  D
+ 2.138986865  3  3  2  D
+ 2.174297845  3  3  3  D
+ 2.174384408  3  3  0  D
+ 2.217653267  3  3  1  D
+ 2.671723831  3  3  2  D
+ 2.692213628  3  3  3  D
+ 2.692298545  3  3  0  D
+ 2.725823454  3  3  1  D
+ 3.053800745  3  3  2  D
+ 3.090638077  3  3  3  D
+ 3.090669428  3  3  0  D
+ 3.138138900  3  3  1  D
+ 3.519276127  3  3  2  D
+ 3.536373938  3  3  3  D
+ 3.536415297  3  3  0  D
+ 3.578259483  3  3  1  D
+ 3.936517473  3  3  2  D
+ 3.950218368  3  3  3  D
+ 3.950251164  3  3  0  D
+ 3.980468961  3  3  1  D
+ 4.427388804  3  3  2  D
+ 4.452715591  3  3  3  D
+ 4.452795088  3  3  0  D
+ 4.480301814  3  3  1  D
+ 4.931313893  3  3  2  D
+ 4.980092682  3  3  3  D
+ 4.980138111  3  3  0  D
+ 5.022510895  3  3  1  D
+ 5.390466070  3  3  2  D
+ 5.402919240  3  3  3  D
+ 5.402967033  3  3  0  D
+ 5.421745404  3  3  1  D
+ 5.793615179  3  3  2  D
+ 5.843137247  3  3  3  D
+ 5.843168123  3  3  0  D
+ 5.874023855  3  3  1  D
+ 6.257309193  3  3  2  D
+ 6.298105078  3  3  3  D
+ 6.298135009  3  3  0  D
+ 6.343186163  3  3  1  D
+ 6.775555333  3  3  2  D
+ 6.807150529  3  3  3  D
+ 6.807176247  3  3  0  D
+ 6.826199424  3  3  1  D
+ 7.096683376  3  3  2  D
+ 7.136367358  3  3  3  D
+ 7.136396733  3  3  0  D
+ 7.158427867  3  3  1  D
+ 7.536607925  3  3  2  D
+ 7.570406871  3  3  3  D
+ 7.570432282  3  3  0  D
+ 7.609563193  3  3  1  D
+ 7.819157453  3  3  2  D
+ 7.847401094  3  3  3  D
+ 7.847432852  3  3  0  D
+ 7.883581286  3  3  1  D
+ 8.151330954  3  3  2  D
+ 8.201155695  3  3  3  D
+ 8.201181844  3  3  0  D
+ 8.218138419  3  3  1  D
+ 8.449678047  3  3  2  D
+ 8.480995430  3  3  3  D
+ 8.481021692  3  3  0  D
+ 8.527724920  3  3  1  D
+ 8.684272893  3  3  2  D
+ 8.730352573  3  3  3  D
+ 8.730377915  3  3  0  D
+process  5 unlocked
+process  1 locked
+process  5 locking
+process  1 unlocked
+process  11 locked
+ 0.002036385  1  1  0  B
+ 0.024660626  1  1  1  B
+ 0.147754431  1  1  2  B
+ 0.197143465  1  1  3  B
+ 0.197239348  1  1  0  B
+ 0.243631086  1  1  1  B
+ 0.545934802  1  1  2  B
+ 0.588463913  1  1  3  B
+ 0.588491907  1  1  0  B
+ 0.621391598  1  1  1  B
+ 0.961349598  1  1  2  B
+ 0.995553761  1  1  3  B
+ 0.995590339  1  1  0  B
+ 1.009230764  1  1  1  B
+ 1.471465274  1  1  2  B
+ 1.506869631  1  1  3  B
+ 1.506890762  1  1  0  B
+ 1.535592288  1  1  1  B
+ 1.883134130  1  1  2  B
+ 1.898389204  1  1  3  B
+ 1.898415477  1  1  0  B
+ 1.926315623  1  1  1  B
+ 2.359182152  1  1  2  B
+ 2.396382363  1  1  3  B
+ 2.396422292  1  1  0  B
+ 2.417800509  1  1  1  B
+ 2.824875646  1  1  2  B
+ 2.857413358  1  1  3  B
+ 2.857439719  1  1  0  B
+ 2.903375255  1  1  1  B
+ 3.224063948  1  1  2  B
+ 3.271351364  1  1  3  B
+ 3.271369271  1  1  0  B
+ 3.321279097  1  1  1  B
+ 3.690595707  1  1  2  B
+ 3.730134433  1  1  3  B
+ 3.730159335  1  1  0  B
+ 3.774920599  1  1  1  B
+ 4.172712216  1  1  2  B
+ 4.198422458  1  1  3  B
+ 4.198462126  1  1  0  B
+ 4.217471098  1  1  1  B
+ 4.612054623  1  1  2  B
+ 4.654921679  1  1  3  B
+ 4.654955644  1  1  0  B
+ 4.677529827  1  1  1  B
+ 5.154267421  1  1  2  B
+ 5.177068992  1  1  3  B
+ 5.177094711  1  1  0  B
+ 5.202681106  1  1  1  B
+ 5.549309921  1  1  2  B
+ 5.593131353  1  1  3  B
+ 5.593180245  1  1  0  B
+ 5.620139890  1  1  1  B
+ 6.005914712  1  1  2  B
+ 6.018403496  1  1  3  B
+ 6.018435550  1  1  0  B
+ 6.059024498  1  1  1  B
+ 6.473640469  1  1  2  B
+ 6.517907040  1  1  3  B
+ 6.517935708  1  1  0  B
+ 6.551735876  1  1  1  B
+ 6.931246358  1  1  2  B
+ 6.947034402  1  1  3  B
+ 6.947064069  1  1  0  B
+ 6.957366147  1  1  1  B
+ 7.256658714  1  1  2  B
+ 7.287200487  1  1  3  B
+ 7.287243310  1  1  0  B
+ 7.327767779  1  1  1  B
+ 7.611209769  1  1  2  B
+ 7.660151222  1  1  3  B
+ 7.660199120  1  1  0  B
+ 7.708524809  1  1  1  B
+ 7.932101360  1  1  2  B
+ 7.958173123  1  1  3  B
+ 7.958202922  1  1  0  B
+ 7.990243284  1  1  1  B
+ 8.261255937  1  1  2  B
+ 8.276185065  1  1  3  B
+ 8.276215968  1  1  0  B
+ 8.315363373  1  1  1  B
+ 8.517767889  1  1  2  B
+ 8.562534716  1  1  3  B
+ 8.562557728  1  1  0  B
+ 8.595657435  1  1  1  B
+ 8.755780531  1  1  2  B
+ 8.792105354  1  1  3  B
+ 8.792134828  1  1  0  B
+process  11 unlocked
+process  0 locked
+ 0.002528577  11  11  0  L
+ 0.031410504  11  11  1  L
+ 0.229652999  11  11  2  L
+ 0.250535767  11  11  3  L
+ 0.250561889  11  11  0  L
+ 0.279662205  11  11  1  L
+ 0.609633328  11  11  2  L
+ 0.622531214  11  11  3  L
+ 0.622560953  11  11  0  L
+ 0.643980009  11  11  1  L
+ 0.995613647  11  11  2  L
+ 1.024046772  11  11  3  L
+ 1.024080444  11  11  0  L
+ 1.038562259  11  11  1  L
+ 1.506918555  11  11  2  L
+ 1.546904454  11  11  3  L
+ 1.546927700  11  11  0  L
+ 1.572006712  11  11  1  L
+ 1.898437649  11  11  2  L
+ 1.944990876  11  11  3  L
+ 1.945021301  11  11  0  L
+ 1.972797087  11  11  1  L
+ 2.396455344  11  11  2  L
+ 2.427210541  11  11  3  L
+ 2.427235524  11  11  0  L
+ 2.462843381  11  11  1  L
+ 2.857482831  11  11  2  L
+ 2.896802522  11  11  3  L
+ 2.896851907  11  11  0  L
+ 2.944132012  11  11  1  L
+ 3.285404490  11  11  2  L
+ 3.300844735  11  11  3  L
+ 3.300868247  11  11  0  L
+ 3.311360424  11  11  1  L
+ 3.680174447  11  11  2  L
+ 3.690412192  11  11  3  L
+ 3.690440995  11  11  0  L
+ 3.731074126  11  11  1  L
+ 4.141015375  11  11  2  L
+ 4.172645900  11  11  3  L
+ 4.172680364  11  11  0  L
+ 4.220702614  11  11  1  L
+ 4.655086332  11  11  2  L
+ 4.680234879  11  11  3  L
+ 4.680257768  11  11  0  L
+ 4.699110389  11  11  1  L
+ 5.177115273  11  11  2  L
+ 5.224544995  11  11  3  L
+ 5.224570946  11  11  0  L
+ 5.253644340  11  11  1  L
+ 5.593347114  11  11  2  L
+ 5.609717172  11  11  3  L
+ 5.609766197  11  11  0  L
+ 5.630554747  11  11  1  L
+ 6.018566437  11  11  2  L
+ 6.057062134  11  11  3  L
+ 6.057089091  11  11  0  L
+ 6.091516115  11  11  1  L
+ 6.517956831  11  11  2  L
+ 6.560924413  11  11  3  L
+ 6.560952841  11  11  0  L
+ 6.583301139  11  11  1  L
+ 6.947210361  11  11  2  L
+ 6.958772291  11  11  3  L
+ 6.958801827  11  11  0  L
+ 7.006652074  11  11  1  L
+ 7.312930299  11  11  2  L
+ 7.361615050  11  11  3  L
+ 7.361635538  11  11  0  L
+ 7.410064730  11  11  1  L
+ 7.712603589  11  11  2  L
+ 7.723273517  11  11  3  L
+ 7.723297027  11  11  0  L
+ 7.757236486  11  11  1  L
+ 7.996321038  11  11  2  L
+ 8.038819033  11  11  3  L
+ 8.038989103  11  11  0  L
+ 8.080977177  11  11  1  L
+ 8.315276189  11  11  2  L
+ 8.361090134  11  11  3  L
+ 8.361268763  11  11  0  L
+ 8.399845438  11  11  1  L
+ 8.583552698  11  11  2  L
+ 8.617010615  11  11  3  L
+ 8.617045185  11  11  0  L
+ 8.645541480  11  11  1  L
+ 8.792169749  11  11  2  L
+ 8.803480105  11  11  3  L
+ 8.803508160  11  11  0  L
+process  0 unlocked
+process  9 locked
+ 0.002007305  0  0  0  A
+ 0.048071273  0  0  1  A
+ 0.401056208  0  0  2  A
+ 0.417746779  0  0  3  A
+ 0.417775348  0  0  0  A
+ 0.435416237  0  0  1  A
+ 0.792729873  0  0  2  A
+ 0.812299373  0  0  3  A
+ 0.812321942  0  0  0  A
+ 0.853447150  0  0  1  A
+ 1.215226327  0  0  2  A
+ 1.257133349  0  0  3  A
+ 1.257172238  0  0  0  A
+ 1.294856811  0  0  1  A
+ 1.694152674  0  0  2  A
+ 1.723151837  0  0  3  A
+ 1.723183122  0  0  0  A
+ 1.748245483  0  0  1  A
+ 2.092113041  0  0  2  A
+ 2.138835664  0  0  3  A
+ 2.138925104  0  0  0  A
+ 2.158881017  0  0  1  A
+ 2.624115252  0  0  2  A
+ 2.671593887  0  0  3  A
+ 2.671681332  0  0  0  A
+ 2.716668166  0  0  1  A
+ 3.026771798  0  0  2  A
+ 3.053632838  0  0  3  A
+ 3.053659123  0  0  0  A
+ 3.099585273  0  0  1  A
+ 3.481092374  0  0  2  A
+ 3.519241142  0  0  3  A
+ 3.519393733  0  0  0  A
+ 3.555987639  0  0  1  A
+ 3.925312735  0  0  2  A
+ 3.936466201  0  0  3  A
+ 3.936490783  0  0  0  A
+ 3.955906548  0  0  1  A
+ 4.341422370  0  0  2  A
+ 4.385076533  0  0  3  A
+ 4.385140161  0  0  0  A
+ 4.408571479  0  0  1  A
+ 4.851076609  0  0  2  A
+ 4.891869468  0  0  3  A
+ 4.892244110  0  0  0  A
+ 4.907184641  0  0  1  A
+ 5.339945492  0  0  2  A
+ 5.359480564  0  0  3  A
+ 5.359518187  0  0  0  A
+ 5.373134324  0  0  1  A
+ 5.709142635  0  0  2  A
+ 5.748427577  0  0  3  A
+ 5.748456447  0  0  0  A
+ 5.794714408  0  0  1  A
+ 6.200689927  0  0  2  A
+ 6.213222218  0  0  3  A
+ 6.213247238  0  0  0  A
+ 6.253077476  0  0  1  A
+ 6.688732888  0  0  2  A
+ 6.707930748  0  0  3  A
+ 6.707960781  0  0  0  A
+ 6.753386116  0  0  1  A
+ 7.047766442  0  0  2  A
+ 7.060982584  0  0  3  A
+ 7.061012572  0  0  0  A
+ 7.109755430  0  0  1  A
+ 7.452791625  0  0  2  A
+ 7.494408303  0  0  3  A
+ 7.494449521  0  0  0  A
+ 7.517003358  0  0  1  A
+ 7.784594752  0  0  2  A
+ 7.794708694  0  0  3  A
+ 7.794736460  0  0  0  A
+ 7.806381942  0  0  1  A
+ 8.038860232  0  0  2  A
+ 8.080847273  0  0  3  A
+ 8.080874176  0  0  0  A
+ 8.116861981  0  0  1  A
+ 8.361103274  0  0  2  A
+ 8.405239462  0  0  3  A
+ 8.405260911  0  0  0  A
+ 8.433944663  0  0  1  A
+ 8.617074415  0  0  2  A
+ 8.636218396  0  0  3  A
+ 8.636260271  0  0  0  A
+ 8.661897622  0  0  1  A
+ 8.803651432  0  0  2  A
+ 8.839773605  0  0  3  A
+ 8.839797369  0  0  0  A
+process  5 locked
+process  9 unlocked
+process  5 unlocked
+process  9 locking
+process  9 locked
+process  9 unlocked
+ 0.002291014  9  9  0  J
+ 0.013907189  9  9  1  J
+ 0.014014719  9  9  2  J
+ 0.048622780  9  9  3  J
+ 0.048648700  9  9  0  J
+ 0.060753231  9  9  1  J
+ 0.417894867  9  9  2  J
+ 0.442215725  9  9  3  J
+ 0.442232225  9  9  0  J
+ 0.452419706  9  9  1  J
+ 0.826657382  9  9  2  J
+ 0.839217336  9  9  3  J
+ 0.839241163  9  9  0  J
+ 0.864209607  9  9  1  J
+ 1.283651185  9  9  2  J
+ 1.331355851  9  9  3  J
+ 1.331379049  9  9  0  J
+ 1.348334103  9  9  1  J
+ 1.756656832  9  9  2  J
+ 1.797131254  9  9  3  J
+ 1.797154838  9  9  0  J
+ 1.815954169  9  9  1  J
+ 2.174500384  9  9  2  J
+ 2.217664895  9  9  3  J
+ 2.217700835  9  9  0  J
+ 2.231389450  9  9  1  J
+ 2.692446258  9  9  2  J
+ 2.715783873  9  9  3  J
+ 2.715825968  9  9  0  J
+ 2.752809276  9  9  1  J
+ 3.090701348  9  9  2  J
+ 3.125594915  9  9  3  J
+ 3.125630951  9  9  0  J
+ 3.139819181  9  9  1  J
+ 3.536441050  9  9  2  J
+ 3.568597412  9  9  3  J
+ 3.568703733  9  9  0  J
+ 3.611356975  9  9  1  J
+ 3.950348290  9  9  2  J
+ 3.973863012  9  9  3  J
+ 3.973911283  9  9  0  J
+ 4.009534517  9  9  1  J
+ 4.452831978  9  9  2  J
+ 4.467602140  9  9  3  J
+ 4.467636158  9  9  0  J
+ 4.481818421  9  9  1  J
+ 4.980171454  9  9  2  J
+ 5.018920736  9  9  3  J
+ 5.018964476  9  9  0  J
+ 5.030259825  9  9  1  J
+ 5.402999129  9  9  2  J
+ 5.414044777  9  9  3  J
+ 5.414064789  9  9  0  J
+ 5.429118432  9  9  1  J
+ 5.843332661  9  9  2  J
+ 5.884262050  9  9  3  J
+ 5.884290513  9  9  0  J
+ 5.896676659  9  9  1  J
+ 6.298280980  9  9  2  J
+ 6.322718837  9  9  3  J
+ 6.322744660  9  9  0  J
+ 6.334505184  9  9  1  J
+ 6.727712517  9  9  2  J
+ 6.775381338  9  9  3  J
+ 6.775411801  9  9  0  J
+ 6.823295729  9  9  1  J
+ 7.061170269  9  9  2  J
+ 7.096653345  9  9  3  J
+ 7.096718614  9  9  0  J
+ 7.144504833  9  9  1  J
+ 7.494613152  9  9  2  J
+ 7.536589469  9  9  3  J
+ 7.536635395  9  9  0  J
+ 7.582527529  9  9  1  J
+ 7.794765913  9  9  2  J
+ 7.819139900  9  9  3  J
+ 7.819183371  9  9  0  J
+ 7.843080934  9  9  1  J
+ 8.114404180  9  9  2  J
+ 8.151162294  9  9  3  J
+ 8.151190059  9  9  0  J
+ 8.173765547  9  9  1  J
+ 8.432684372  9  9  2  J
+ 8.449646246  9  9  3  J
+ 8.449664766  9  9  0  J
+ 8.467730857  9  9  1  J
+ 8.636233970  9  9  2  J
+ 8.684259572  9  9  3  J
+ 8.684291985  9  9  0  J
+ 8.695159083  9  9  1  J
+ 8.839839914  9  9  2  J
+ 8.889051659  9  9  3  J
+ 8.889103132  9  9  0  J
+ 8.918460090  9  9  1  J
+ 8.918508366  9  9  2  J
+ 8.951874998  9  9  3  J
+ 8.951893214  9  9  0  J
+process  5 locking
+process  5 locked
+process  5 unlocked
+ 0.002110837  5  5  0  F
+ 0.044635055  5  5  1  F
+ 0.310186281  5  5  2  F
+ 0.350425892  5  5  3  F
+ 0.350450447  5  5  0  F
+ 0.396917501  5  5  1  F
+ 0.730187199  5  5  2  F
+ 0.750102523  5  5  3  F
+ 0.750132238  5  5  0  F
+ 0.791667657  5  5  1  F
+ 1.155005001  5  5  2  F
+ 1.172898439  5  5  3  F
+ 1.172928939  5  5  0  F
+ 1.191908018  5  5  1  F
+ 1.641981341  5  5  2  F
+ 1.657251400  5  5  3  F
+ 1.657452248  5  5  0  F
+ 1.682367898  5  5  1  F
+ 2.011489968  5  5  2  F
+ 2.034344794  5  5  3  F
+ 2.034359352  5  5  0  F
+ 2.046138692  5  5  1  F
+ 2.509631127  5  5  2  F
+ 2.534464689  5  5  3  F
+ 2.534597005  5  5  0  F
+ 2.551237897  5  5  1  F
+ 2.908525287  5  5  2  F
+ 2.932772693  5  5  3  F
+ 2.932800362  5  5  0  F
+ 2.955140996  5  5  1  F
+ 3.300891620  5  5  2  F
+ 3.341360623  5  5  3  F
+ 3.341388761  5  5  0  F
+ 3.353617692  5  5  1  F
+ 3.730314863  5  5  2  F
+ 3.755142747  5  5  3  F
+ 3.755188693  5  5  0  F
+ 3.781468625  5  5  1  F
+ 4.198603442  5  5  2  F
+ 4.245500792  5  5  3  F
+ 4.245529966  5  5  0  F
+ 4.295278926  5  5  1  F
+ 4.716084960  5  5  2  F
+ 4.765356372  5  5  3  F
+ 4.765408386  5  5  0  F
+ 4.805482368  5  5  1  F
+ 5.246224536  5  5  2  F
+ 5.287067767  5  5  3  F
+ 5.287123624  5  5  0  F
+ 5.313614385  5  5  1  F
+ 5.640795227  5  5  2  F
+ 5.683138619  5  5  3  F
+ 5.683164267  5  5  0  F
+ 5.708013285  5  5  1  F
+ 6.092935185  5  5  2  F
+ 6.138751464  5  5  3  F
+ 6.138788428  5  5  0  F
+ 6.179550856  5  5  1  F
+ 6.601969637  5  5  2  F
+ 6.643095300  5  5  3  F
+ 6.643157748  5  5  0  F
+ 6.677952216  5  5  1  F
+ 6.986166800  5  5  2  F
+ 7.008013799  5  5  3  F
+ 7.008038294  5  5  0  F
+ 7.053472369  5  5  1  F
+ 7.372840218  5  5  2  F
+ 7.417542838  5  5  3  F
+ 7.417571375  5  5  0  F
+ 7.453135488  5  5  1  F
+ 7.723459089  5  5  2  F
+ 7.736430652  5  5  3  F
+ 7.736461747  5  5  0  F
+ 7.749149127  5  5  1  F
+ 7.983310827  5  5  2  F
+ 7.996253350  5  5  3  F
+ 7.996280988  5  5  0  F
+ 8.015226966  5  5  1  F
+ 8.276389296  5  5  2  F
+ 8.289634762  5  5  3  F
+ 8.289681700  5  5  0  F
+ 8.308418267  5  5  1  F
+ 8.481038983  5  5  2  F
+ 8.517592144  5  5  3  F
+ 8.517636539  5  5  0  F
+ 8.553825697  5  5  1  F
+ 8.730403304  5  5  2  F
+ 8.755722547  5  5  3  F
+ 8.755757790  5  5  0  F
+ 8.791579989  5  5  1  F
+ 8.889074316  5  5  2  F
+ 8.914268158  5  5  3  F
+ 8.914314286  5  5  0  F
+ 8.959145433  5  5  1  F
+ 8.959182630  5  5  2  F
+ 8.994036208  5  5  3  F
+ 8.994070988  5  5  0  F
+-1  15  15  4 LOCAL_SECTION;ENTRY_PROTOCOL;CRITICAL_SECTION;EXIT_PROTOCOL;EXTRA_LABEL;
